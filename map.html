@@ -93,18 +93,24 @@
 					footprintData[i].date = footprintData[i].date.slice(0,index);
 				}*/
 				console.log(footprintData);
-				//make slider dates array
-				for (i = 0; i < footprintData.length; i++) {
-				  if (i === 0) {
-				    sliderDatesArray.push(footprintData[0].date);
-				  } else if (footprintData[i].date !== footprintData[i-1].date) {
-				    sliderDatesArray.push(footprintData[i].date);
-				  } 
-				} 
+				
+				createSliderDatesArray(footprintData)
 			} catch (err) {
 				console.log(err);
 			}
 		};
+
+		//create slider dates array
+		function createSliderDatesArray(footprintData) {
+			//make slider dates array
+			for (i = 0; i < footprintData.length; i++) {
+			  if (i === 0) {
+			    sliderDatesArray.push(footprintData[0].date);
+			  } else if (footprintData[i].date !== footprintData[i-1].date) {
+			    sliderDatesArray.push(footprintData[i].date);
+			  } 
+			} 
+		}
 
 		//create reference to footprint toggle button
 		const footprintToggle = document.getElementById('footprint-button');
@@ -150,7 +156,7 @@
 			loadFootprints()
 			.then(() => {
 				var options = {
-					zoom: 12,
+					zoom: 10,
 					center: {lat:24.1477, lng: 120.6736},
 					//mapTypeControl: false,
 					disableDefaultUI: true,
@@ -179,7 +185,7 @@
 		function addMarker(footprintData) {
 			var marker = new google.maps.Marker({
 				position: footprintData.coords,
-				map: map,
+				//map: map,
 			});
 
 
@@ -218,6 +224,54 @@
 				markers[i].setMap(map);
 			}
 		}
+		//go through the slider dates array
+		//and then for each one, go through the markers array
+		//if the sliderDatesArray.inclues(marker[j].date)
+		//set marker[i] on map
+		function showFromMarkers(from, to) {
+			//first clear all markers
+			console.log('clear all markers')
+			console.log(`from is ${from}`)
+			console.log(`to is ${to}`)
+			//hideMarkers()
+			//hide all markers at j values below FROM		
+			for (j = 0; j < from; j++) {
+				for (i = 0; i < footprintData.length; i++) {
+					if (sliderDatesArray[j].includes(footprintData[i].date)) {
+						//console.log(footprintData[i].date);
+						//console.log(`${i} should be shown`)
+						markers[i].setMap(null);
+					}
+				}
+				console.log(`${j} should be excluded`);
+			}
+
+			//hide all markers at j values above TO
+			for (j = to + 1; j < sliderDatesArray.length; j++) {
+				for (i = 0; i < footprintData.length; i++) {
+					if (sliderDatesArray[j].includes(footprintData[i].date)) {
+						//console.log(footprintData[i].date);
+						//console.log(`${i} should be shown`)
+						markers[i].setMap(null);
+					}
+				}
+				console.log(`${j} should be excluded`);
+			}
+			console.log('starting showing markers now')
+			//console.log(from)
+			
+			//show all markers between FROM and TO
+			for (j = from; j <= to; j++) {
+				console.log(`${j} should be included`);
+				for (i = 0; i < footprintData.length; i++) {
+					if (sliderDatesArray[j].includes(footprintData[i].date)) {
+						//console.log(footprintData[i].date);
+						//console.log(`${i} should be shown`)
+						markers[i].setMap(map);
+					}
+				}
+			}
+		}
 
 		function showMarkers() {
 			setMapOnAll(map);
@@ -245,6 +299,7 @@
 				}
 			}
 		}
+
 	</script>
 	<script>
 		//if I make this one big function
@@ -257,7 +312,6 @@
 			//so I'd get a new array, with hopefully one index
 			//for each date value. let's try..
 		function initializeSlider() {
-
 			var $range = $(".js-range-slider"),
 		    $inputFrom = $(".js-input-from"),
 		    $inputTo = $(".js-input-to"),
@@ -283,11 +337,14 @@
 			function updateInputs (data) {
 			    from = data.from;
 			    to = data.to;
-			    
 			    $inputFrom.prop("value", from);
-			    $inputTo.prop("value", to); 
+			    $inputTo.prop("value", to);
+			    //console.log(`The oldest should should be from: ${from}`)
+			    //console.log(`${sliderDatesArray[from]}`)
+			    showFromMarkers(from, to)
 			}
 
+			//function to match slider FROM/MIN with user input
 			$inputFrom.on("input", function () {
 			    var val = $(this).prop("value");
 			    
@@ -303,6 +360,7 @@
 			    });
 			});
 
+			//function to match slider TO/MAX with user input
 			$inputTo.on("input", function () {
 			    var val = $(this).prop("value");
 			    
