@@ -1,0 +1,142 @@
+/*
+These are colors that I need to figure out variables for\
+rgb(35,35,35) *** dark grey (my black)
+rgb(245,245,245) *** off-white (my white)
+canary yellow
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*, *::before, *::after {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+/* color variables go here */
+:root {
+	--background:rgb(57,57,57);
+	--dark-text:rgb(245,245,245);
+};
+
+body {
+	margin:0px;
+	padding:0px;
+}
+/*Teacher info section begins here*/
+.teacher-section {
+	text-align:center;
+}
+/*Service info section begins here*/
+.info-container {
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	flex-wrap:wrap;
+}
+
+.info-item {
+	margin:10px 5px;
+	width:80%;
+	min-width:100px;
+}
+
+.info-item h2,h3 {
+	text-align:center;
+}
+
+/*The Add/View Class section begins here*/
+
+.class-section {
+	position:relative;
+	padding: 5px 5px;
+}
+
+.add-class-container {
+	display:flex;
+	justify-content:flex-end;
+}
+
+.add-class {
+
+	border:none;
+	padding:10px;
+	font-weight:bold;
+	color:var(--dark-text);
+	background-color:var(--background);
+}
+
+/*THIS BOX WRAPS THE NAV AND BODY CONTENT TOGETHER*/
+.nav-body-box {
+	display:flex;
+}
+
+/*WRAP ALL THE BODY CONTENT IN ONE CONTAINER*/
+/*SEPARATES BOD CONTENT FROM NAV ON LEFT*/
+.whole-content-box {
+	margin-left:15vw;
+	margin-right:15vw;
+	height:200vh;
+}
+
+.whole-content-box h2 {
+	text-align:center;
+}
+
+/*Wrap all the page content in a flex box*/
+.content-info-box {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+/*INDEX PAGE*/
+.login-option {
+	width:50%;
+}
+.login-option h3  {
+	text-align:center;
+}
+
+/*style the New Student Account popup box*/
+.account-open {
+	position:absolute;
+	top:25vh;
+	left:25vw;
+	background-color:yellow;
+	height:500px;
+	width:500px;
+	padding:10px;
+}
+/* style the New Student Account close window button */
+.close-window {
+	border:2px solid black;
+	position:absolute;
+	top:2px;
+	right:2px;
+	height:25px;
+	width:25px;
+}
+
+@media screen and (min-width:500px) {
+	.info-item {
+		width:30%;
+	}
+}
+
+@media (max-width:400px) {
+	.nav {
+		position:absolute;
+		top:5px;
+		right:5px;
+		height:25px;
+		width:100px;
+	}
+
+	.profile-container {
+		width:100%;
+		margin-left:0px;
+	}
+}

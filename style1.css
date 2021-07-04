@@ -1,0 +1,54 @@
+
+.separation {
+margin-bottom:50px;
+}
+
+p a {
+color:blue;
+text-decoration:underline;
+}
+label {
+	font-weight: bold;
+}
+
+.checkbox {
+	display: none;
+}
+
+
+#searchWrapper {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+}
+
+.searchBar {
+	width: 100%;
+}
+
+#searchResults {
+	width: 100%;
+}
+
+.searchContainer{
+	display: flex;
+	justify-content: left;
+	padding: 5px 0px;
+	border-bottom: 0.5px rgba(200,200,200,0.8) solid;
+}
+
+.searchLink {
+	text-align: left;
+}
+
+.searchLink:hover {
+	color:#0066CC;
+}
+
+.faqContainer {
+text-align:left;
+}
