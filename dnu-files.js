@@ -1,0 +1,5 @@
+//create do not use punctuation array
+let dnuPunctuation = ["?", ".", ",", "/", "<", ">", "'", '"', ";", ":", "[", "]", "{", "}", "|", "`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "\\"] ;
+
+//create do not use word array
+let dnuWords = ["covid", "taichung", "taiwan", "what", "is", "", "i", "you", "he", "she", "it", "we", "they", "am", "are", "m", "re", "can", "may", "will", "ll", "could", "would", "should", "have", "ve", "maybe", "go", "a", "the", "an", "for", "as", "on", "in", "at", "next", "by", "to", "give", "let", "take", "me", "her", "his", "him", "hers", "their", "theirs", "its", "us", "our", "ours", "mine", "your", "yours", "gonna", "want", "like", "love", "wanna", "gonna", "lot", "many", "much", "very", "good", "bad", "still", "out", "next", "first", "last", "previous", "before", "after", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "and", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
