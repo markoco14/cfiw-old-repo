@@ -1,0 +1,27 @@
+/*
+These are colors that I need to figure out variables for\
+rgb(35,35,35) *** dark grey (my black)
+rgb(245,245,245) *** off-white (my white)
+canary yellow
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*, *::before, *::after {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+/* color variables go here */
+:root {
+	--background:rgb(57,57,57);
+	--dark-text:rgb(245,245,245);
+};
+
+body {
+	margin:0px;
+	padding:0px;
+}
