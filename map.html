@@ -7,17 +7,84 @@
 	<link href='style.css' rel='stylesheet' type='text/css'>
 	<link href='headerStyle.css' rel='stylesheet' type='text/css'>
 	<style>
+
+		/* Style the page */
+
 		body {
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
 		}
 
+		#page-header {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		/* Style the map */
+
 		#map {
 			position: relative;
 			height: 400px;
 			width: 80%;
-			margin: 0 auto;
+			margin: 20px auto;
+		}
+
+		/* Style the controls containers */
+
+		.controls-container {
+			position: relative;
+			margin: 20px auto;
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: top;
+		}
+
+		.container {
+			width: 40%;
+			margin: 10px 20px;
+		}
+
+		/* Style the Footprint controls */
+
+		.extra-controls {
+			display: flex;
+			justify-content: center;
+		}
+
+		.js-input {
+			width: 50%;
+		}
+
+		/* Style the Disinfection/Vaccination/Hospital controls */
+
+		.category-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.other-control-label {
+			width: 70%;
+		}
+
+		.hide-show-controls {
+			width: 30%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.hide-show-button {
+			width: 50%;
+		}
+
+		@media all and (max-width: 751px) {
+
+			.container {
+				width: 100%;
+			}
 		}
 	</style>
 	<!--ion Range Slider Plugin CSS file with desired skin-->
@@ -44,16 +111,53 @@
 			<span></span>
 		</label>
 	</header>
-	<h1>This is the map</h1>
-	<button id="footprint-button">Hide footprints</button>
-	<div class="range-slider">
-    <input type="text" class="js-range-slider" value="" />
-	</div>
-	<div class="extra-controls">
-	    <input type="text" class="js-input-from" value="0" />
-	    <input type="text" class="js-input-to" value="0" />
-	</div>
-	<div id="map"></div>
+	<section>
+		<h1 id="page-header">This is the map</h1>
+		<div class="controls-container">
+			<div id="footprint-controls-container" class="container">
+				<label>Footprint Locations</label>
+				<button id="footprint-button">Hide footprints</button>
+				<div class="range-slider">
+			    <input type="text" class="js-range-slider" value="" />
+				</div>
+				<div class="extra-controls">
+				    <input type="text" class="js-input-from js-input" value="0" />
+				    <input type="text" class="js-input-to js-input" value="0" />
+				</div>
+			</div>
+			<div id="other-controls-container" class="container">
+				<div class="category-container">
+					<label class="other-control-label">Disinfection Locations</label>
+					<div class="hide-show-controls">
+						<button id="hide-disinfections" class="hide-show-button">Hide</button>
+						<button id="show-disinfections" class="hide-show-button">Show</button>
+					</div>
+				</div>
+				<div class="category-container">
+					<label class="other-control-label">Chinese Hospitals</label>
+					<div class="hide-show-controls">
+						<button id="hide-chinese-hospitals" class="hide-show-button">Hide</button>
+						<button id="show-chinese-hospitals" class="hide-show-button">Show</button>
+					</div>
+				</div>
+				<div class="category-container">
+					<label class="other-control-label">English Hospitals</label>
+					<div class="hide-show-controls">
+						<button id="english-hospitals-button" class="hide-show-button">Hide</button>
+						<button id="show-english-hospitals" class="hide-show-button">Show</button>
+					</div>
+				</div>
+				<div class="category-container">
+					<label class="other-control-label">Vaccination Stations</label>
+					<div class="hide-show-controls">
+						<button id="hide-vaccination-stations" class="hide-show-button">Hide</button>
+						<button id="show-vaccination-stations" class="hide-show-button">Show</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="map"></div>
+	</section>
 	<script>
 		//I think I need to write an async function which chains those two functions one after another.
 		var footprintIconPink = "https://i.ibb.co/N3tfg1D/CFIW-pink-pin-72ppi-transparent.png";
@@ -228,7 +332,7 @@
 		//and then for each one, go through the markers array
 		//if the sliderDatesArray.inclues(marker[j].date)
 		//set marker[i] on map
-		function showFromMarkers(from, to) {
+		function showSliderMarkers(from, to) {
 			//first clear all markers
 			console.log('clear all markers')
 			console.log(`from is ${from}`)
@@ -328,6 +432,9 @@
 			    max: max,
 			    from: sliderDatesArray.length-3,
 			    to: sliderDatesArray.length-1,
+			    //from: my_from,
+			    //to: my_to,
+			    values: sliderDatesArray,
 			    onStart: updateInputs,
 			    onChange: updateInputs
 			});
@@ -341,7 +448,7 @@
 			    $inputTo.prop("value", to);
 			    //console.log(`The oldest should should be from: ${from}`)
 			    //console.log(`${sliderDatesArray[from]}`)
-			    showFromMarkers(from, to)
+			    showSliderMarkers(from, to)
 			}
 
 			//function to match slider FROM/MIN with user input
