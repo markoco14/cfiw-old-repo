@@ -1,443 +1,92 @@
 [
 {
-"more": "7-3 Carrefour Fengyuan Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 500, Chenggong Road, Fengyuan District, Taichung City, Taiwan 420",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福豐原店 / 台中市豐原區成功路500號",
-"lng": 24.2520284,
-"coords": 120.7061361
+"place": "Cheng Ching Hospital",
+"bookRapid": "Go to registration counter to apply and they have English service",
+"infoRapid": "Schedule: Mon-Sat 08:30-12:30 / Notes: Free for Taichung residents, if you had contact with a confirmed case (check footprints), or received a message from the health agency. Others pay for testing. Bring ARC, APRC, NHIC, wear mask, don't use public transport when you had contact or received message, come 15m early.",
+"bookMolec": "http://www.ccgh.com.tw/PT2/html/webdetail.aspx?pagetype=2&otherkind=1&pageno=1&page=1&id=4352 / Go to ER (emergency room) counter to apply",
+"infoMolec": "Notes: Usually paid. Needed for confirmation of rapid antigen test or travel abroad. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, PCR Test Application Form, wear mask, no public transport when you had contact with confirmed case, come 15m early, some accept walk-ins.",
+"bookAZ": "",
+"scheduleAZ": "",
+"bookModerna": "",
+"scheduleModerna": "Notes: Need to be in priority groups 1-5 or older than 75 or pregnant woman. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, wear mask, come 15m early, some have a waitlist if you didn't book but are eligible and go early.",
+"more": "www.covid-taichung.com",
+"website": "http://www.ccgh.com.tw/PT2/html/webdetail.aspx?pagetype=2&otherkind=1&pageno=1&page=1",
+"address": "No. 139, Pingdeng Street, Central District, Taichung City, 400 / (04)2463-2000 / Make appointment",
+"disclaimer": "This map may be used for private purposes. For use, reproduction or transmission for purposes other than private use, please contact us. The content on this map was translated by volunteers, third parties, and translation software. Reasonable efforts have been made in order to provide accurate translations. Translations are provided as a service to users of this map, and are provided 'as is.' No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source data into any other language. Some content may not be accurately translated due to limitations of the translation software.",
+"lat": 24.1428095,
+"lng": 120.6816435,
+"coords": "24.1428095, 120.6816435"
 },
 {
-"more": "7-3 Taroko Mall East District Branch",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 186, Section 4, Fuxing Road, East District, Taichung City, Taiwan 401",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大魯閣新時代臺中分公司 / 台中市東區復興路四段186號",
-"lng": 24.1357726,
-"coords": 120.6877477
+"place": "Cheng Ching Hospital (Chung Kang Branch)",
+"bookRapid": "Go to RA test check-in location to apply ",
+"infoRapid": "Schedule: Mon-Fri 13:30-17:30 / Location: Alley between Mos Burger and the hospital  / Notes: Free for Taichung residents, if you had contact with a confirmed case (check footprints), or received a message from the health agency. Others pay for testing. Bring ARC, APRC, NHIC, wear mask, don't use public transport when you had contact or received message, come 15m early.",
+"bookMolec": "04-24632000#32511, Miss Tang (湯小姐), Mon-Fri 08:00-12:00, 13:30-17:30 / Go to ER (emergency room) counter to apply",
+"infoMolec": "Schedule: Mon-Thu 08:00-11:30 / Notes: Usually paid. Needed for confirmation of rapid antigen test or travel abroad. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, PCR Test Application Form, wear mask, no public transport when you had contact with confirmed case, come 15m early, some accept walk-ins.",
+"bookAZ": "",
+"scheduleAZ": "",
+"bookModerna": "",
+"scheduleModerna": "Notes: Need to be in priority groups 1-5 or older than 75 or pregnant woman. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, wear mask, come 15m early, some have a waitlist if you didn't book but are eligible and go early.",
+"more": "www.covid-taichung.com",
+"website": "http://www.ccgh.com.tw/",
+"address": "No. 966, Section 4, Taiwan Boulevard, Xitun District, Taichung City, 407 / (04)2463-2000 / 24 hours emergency, make appointment for other services",
+"disclaimer": "This map may be used for private purposes. For use, reproduction or transmission for purposes other than private use, please contact us. The content on this map was translated by volunteers, third parties, and translation software. Reasonable efforts have been made in order to provide accurate translations. Translations are provided as a service to users of this map, and are provided 'as is.' No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source data into any other language. Some content may not be accurately translated due to limitations of the translation software.",
+"lat": 24.1829316,
+"lng": 120.6170756,
+"coords": "24.1829316, 120.6170756"
 },
 {
-"more": "7-3 Carrefour De'an Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 186, Section 4, Fuxing Road, East District, Taichung City, Taiwan 401",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福新時代店 / 台中市東區復興路四段186號",
-"lng": 24.1357726,
-"coords": 120.6877477
+"place": "Chung Shan Medical University Hospital",
+"bookRapid": "Go to RA test check-in location to apply ",
+"infoRapid": "Location: Internal Medicine Building (內科大樓篩檢站) / Notes: Free for Taichung residents, if you had contact with a confirmed case (check footprints), or received a message from the health agency. Others pay for testing. Bring ARC, APRC, NHIC, wear mask, don't use public transport when you had contact or received message, come 15m early.",
+"bookMolec": "https://sysint.csh.org.tw/CSHVaccine/EmergencyVaccineEng.aspx / ",
+"infoMolec": "Notes: Usually paid. Needed for confirmation of rapid antigen test or travel abroad. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, PCR Test Application Form, wear mask, no public transport when you had contact with confirmed case, come 15m early, some accept walk-ins.",
+"bookAZ": "",
+"scheduleAZ": "",
+"bookModerna": "https://sysint.csh.org.tw/CSHVaccine/CSHModerna.aspx (Chinese) / ",
+"scheduleModerna": "Schedule: Mon-Fri 8:30-11:10 / Location: Side Entrance of Internal Medicine Building (Vaccination station) 內科大樓側門 (疫苗接種站) / Notes: Need to be in priority groups 1-5 or older than 75 or pregnant woman. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, wear mask, come 15m early, some have a waitlist if you didn't book but are eligible and go early.",
+"more": "www.covid-taichung.com",
+"website": "http://www.csh.org.tw/",
+"address": "No. 110, Section 1, Jianguo North Road, South District, Taichung City, 402 / (04)2473-9595 / Make appointment",
+"disclaimer": "This map may be used for private purposes. For use, reproduction or transmission for purposes other than private use, please contact us. The content on this map was translated by volunteers, third parties, and translation software. Reasonable efforts have been made in order to provide accurate translations. Translations are provided as a service to users of this map, and are provided 'as is.' No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source data into any other language. Some content may not be accurately translated due to limitations of the translation software.",
+"lat": 24.1214835,
+"lng": 120.6501091,
+"coords": "24.1214835, 120.6501091"
 },
 {
-"more": "7-3 Save & Safe Beitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 370, Beitun Road, Beitun District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大買家北屯店 / 台中市北屯區北屯路370號",
-"lng": 24.1763866,
-"coords": 120.6997977
+"place": "Taichung Armed Forces General Hospital",
+"bookRapid": "Go to registration counter to apply and they have English service",
+"infoRapid": "Schedule: Mon-Fri 9:00-13:00 / Location: ER Emergency room (急診室) / Notes: Free for Taichung residents, if you had contact with a confirmed case (check footprints), or received a message from the health agency. Others pay for testing. Bring ARC, APRC, NHIC, wear mask, don't use public transport when you had contact or received message, come 15m early.",
+"bookMolec": "",
+"infoMolec": "Notes: Usually paid. Needed for confirmation of rapid antigen test or travel abroad. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, PCR Test Application Form, wear mask, no public transport when you had contact with confirmed case, come 15m early, some accept walk-ins.",
+"bookAZ": "",
+"scheduleAZ": "",
+"bookModerna": "",
+"scheduleModerna": "Notes: Need to be in priority groups 1-5 or older than 75 or pregnant woman. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, wear mask, come 15m early, some have a waitlist if you didn't book but are eligible and go early.",
+"more": "www.covid-taichung.com",
+"website": "https://803.mnd.gov.tw/english/",
+"address": "No. 348, Section 2, Zhongshan Road, Taiping District, Taichung City, 411 / (04)2393-4191#12 / Mon-Fri: 8:30–12:00, 14:00–17:30, 18:30–10:00",
+"disclaimer": "This map may be used for private purposes. For use, reproduction or transmission for purposes other than private use, please contact us. The content on this map was translated by volunteers, third parties, and translation software. Reasonable efforts have been made in order to provide accurate translations. Translations are provided as a service to users of this map, and are provided 'as is.' No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source data into any other language. Some content may not be accurately translated due to limitations of the translation software.",
+"lat": 24.1506475,
+"lng": 120.7305559,
+"coords": "24.1506475, 120.7305559"
 },
 {
-"more": "7-3 Carrefour Zhongqing Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 436, Section 3, Zhongqing Road, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福中清店 / 台中市西屯區中清路三段436號",
-"lng": 24.2069596,
-"coords": 120.6526051
-},
-{
-"more": "7-3 Carrefour Qinghai Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 207-18, Section 2, Qinghai Road, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福青海店 / 台中市西屯區青海路二段207-18號",
-"lng": 24.1704516,
-"coords": 120.644816
-},
-{
-"more": "7-3 Park Lane by CMP",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "403, Taiwan, Taichung City, West District, Gongyi Road, 68號號",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "勤美誠品綠園道 / 台中市西區公益路68號",
-"lng": 24.15104,
-"coords": 120.663848
-},
-{
-"more": "7-3 Save & Safe Guoguang Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 710, Section 2, Guoguang Road, Dali District, Taichung City, Taiwan 412",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大買家國光店 / 台中市大里區國光路二段710號",
-"lng": 24.115245,
-"coords": 120.679626
-},
-{
-"more": "7-3 a.mart Fuxing Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 359, Section 1, Fuxing Road, South District, Taichung City, Taiwan 402",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "愛買復興店 / 台中市南區復興路一段359號",
-"lng": 24.1148807,
-"coords": 120.6542177
-},
-{
-"more": "7-3 a.mart Fengyuan Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 420, Shuiyuan Road, Fengyuan District, Taichung City, Taiwan 420",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "愛買豐原店 / 台中市豐原區水源路420號",
-"lng": 24.2567943,
-"coords": 120.7345013
-},
-{
-"more": "7-3 i-House Fengyuan Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 420, Shuiyuan Road, Fengyuan District, Taichung City, Taiwan 420",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "特力屋豐原店 / 台中市豐原區水源路420號",
-"lng": 24.2567943,
-"coords": 120.7345013
-},
-{
-"more": "7-3 i-House Xitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 528, Section 4, Taiwan Boulevard, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "特力屋西屯店 / 台中市西屯區台灣大道四段528號",
-"lng": 24.178444,
-"coords": 120.6254733
-},
-{
-"more": "7-3 i-House Beitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 407-1, Beitun Road, Beitun District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "特力屋北屯店 / 台中市北屯區北屯路407-1號",
-"lng": 24.1734678,
-"coords": 120.6978337
-},
-{
-"more": "7-3 Carrefour Taiping Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 70, Zhongping 7th Street, Taiping District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福太平店 / 台中市太平區中平七街70號",
-"lng": 24.1250419,
-"coords": 120.7194335
-},
-{
-"more": "7-3 Carrefour Wenxin Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 521, Section 1, Wenxin Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福文心店 / 台中市南屯區文心路一段521號",
-"lng": 24.1539166,
-"coords": 120.6464058
-},
-{
-"more": "7-3 IKEA Taichung Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 168, Section 2, Xiangshang Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "IKEA台中店 / 台中市南屯區向上路二段168號",
-"lng": 24.147041,
-"coords": 120.6429056
-},
-{
-"more": "7-3 Carrefour Shalu Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 336, Guanghua Road, Shalu District, Taichung City, Taiwan 433",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福沙鹿店 / 台中市沙鹿區光華路336號",
-"lng": 24.2424133,
-"coords": 120.5652449
-},
-{
-"more": "7-3 RT-Mart Zhongming Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 499, Zhongming Road, North District, Taichung City, Taiwan 404",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大潤發忠明店 / 台中市北區忠明路499號",
-"lng": 24.16341,
-"coords": 120.6719255
-},
-{
-"more": "7-3 Costco North Taichung Beitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 366, Dunfu Rd, Beitun District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "好市多北台中店 / 台中市北屯區敦富路366號",
-"lng": 24.1867582,
-"coords": 120.7079713
-},
-{
-"more": "7-3 Costco Taichung Wenxin Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 289, Wenxin South 3rd Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "好市多台中店 / 台中市南屯區文心南三路289號",
-"lng": 24.1331476,
-"coords": 120.6497275
-},
-{
-"more": "7-3 Tiger City Shopping Center",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 120-1, Section 3, Henan Road, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "老虎城購物中心 / 台中市西屯區河南路三段120號",
-"lng": 24.1642474,
-"coords": 120.6381239
-},
-{
-"more": "7-3 Top City Taichung Shopping Center",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 251, Section 3, Taiwan Blvd, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "台中大遠百 / 台中市西屯區台灣大道三段251號",
-"lng": 24.1643211,
-"coords": 120.6445226
-},
-{
-"more": "7-3 Shinkong Mitsukoshi Taichung Zhonggang Department Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 301, Section 3, Taiwan Blvd, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "新光三越台中中港店 / 台中市西屯區台灣大道三段301號",
-"lng": 24.1651522,
-"coords": 120.6436634
-},
-{
-"more": "7-3 Kuang San SOGO Department Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 459-455, Section 2, Taiwan Boulevard, West District, Taichung City, Taiwan 403",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "廣三SOGO百貨公司 / 台中市西區台灣大道二段459號",
-"lng": 24.1555445,
-"coords": 120.6618226
-},
-{
-"more": "7-3 Chungyo Department Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 161, Section 3, Sanmin Road, North District, Taichung City, Taiwan 40446",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "中友百貨 / 台中市北區三民路三段161號",
-"lng": 24.152229,
-"coords": 120.684711
-},
-{
-"more": "7-3 Fengyuan Pacific Department Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 2, Fuxing Road, Fengyuan District, Taichung City, Taiwan 420",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "豐原太平洋百貨 / 台中市豐原區復興路2號",
-"lng": 24.2509879,
-"coords": 120.7206061
-},
-{
-"more": "7-3 Carrefour Dadun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 533, Dadun Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福大墩店 / 台中市南屯區大墩路533號",
-"lng": 24.149573,
-"coords": 120.649653
-},
-{
-"more": "7-3 Showtime Plaza Taichung Station Front Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 76, Nanjing Road, East District, Taichung City, Taiwan 401",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "秀泰廣場台中站前店 / 台中市東區南京路76號",
-"lng": 24.1405776,
-"coords": 120.689814
-},
-{
-"more": "7-3 Lihpao Outlet Mall",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 201, Furong Road, Houli District, Taichung City, Taiwan 421",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "麗寶 outletmall / 台中市后里區福容路201號",
-"lng": 24.3243894,
-"coords": 120.6992488
-},
-{
-"more": "7-3 Showtime Plaza Wenxin Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 289, Wenxin South Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "秀泰廣場股份有限公司(文心店) / 台中市南屯區文心南路289號",
-"lng": 24.129125,
-"coords": 120.6461878
-},
-{
-"more": "7-3 Msquare Department store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 168, Guo'an 1st Road, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "米平方商場 M Square / 台中市西屯區國安一路168號",
-"lng": 24.1921753,
-"coords": 120.6117706
-},
-{
-"more": "7-3 Sunshine Plaza Outlet",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 94, Section 2, Ziyou Road, Central District, Taichung City, Taiwan 400",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "日曜天地 / 台中市中區自由路二段94號",
-"lng": 24.1425749,
-"coords": 120.685322
-},
-{
-"more": "7-3 Mitsui Outlet Park Taichung Port",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 168, Section 10, Taiwan Boulevard, Wuqi District, Taichung City, Taiwan 435",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "Mitsui Outlet Park台中港(三井outletmall) / 台中市梧棲區臺灣大道十段168號",
-"lng": 24.2588671,
-"coords": 120.5184133
-},
-{
-"more": "7-3 Decathlon Nantun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 379, Dadun South Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "迪卡儂(南屯店) / 台中市南屯區大墩南路379號",
-"lng": 24.1313963,
-"coords": 120.6496192
-},
-{
-"more": "7-3 Decathlon Beitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 1075, Section 2, Zhongqing Rd, Beitun District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "迪卡儂(北屯店) / 台中市北屯區中清路二段1075號",
-"lng": 24.1912325,
-"coords": 120.660632
-},
-{
-"more": "7-3 Carrefour Xitun Store",
-"website": "On 7-3-2021 9:30-11:00am, 3:00-4:30pm",
-"info": "No. 1086, Section 4, Taiwan Boulevard, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "家樂福西屯店 / 台中市西屯區台灣大道四段1086號",
-"lng": 24.1841332,
-"coords": 120.614969
-},
-{
-"more": "7-3 Central Taiwan Science Park Administration",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 2, Zhongke Rd, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "中部科學園區台中園區",
-"lng": 24.2099004406634,
-"coords": 120.618684286644
-},
-{
-"more": "7-3 Houli Park, Central Science Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 2, Section 3, Houke Road, Houli District, Taichung City, 421",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "中部科學園區后里園區",
-"lng": 24.3216436830185,
-"coords": 120.722941427093
-},
-{
-"more": "7-3 Taichung Precision Machinery Technology Innovation Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 28, Jingke Road, Nantun District, Taichung City, Taiwan 408",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "臺中市精密機械科技創新園區",
-"lng": 24.1476260204924,
-"coords": 120.606610355481
-},
-{
-"more": "7-3 Taiping Industrial Park, Taichung City",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 317, Guangxing Road, Taiping District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "臺中市太平產業園區",
-"lng": 24.1004149696893,
-"coords": 120.729338181793
-},
-{
-"more": "7-3 Taichung Port Science and Technology Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 6, Daguan Road, Wuqi District, Taichung City, Taiwan 435",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "臺中港科技園區",
-"lng": 24.2370845865139,
-"coords": 120.515491488728
-},
-{
-"more": "7-3 Tanzi Science and Technology Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 500, Section 2, Zhongshan Road, Tanzi District, Taichung City, Taiwan 427",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "潭子科技園區",
-"lng": 24.2176510385699,
-"coords": 120.705628610249
-},
-{
-"more": "7-3 Toyosu Technology Industrial Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 806, Fenggong Road, Shengang District, Taichung City, Taiwan 429",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "豐洲科技工業園區",
-"lng": 24.2772689343052,
-"coords": 120.704767990037
-},
-{
-"more": "7-3 Taichung Industrial Park",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 6, Gongyequ 9th Road, Xitun District, Taichung City, Taiwan 407",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "台中工業區",
-"lng": 24.1709884293982,
-"coords": 120.600744925414
-},
-{
-"more": "7-3 Dajia Cubs Industrial Zone",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 36, Youshi Road, Dajia District, Taichung City, Taiwan 437",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大甲幼獅工業區 ",
-"lng": 24.4049263481214,
-"coords": 120.65203313436
-},
-{
-"more": "7-3 Taichung Port Related Industrial Zone",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 280, Ziqiang Road, Wuqi District, Taichung City, Taiwan 435",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "台中港關連工業區 ",
-"lng": 24.2370600040095,
-"coords": 120.523724249369
-},
-{
-"more": "7-3 Dali Industrial Zone",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 36, Gongye 15th Road, Taiping District, Taichung City, Taiwan 406",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "大里工業區",
-"lng": 24.1044912535391,
-"coords": 120.715357136253
-},
-{
-"more": "7-3 Renhua Industrial Zone",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 87, Renhuagong 2nd Road, Dali District, Taichung City, Taiwan 412",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "仁化工業區",
-"lng": 24.0928287742924,
-"coords": 120.725012663951
-},
-{
-"more": "7-3 Wufeng Industrial Zone",
-"website": "On 7-3-2021 9:30-11:00am, 15:00-16:30pm",
-"info": "No. 25, Lane 571, Dingtai Road, Wufeng District, Taichung City, Taiwan 413",
-"disclaimer": "Commercially available bleaching water (sodium hypochlorite) dilution disinfection / car-mounted concentration 50ppm / load concentration 500PPM",
-"lat": "霧峰工業區",
-"lng": 24.0633019902381,
-"coords": 120.677617432012
+"place": "Taichung Veterans General Hospital",
+"bookRapid": "Go to RA test check-in location to apply ",
+"infoRapid": "Schedule: Mon-Fri 15:00-19:00 / Location: Square outside the 2F of new outpatient building. Close to Section 4 of Taiwan Boulevard.  新門診大樓二樓外廣場(緊臨台灣大道四段) / Notes: Free for Taichung residents, if you had contact with a confirmed case (check footprints), or received a message from the health agency. Others pay for testing. Bring ARC, APRC, NHIC, wear mask, don't use public transport when you had contact or received message, come 15m early.",
+"bookMolec": "http://register.vghtc.gov.tw/register/listDoctor.jsp?init=sub&section=FCOV / ",
+"infoMolec": "Notes: Usually paid. Needed for confirmation of rapid antigen test or travel abroad. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, PCR Test Application Form, wear mask, no public transport when you had contact with confirmed case, come 15m early, some accept walk-ins.",
+"bookAZ": "",
+"scheduleAZ": "",
+"bookModerna": "",
+"scheduleModerna": "Notes: Need to be in priority groups 1-5 or older than 75 or pregnant woman. Bring Passport, ARC/APRC and NHIC, E-ticket Print-out, wear mask, come 15m early, some have a waitlist if you didn't book but are eligible and go early.",
+"more": "www.covid-taichung.com",
+"website": "https://www.vghtc.gov.tw/Home/IndexEng",
+"address": "No. 1650, Section 4, Taiwan Boulevard, Xitun District, Taichung City, 40705 / (04)2359-2525 / 24 hours emergency, make appointment for other services",
+"disclaimer": "This map may be used for private purposes. For use, reproduction or transmission for purposes other than private use, please contact us. The content on this map was translated by volunteers, third parties, and translation software. Reasonable efforts have been made in order to provide accurate translations. Translations are provided as a service to users of this map, and are provided 'as is.' No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source data into any other language. Some content may not be accurately translated due to limitations of the translation software.",
+"lat": 24.1846181,
+"lng": 120.6045129,
+"coords": "24.1846181, 120.6045129"
 }
 ]
