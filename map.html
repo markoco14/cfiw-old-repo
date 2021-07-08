@@ -7,6 +7,7 @@
 	<link href='css/style.css' rel='stylesheet' type='text/css'/>
 	<link href='css/headerStyle.css' rel='stylesheet' type='text/css'/>
 	<!--<link href='css/map-styles.css' rel='stylesheet' type='text/css'/>-->
+	<link rel="stylesheet" type="text/css" href="css/font-icon-styles.css">
 	<!--ion Range Slider Plugin CSS file with desired skin-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <!--jQuery-->
@@ -30,69 +31,72 @@
 			font-weight: 500;
 		}
 
+		.pressed {
+			box-shadow:  inset 0px 0px 5px #c1c1c1;
+		}
+
 		#footprint-button {
 			/*color: var(--dark-text);
 			background-color: rgb(34,34,34);*/
 		}
 
 		#footprint-button:hover {
+			cursor:  pointer;
 			color: var(--background);
 			background-color: #ff4081;
 		}
 
 		#footprint-button:active {
+			cursor:  pointer;
 			color: black;
 			background-color: #E2326D;
 		}
 
 
-		#hide-disinfections,
-		#show-disinfections {
+		#disinfection-button {
 			
 		}
 
-		#hide-disinfections:hover,
-		#show-disinfections:hover {
+		#disinfection-button:hover {
+			cursor:  pointer;
 			color: var(--background);
 			background-color:  #6242ff;
 		}
 
-		#hide-disinfections:active,
-		#show-disinfections:active {
+		#disinfection-button:active {
+			cursor:  pointer;
 			color: black;
 			background-color:  #5238D2;
 		}
 
-		#hide-chinese-hospitals,
-		#show-chinese-hospitals {
+		#chinese-hospitals-button {
 			
 		}
 
-		#hide-chinese-hospitals:hover,
-		#show-chinese-hospitals:hover {
+		#chinese-hospitals-button:hover{
+			cursor:  pointer;
 			color: var(--background);
 			background-color: #ffe94b;
 		}
 
-		#hide-chinese-hospitals:active,
-		#show-chinese-hospitals:active {
+		#chinese-hospitals-button:active {
+			cursor:  pointer;
 			color: black;
 			background-color: #D7C73D;
 		}
 
-		#hide-english-hospitals,
-		#show-english-hospitals {
+		#english-hospitals-button {
 			
 		}
 
-		#hide-english-hospitals:hover,
-		#show-english-hospitals:hover {
+		#english-hospitals-button:hover {
+			cursor:  pointer;
 			color: var(--background);
 			background-color: #1de9b6;
 		}
 
-		#hide-english-hospitals:active,
-		#show-english-hospitals:active {
+		#english-hospitals-button:active {
+			cursor:  pointer;
 			color: black;
 			background-color: #1CD0A6;
 		}
@@ -145,10 +149,23 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			height: 40px;
 		}
 
-		.other-control-label {
-			width: 70%;
+		.control-label {
+			width: 60%;
+			height: 16px;
+			line-height: 16px;
+			display: inline-flex;
+			justify-content: left;
+			align-items: center;
+			gap: 10px;
+			font-size: 16px;
+		}
+
+		.control-button {
+			height: 40px;
+			width: 100%;
 		}
 
 		.hide-show-controls {
@@ -159,6 +176,11 @@
 
 		.hide-show-button {
 			width: 50%;
+		}
+
+		.inline-legend {
+			height: 16px;
+			width: 16px;
 		}
 
 		@media all and (max-width: 751px) {
@@ -190,8 +212,12 @@
 		<h1 id="page-header">This is the map</h1>
 		<div class="controls-container">
 			<div id="footprint-controls-container" class="container">
-				<label>Footprint Locations</label>
-				<button id="footprint-button" class="footprints-pressed">Hide footprints</button>
+				<div class="category-container">
+					<label class="control-label"><img src="https://i.ibb.co/N3tfg1D/CFIW-pink-pin-72ppi-transparent.png" class="inline-legend"> Footprint locations</label>
+					<div class="hide-show-controls">
+						<button id="footprint-button" class="control-button pressed">Hide footprints</button>
+					</div>
+				</div>
 				<div class="range-slider">
 			    <input type="text" class="js-range-slider" value="" />
 				</div>
@@ -202,36 +228,34 @@
 			</div>
 			<div id="other-controls-container" class="container">
 				<div class="category-container">
-					<label class="other-control-label">Disinfection Locations</label>
+					<label class="control-label"><img src="https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png" class="inline-legend"> Disinfection Locations
+					</label>
 					<div class="hide-show-controls">
-						<button id="hide-disinfections" class="hide-show-button">Hide</button>
-						<button id="show-disinfections" class="hide-show-button">Show</button>
+						<button id="disinfection-button" class="control-button pressed">Hide Disinfections</button>
 					</div>
 				</div>
 				<div class="category-container">
-					<label class="other-control-label">Chinese Hospitals</label>
+					<label class="control-label"><img src="https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png" class="inline-legend"> Chinese Hospitals
+					</label>
 					<div class="hide-show-controls">
-						<button id="hide-chinese-hospitals" class="hide-show-button">Hide</button>
-						<button id="show-chinese-hospitals" class="hide-show-button">Show</button>
+						<button id="chinese-hospitals-button" class="control-button pressed">Hide Chinese Hospitals</button>
 					</div>
 				</div>
 				<div class="category-container">
-					<label class="other-control-label">English Hospitals 
-						<i></i>
-						</label>
+					<label class="control-label"><img src="https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png" class="inline-legend"> English Hospitals 
+					</label>
 
 					<div class="hide-show-controls">
-						<button id="hide-english-hospitals" class="hide-show-button">Hide</button>
-						<button id="show-english-hospitals" class="hide-show-button">Show</button>
+						<button id="english-hospitals-button" class="control-button pressed">Hide English Hospitals</button>
 					</div>
 				</div>
-				<div class="category-container">
+				<!--<div class="category-container">
 					<label class="other-control-label">Vaccination Stations</label>
 					<div class="hide-show-controls">
 						<button id="hide-vaccination-stations" class="hide-show-button">Hide</button>
 						<button id="show-vaccination-stations" class="hide-show-button">Show</button>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 		<div id="map"></div>
