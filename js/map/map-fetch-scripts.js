@@ -83,3 +83,21 @@ const loadEnglishHospitals = async () => {
 				console.log(err);
 			}
 		};
+
+//fetch chinese vaccination location data
+const loadTestHospitals = async () => {
+			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
+			let url = "https://markoco14.github.io/cfiw/json/tests-health-facilities-data.json";
+			try {
+				const res = await fetch(url);
+				testHospitalData = await res.json();
+				//clean the coords cells
+				for (i=0; i<testHospitalData.length; i++) {
+					testHospitalData[i].coords = testHospitalData[i].coords.split(',');
+					testHospitalData[i].coords = {lat: Number(testHospitalData[i].coords[0]), lng: Number(testHospitalData[i].coords[1])};
+				}
+				console.log(testHospitalData);
+			} catch (err) {
+				console.log(err);
+			}
+		};
