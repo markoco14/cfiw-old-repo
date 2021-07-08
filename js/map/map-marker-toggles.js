@@ -4,8 +4,8 @@
 //create references to all toggle buttons
 const footprintToggleButton = document.getElementById('footprint-button');
 const disinfectionToggleButton = document.getElementById('disinfection-button');
-const chineseHospitalToggleButton = document.getElementById('chinese-hospitals-button');
-const englishHospitalToggleButton = document.getElementById('english-hospitals-button');
+const testHospitalToggleButton = document.getElementById('test-hospitals-button');
+const vaccinationHospitalToggleButton = document.getElementById('vaccination-hospitals-button');
 
 //need referenece to chinese hospital buttons
 //need referenece to english hospital buttons
@@ -13,8 +13,8 @@ const englishHospitalToggleButton = document.getElementById('english-hospitals-b
 //create variables to track active/inactive state
 let footprintMarkersActive = true;
 let disinfectionMarkersActive = true;
-let chineseMarkersActive = true;
-let englishMarkersActive = true;
+let testMarkersActive = true;
+let vaccinationMarkersActive = true;
 
 
 /* toggle functions
@@ -52,39 +52,39 @@ let toggleDisinfections = function () {
 	}
 }
 
-let toggleChineseHospitals = function() {
-	if (!chineseMarkersActive) {
-		showChineseHospitalMarkers()
-		chineseHospitalToggleButton.textContent = "Hide Chinese hopsitals"
-		chineseMarkersActive = true;
-		chineseHospitalToggleButton.classList.add("pressed")
+let toggleTestHospitals = function() {
+	if (!testMarkersActive) {
+		showTestHospitalMarkers()
+		testHospitalToggleButton.textContent = "Hide testing hospitals"
+		testMarkersActive = true;
+		testHospitalToggleButton.classList.add("pressed")
 	} else {
-		hideChineseHospitalMarkers()
-		chineseHospitalToggleButton.textContent = "Show Chinese hopsitals"
-		chineseMarkersActive = false;
-		chineseHospitalToggleButton.classList.remove("pressed")
+		hideTestHospitalMarkers()
+		testHospitalToggleButton.textContent = "Show testing hospitals"
+		testMarkersActive = false;
+		testHospitalToggleButton.classList.remove("pressed")
 	}
 }
 
-let toggleEnglishHospitals = function() {
-	if (!englishMarkersActive) {
-		showEnglishHospitalMarkers()
-		englishHospitalToggleButton.textContent = "Hide English hopsitals"
-		englishMarkersActive = true;
-		englishHospitalToggleButton.classList.add("pressed")
+let toggleVaccinationHospitals = function() {
+	if (!vaccinationMarkersActive) {
+		showVaccinationHospitalMarkers()
+		vaccinationHospitalToggleButton.textContent = "Hide vaccination hospitals"
+		vaccinationMarkersActive = true;
+		vaccinationHospitalToggleButton.classList.add("pressed")
 	} else {
-		hideEnglishHospitalMarkers()
-		englishHospitalToggleButton.textContent = "Show English hopsitals"
-		englishMarkersActive = false;
-		englishHospitalToggleButton.classList.remove("pressed")
+		hideVaccinationHospitalMarkers()
+		vaccinationHospitalToggleButton.textContent = "Show vaccination hospitals"
+		vaccinationMarkersActive = false;
+		vaccinationHospitalToggleButton.classList.remove("pressed")
 	}
 }
 
 // create all toggle button listeners
 footprintToggleButton.addEventListener('click', toggleFootprints);
 disinfectionToggleButton.addEventListener('click', toggleDisinfections)
-chineseHospitalToggleButton.addEventListener('click', toggleChineseHospitals);
-englishHospitalToggleButton.addEventListener('click', toggleEnglishHospitals);
+testHospitalToggleButton.addEventListener('click', toggleTestHospitals);
+vaccinationHospitalToggleButton.addEventListener('click', toggleVaccinationHospitals);
 
 
 

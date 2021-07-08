@@ -3,8 +3,8 @@ var footprintIconPink = "https://i.ibb.co/N3tfg1D/CFIW-pink-pin-72ppi-transparen
 var footprintIconPurple = "https://i.ibb.co/YpkKMWH/CFIW-purple-pin-72ppi-transparent.png";
 var vaccinationIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
 var disinfectionIcon = "https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png";
-var chineseHospitalIcon = "https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png"
-var englishHospitalIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
+var testHospitalIcon = "https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png"
+var vaccinationHospitalIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
 
 let date = new Date();
 let year = date.getFullYear();
@@ -23,7 +23,9 @@ date = year + '-' + month + '-' + day;
 var footprintMarkers = [];
 var disinfectionMarkers = [];
 var chineseHospitalMarkers = [];
+var testHospitalMarkers = [];
 var englishHospitalMarkers = [];
+var vaccinationHospitalMarkers = [];
 
 //initialize variable for the map
 let map;
@@ -40,6 +42,8 @@ function initMap() {
 	.then(loadDisinfections)
 	.then(loadChineseHospitals)
 	.then(loadEnglishHospitals)
+	.then(loadTestHospitals)
+	.then(loadVaccinationHospitals)
 	.then(() => {
 		var options = {
 			zoom: 10,
@@ -64,18 +68,18 @@ function initMap() {
 		}
 
 		//make loop to initialize chinese hospital markers
-		for (i = 0; i < chineseHospitalData.length; i++) {
-			addChineseHospitalMarker(chineseHospitalData[i]);
+		for (i = 0; i < testHospitalData.length; i++) {
+			addTestHospitalMarker(testHospitalData[i]);
 		}
 
 		//make loop to initialize english hospital markers
-		for (i = 0; i < englishHospitalData.length; i++) {
-			addEnglishHospitalMarker(englishHospitalData[i]);
+		for (i = 0; i < vaccinationHospitalData.length; i++) {
+			addVaccinationHospitalMarker(vaccinationHospitalData[i]);
 		}
 
 		//show all markers
 		//footprint data not included because it is found in showSliderMarkers function
-		showMarkers(disinfectionData, chineseHospitalData, englishHospitalData);
+		showMarkers(disinfectionData, testHospitalData, vaccinationHospitalData);
 
 		changeMarkerIcons();
 	})
@@ -100,12 +104,12 @@ function changeMarkerIcons() {
 	}
 	//add loop for chinese hospitals
 
-	for (i =0; i < chineseHospitalMarkers.length; i++) {
-		chineseHospitalMarkers[i].setIcon(chineseHospitalIcon)
+	for (i =0; i < testHospitalMarkers.length; i++) {
+		testHospitalMarkers[i].setIcon(testHospitalIcon)
 	}
 	//add loop for english hospitals
-	for (i=0; i < englishHospitalMarkers.length; i++) {
-		englishHospitalMarkers[i].setIcon(englishHospitalIcon);
+	for (i=0; i < vaccinationHospitalMarkers.length; i++) {
+		vaccinationHospitalMarkers[i].setIcon(vaccinationHospitalIcon);
 	}
 }
 
@@ -169,23 +173,23 @@ function addDisinfectionMarker(disinfectionData) {
 	disinfectionMarkers.push(disinfectionMarker);
 }
 
-function addChineseHospitalMarker(chineseHospitalData) {
-	var chineseHospitalMarker = new google.maps.Marker({
-		position: chineseHospitalData.coords,
+function addTestHospitalMarker(testHospitalData) {
+	var testHospitalMarker = new google.maps.Marker({
+		position: testHospitalData.coords,
 		//map: map,
 	});
 	//check for marker has place data, create info window
-	if(chineseHospitalData.place) {
+	if(testHospitalData.place) {
 		var infoWindow = new google.maps.InfoWindow({
-			content: chineseHospitalData.place
+			content: testHospitalData.place
 		})
 	}
 	//add listener to open/close windows on click
-	if(chineseHospitalData.place) {
+	if(testHospitalData.place) {
 		let infoWindowOpen = false;
-		chineseHospitalMarker.addListener('click', function() {
+		testHospitalMarker.addListener('click', function() {
 			if (!infoWindowOpen) {
-				infoWindow.open(map, chineseHospitalMarker)
+				infoWindow.open(map, testHospitalMarker)
 				infoWindowOpen = true;
 			} else {
 				infoWindow.close()
@@ -195,26 +199,26 @@ function addChineseHospitalMarker(chineseHospitalData) {
 	}
 
 	//push new markers into the disinfection markers array	
-	chineseHospitalMarkers.push(chineseHospitalMarker);
+	testHospitalMarkers.push(testHospitalMarker);
 }
 
-function addEnglishHospitalMarker(englishHospitalData) {
-	var englishHospitalMarker = new google.maps.Marker({
-		position: englishHospitalData.coords,
+function addVaccinationHospitalMarker(vaccinationHospitalData) {
+	var vaccinationHospitalMarker = new google.maps.Marker({
+		position: vaccinationHospitalData.coords,
 		//map: map,
 	});
 	//check for marker has place data, create info window
-	if(englishHospitalData.place) {
+	if(vaccinationHospitalData.place) {
 		var infoWindow = new google.maps.InfoWindow({
-			content: englishHospitalData.place
+			content: vaccinationHospitalData.place
 		})
 	}
 	//add listener to open/close windows on click
-	if(englishHospitalData.place) {
+	if(vaccinationHospitalData.place) {
 		let infoWindowOpen = false;
-		englishHospitalMarker.addListener('click', function() {
+		vaccinationHospitalData.addListener('click', function() {
 			if (!infoWindowOpen) {
-				infoWindow.open(map, englishHospitalMarker)
+				infoWindow.open(map, vaccinationHospitalData)
 				infoWindowOpen = true;
 			} else {
 				infoWindow.close()
@@ -224,7 +228,7 @@ function addEnglishHospitalMarker(englishHospitalData) {
 	}
 
 	//push new markers into the disinfection markers array	
-	englishHospitalMarkers.push(englishHospitalMarker);
+	vaccinationHospitalMarkers.push(vaccinationHospitalMarker);
 }
 
 /* set map on all markers here */
@@ -243,29 +247,29 @@ function setMapOnDisinfections(map) {
 	}
 }
 
-function setMapOnChineseHospitals(map) {
-	for (i=0; i < chineseHospitalMarkers.length; i++) {
-		chineseHospitalMarkers[i].setMap(map);
+function setMapOnTestHospitals(map) {
+	for (i=0; i < testHospitalMarkers.length; i++) {
+		testHospitalMarkers[i].setMap(map);
 	}
 }
 
-function setMapOnEnglishHospitals(map) {
-	for (i=0; i < englishHospitalMarkers.length; i++) {
-		englishHospitalMarkers[i].setMap(map);
+function setMapOnVaccinationHospitals(map) {
+	for (i=0; i < vaccinationHospitalMarkers.length; i++) {
+		vaccinationHospitalMarkers[i].setMap(map);
 	}
 }
 
 /* show marker functions here */
 
-function showMarkers(disinfectionMarkers, chineseHospitalMarkers, englishHospitalMarkers) {
+function showMarkers(disinfectionMarkers, testHospitalMarkers, vaccinationHospitalMarkers) {
 	if  (disinfectionMarkers) {
 		setMapOnDisinfections(map);
 	}
-	if (chineseHospitalMarkers) {
-		setMapOnChineseHospitals(map);
+	if (testHospitalMarkers) {
+		setMapOnTestHospitals(map);
 	}
-	if (englishHospitalMarkers) {
-		setMapOnEnglishHospitals(map);
+	if (vaccinationHospitalMarkers) {
+		setMapOnVaccinationHospitals(map);
 	}
 }
 
@@ -279,12 +283,12 @@ function showDisinfectionMarkers() {
 	setMapOnDisinfections(map);
 }
 
-function showChineseHospitalMarkers() {
-	setMapOnChineseHospitals(map);
+function showTestHospitalMarkers() {
+	setMapOnTestHospitals(map);
 }
 
-function showEnglishHospitalMarkers() {
-	setMapOnEnglishHospitals(map);
+function showVaccinationHospitalMarkers() {
+	setMapOnVaccinationHospitals(map);
 }
 
 /* hide marker functions for toggle buttons here */ 
@@ -297,12 +301,12 @@ function hideDisinfectionMarkers() {
 	setMapOnDisinfections(null);
 }
 
-function hideChineseHospitalMarkers() {
-	setMapOnChineseHospitals(null);
+function hideTestHospitalMarkers() {
+	setMapOnTestHospitals(null);
 }
 
-function hideEnglishHospitalMarkers() {
-	setMapOnEnglishHospitals(null);
+function hideVaccinationHospitalMarkers() {
+	setMapOnVaccinationHospitals(null);
 }
 
 

@@ -84,7 +84,7 @@ const loadEnglishHospitals = async () => {
 			}
 		};
 
-//fetch chinese vaccination location data
+//fetch testing location data
 const loadTestHospitals = async () => {
 			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
 			let url = "https://markoco14.github.io/cfiw/json/tests-health-facilities-data.json";
@@ -97,6 +97,24 @@ const loadTestHospitals = async () => {
 					testHospitalData[i].coords = {lat: Number(testHospitalData[i].coords[0]), lng: Number(testHospitalData[i].coords[1])};
 				}
 				console.log(testHospitalData);
+			} catch (err) {
+				console.log(err);
+			}
+		};
+
+//fetch vaccination location data
+const loadVaccinationHospitals = async () => {
+			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
+			let url = "https://markoco14.github.io/cfiw/json/vaccination-health-facilities-data.json";
+			try {
+				const res = await fetch(url);
+				vaccinationHospitalData = await res.json();
+				//clean the coords cells
+				for (i=0; i<vaccinationHospitalData.length; i++) {
+					vaccinationHospitalData[i].coords = vaccinationHospitalData[i].coords.split(',');
+					vaccinationHospitalData[i].coords = {lat: Number(vaccinationHospitalData[i].coords[0]), lng: Number(vaccinationHospitalData[i].coords[1])};
+				}
+				console.log(vaccinationHospitalData);
 			} catch (err) {
 				console.log(err);
 			}
