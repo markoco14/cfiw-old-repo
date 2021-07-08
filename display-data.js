@@ -115,7 +115,7 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 const loadFaq = async () => {
-	let url = "https://markoco14.github.io/google-sheet-test/faqDataJSON.json";
+	let url = "https://markoco14.github.io/cfiw/faqDataJSON.json";
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
