@@ -40,8 +40,8 @@ function initMap() {
 	//before we move on with initializing the map
 	loadFootprints()
 	.then(loadDisinfections)
-	.then(loadChineseHospitals)
-	.then(loadEnglishHospitals)
+	//.then(loadChineseHospitals)
+	//.then(loadEnglishHospitals)
 	.then(loadTestHospitals)
 	.then(loadVaccinationHospitals)
 	.then(() => {
