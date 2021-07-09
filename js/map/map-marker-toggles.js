@@ -7,6 +7,12 @@ const disinfectionToggleButton = document.getElementById('disinfection-button');
 const testHospitalToggleButton = document.getElementById('test-hospitals-button');
 const vaccinationHospitalToggleButton = document.getElementById('vaccination-hospitals-button');
 
+
+const footprintSelectors = document.getElementById('footprint-selectors');
+const disinfectionSelectors = document.getElementById('disinfection-selectors');
+const testingSelectors = document.getElementById('testing-selectors');
+const vaccinationSelectors = document.getElementById('vaccination-selectors');
+
 //need referenece to chinese hospital buttons
 //need referenece to english hospital buttons
 
@@ -26,15 +32,17 @@ beyond the normal show/hide marker functions
 let toggleFootprints = function() {
 	if (!footprintMarkersActive) {
 		showFootprintMarkers()
-		footprintToggleButton.textContent = "Hide footprints";
+		footprintToggleButton.innerHTML = "Hide footprints";
 		footprintMarkersActive = true;
 		footprintToggleButton.classList.add("pressed")
+		footprintSelectors.style.display = 'block';
 
 	} else {
 		hideFootprintMarkers()
 		footprintToggleButton.textContent = "Show footprints";
 		footprintMarkersActive = false;
 		footprintToggleButton.classList.remove("pressed")
+		footprintSelectors.style.display = 'none';
 	}
 }
 
@@ -44,11 +52,13 @@ let toggleDisinfections = function () {
 		disinfectionToggleButton.textContent = "Hide disinfections";
 		disinfectionMarkersActive = true;
 		disinfectionToggleButton.classList.add("pressed")
+		disinfectionSelectors.style.display = 'block';
 	} else {
 		hideDisinfectionMarkers()
 		disinfectionToggleButton.textContent = "Show disinfections";
 		disinfectionMarkersActive = false;
 		disinfectionToggleButton.classList.remove("pressed")
+		disinfectionSelectors.style.display = 'none';
 	}
 }
 
@@ -58,11 +68,13 @@ let toggleTestHospitals = function() {
 		testHospitalToggleButton.textContent = "Hide testing hospitals"
 		testMarkersActive = true;
 		testHospitalToggleButton.classList.add("pressed")
+		testingSelectors.style.display = 'block';
 	} else {
 		hideTestHospitalMarkers()
 		testHospitalToggleButton.textContent = "Show testing hospitals"
 		testMarkersActive = false;
 		testHospitalToggleButton.classList.remove("pressed")
+		testingSelectors.style.display = 'none';
 	}
 }
 
@@ -72,11 +84,13 @@ let toggleVaccinationHospitals = function() {
 		vaccinationHospitalToggleButton.textContent = "Hide vaccination hospitals"
 		vaccinationMarkersActive = true;
 		vaccinationHospitalToggleButton.classList.add("pressed")
+		vaccinationSelectors.style.display = 'block';
 	} else {
 		hideVaccinationHospitalMarkers()
 		vaccinationHospitalToggleButton.textContent = "Show vaccination hospitals"
 		vaccinationMarkersActive = false;
 		vaccinationHospitalToggleButton.classList.remove("pressed")
+		vaccinationSelectors.style.display = 'none';
 	}
 }
 

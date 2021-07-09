@@ -6,6 +6,8 @@ var disinfectionIcon = "https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-tra
 var testHospitalIcon = "https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png"
 var vaccinationHospitalIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
 
+
+
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth() + 1;
