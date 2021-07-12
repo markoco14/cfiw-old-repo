@@ -11,9 +11,9 @@
 	<!--ion Range Slider Plugin CSS file with desired skin-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--ion Range Slider Plugin JavaScript file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script async src="js/map/map-fetch-scripts.js"></script>
     <style>
     	/* Style the page */
@@ -40,18 +40,38 @@
 			box-shadow:  inset 0px 0px 5px #c1c1c1;
 		}
 
+		.footprint-pressed {
+			background-color: #ff4081;
+		}
+
+		.disinfection-pressed {
+			background-color: #6242ff;
+		}
+
+		.testing-pressed {
+			background-color: #ffe94b;
+		}
+
+		.vaccination-pressed {
+			background-color: #1de9b6;
+		}
+
+		.health-center-pressed {
+			background-color: #1de9b6;
+		}
+
 		#footprint-button {
 			/*color: var(--dark-text);
 			background-color: rgb(34,34,34);*/
 		}
 
-		#footprint-button:hover {
+		.footprint-button:hover {
 			cursor:  pointer;
 			color: var(--background);
 			background-color: #ff4081;
 		}
 
-		#footprint-button:active {
+		.footprint-button:active {
 			cursor:  pointer;
 			color: black;
 			background-color: #E2326D;
@@ -62,19 +82,19 @@
 			
 		}
 
-		#disinfection-button:hover {
+		.disinfection-button:hover {
 			cursor:  pointer;
 			color: var(--background);
 			background-color:  #6242ff;
 		}
 
-		#disinfection-button:active {
+		.disinfection-button:active {
 			cursor:  pointer;
 			color: black;
 			background-color:  #5238D2;
 		}
 
-		#test-hospitals-button {
+		/*#test-hospitals-button {
 			
 		}
 
@@ -104,6 +124,19 @@
 			cursor:  pointer;
 			color: black;
 			background-color: #1CD0A6;
+		}*/
+
+
+		.health-center-button:hover {
+			cursor:  pointer;
+			color: var(--background);
+			background-color: #1de9b6;
+		}
+
+		.health-center-button:active {
+			cursor:  pointer;
+			color: black;
+			background-color: #1CD0A6;
 		}
 
 		/*Map filter selectors*/
@@ -117,7 +150,7 @@
 			border-bottom: 2px solid #B3B3B3;
 		}
 
-		#testing-selectors {
+		/*#testing-selectors {
 			border-left: 10px solid #ffe94b;
 			border-bottom: 2px solid #B3B3B3;
 		}
@@ -125,6 +158,16 @@
 		#vaccination-selectors {
 			border-left: 10px solid #1de9b6;
 			border-bottom: 2px solid #B3B3B3;
+		}*/
+
+		#health-center-selectors {
+			border-left: 10px solid #1de9b6;
+			border-bottom: 2px solid #B3B3B3;
+		}
+
+
+		.half-category {
+			width: 50%;
 		}
 
 		#page-header {
@@ -218,6 +261,10 @@
 			color: #6242ff;
 		}
 
+		.hidden {
+			display: none;
+		}
+
 		@media all and (max-width: 751px) {
 
 			.container {
@@ -244,14 +291,13 @@
 		</label>
 	</header>
 	<section>
-		<h1 id="page-header">This is the map</h1>
-		<h2>What do you want to see?</h2>
+		<h1 id="page-header">What do you want to see?</h2>
 		<div class="controls-container">
 			<div class="hide-show-controls">
-				<button id="footprint-button" class="control-button pressed">  Hide footprints</button>
-				<button id="disinfection-button" class="control-button pressed">Hide Disinfections</button>
-				<button id="test-hospitals-button" class="control-button pressed">Hide Testing Hospitals</button>
-				<button id="vaccination-hospitals-button" class="control-button pressed">Hide Vaccination Hospitals</button>
+				<button id="footprint-button" class="footprint-button control-button">Footprints</button>
+				<button id="disinfection-button" class="disinfection-button control-button">Disinfections</button>
+				<button id="health-center-button" class="health-center-button control-button pressed health-center-pressed">Health Centers</button>
+				<!-- <button id="vaccination-hospitals-button" class="control-button pressed vaccination-pressed">Hide Vaccination Hospitals</button> -->
 			</div>
 			<!-- <div id="footprint-controls-container" class="container">
 				<div class="category-container">
@@ -262,7 +308,7 @@
 				</div>
 			</div> -->
 			<div id="selectors-container" class="container">
-				<div id="footprint-selectors" class="category-container">
+				<div id="footprint-selectors" class="category-container hidden">
 					<div class="range-slider">
 				    <input type="text" class="js-range-slider" value="" />
 					</div>
@@ -271,30 +317,36 @@
 					    <input type="text" class="js-input-to js-input" value="0" />
 					</div> -->
 				</div>
-				<div id="disinfection-selectors" class="category-container">
+				<div id="disinfection-selectors" class="category-container hidden">
 					<label class="control-label"><img src="https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png" class="inline-legend"> Disinfection Locations
 					</label>
-					<button>Yesterday</button>
-					<button>Today</button>
-					<button>Tomorrow</button>
+					<button id="disinfect-all" class="disinfection-button">All</button>
+					<button id="disinfect-yesterday" class="disinfection-button">Yesterday</button>
+					<button id="disinfect-today" class="disinfection-button">Today</button>
+					<button id="disinfect-tomorrow" class="disinfection-button">Tomorrow</button>
 				</div>
-				<div id="testing-selectors" class="category-container">
-					<label class="control-label"><img src="https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png" class="inline-legend"> Testing Hospitals
-					</label>
-					<button>English</button>
-					<button>Pregnancy</button>
-					<button>Rapid Test</button>
-					<button>PCR Test</button>
-				</div>
-				<div id="vaccination-selectors" class="category-container">
-					<label class="control-label"><img src="https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png" class="inline-legend"> Vaccination Hospitals 
-					</label>
+				<div id="health-center-selectors" class="category-container">
+					<div class="half-category">
+						<label class="control-label"> Testing Facilities
+						</label>
 
-					<button>English</button>
-					<button>Pregnancy</button>
-					<button>Astra Zeneca</button>
-					<button>Moderna</button>
+						<button id="test-english" class="health-center-button">English</button>
+						<button id="test-pregnant" class="health-center-button">Pregnancy</button>
+						<button id="test-rapid" class="health-center-button">Rapid Test</button>
+						<button id="test-pcr" class="health-center-button">PCR Test</button>
+						
+					</div>
+					<div class="half-category">
+						<label class="control-label"> Vaccination Facilities 
+						</label>
+						<button id="vac-english" class="health-center-button">English</button>
+						<button id="vac-pregnant" class="health-center-button">Pregnancy</button>
+						<button id="vac-zeneca"class="health-center-button">Astra Zeneca</button>
+						<button id="vac-moderna"class="health-center-button">Moderna</button>
+					</div>
 				</div>
+				<!-- <div id="vaccination-selectors" class="category-container">
+				</div> -->
 				<!--<div class="category-container">
 					<label class="other-control-label">Vaccination Stations</label>
 					<div class="hide-show-controls">
@@ -307,94 +359,12 @@
 		<div id="map"></div>
 	</section>
 
+	<script src="js/map/initialize-slider.js"></script>
 	<script src="js/map/map-functions.js"></script>
 	<script src="js/map/map-marker-toggles.js"></script>
-	<script>
-		//if I make this one big function
-        //and then call if after the footprint function
-        //and the map function
-        //then... it will wait until footprint data is in
-        //and use it...?
-            //I think I can add a new sliderDatesArray
-            //and in that push all unique date values
-            //so I'd get a new array, with hopefully one index
-            //for each date value. let's try..
-        function initializeSlider() {
-            
-            var $range = $(".js-range-slider"),
-            $inputFrom = $(".js-input-from"),
-            $inputTo = $(".js-input-to"),
-            instance,
-            min = 0,
-            max = sliderDatesArray.length-1,
-            from = 0,
-            to = 0;
-
-            $range.ionRangeSlider({
-                skin: "round",
-                type: "double",
-                min: min,
-                max: max,
-                from: sliderDatesArray.length-3,
-                to: sliderDatesArray.length-1,
-                //from: my_from,
-                //to: my_to,
-                values: sliderDatesArray,
-                onStart: updateInputs,
-                onChange: updateInputs,
-                hide_min_max: true
-            });
-
-            instance = $range.data("ionRangeSlider");
-
-            function updateInputs (data) {
-                from = data.from;
-                to = data.to;
-                $inputFrom.prop("value", from);
-                $inputTo.prop("value", to);
-                //console.log(`The oldest should should be from: ${from}`)
-                //console.log(`${sliderDatesArray[from]}`)
-                showSliderMarkers(from, to)
-            }
-
-            //function to match slider FROM/MIN with user input
-            $inputFrom.on("input", function () {
-                var val = $(this).prop("value");
-                
-                // validate
-                if (val < min) {
-                    val = min;
-                } else if (val > to) {
-                    val = to;
-                }
-                
-                instance.update({
-                    from: val
-                });
-            });
-
-            //function to match slider TO/MAX with user input
-            $inputTo.on("input", function () {
-                var val = $(this).prop("value");
-                
-                // validate
-                if (val < from) {
-                    val = from;
-                } else if (val > max) {
-                    val = max;
-                }
-                
-                instance.update({
-                    to: val
-                });
-            });
-        }   
-        
-	</script>
-	<script async
+	<script 
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqOe9fM_PP7kzC-cqh9IiMogQKRlNFYWQ&callback=initMap">
 	</script>
-	
 </body>
 </html>
 
