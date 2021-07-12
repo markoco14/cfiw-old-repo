@@ -5,8 +5,7 @@ var vaccinationIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
 var disinfectionIcon = "https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png";
 var testHospitalIcon = "https://i.ibb.co/CK66g3y/CFIW-yellow-health-pin.png"
 var vaccinationHospitalIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
-
-
+var healthCenterIcon = "https://i.ibb.co/12DjsWm/CFIW-mint-green-health-pin.png"
 
 let date = new Date();
 let year = date.getFullYear();
@@ -14,20 +13,31 @@ let month = date.getMonth() + 1;
 if (month < 10) {
 	month = '0' + month;
 }
-let day = date.getDate();
-if (day < 10) {
-	day = '0' + day;
+let today = date.getDate();
+if (today < 10) {
+	today = '0' + today;
 }
-date = year + '-' + month + '-' + day;
+let yesterday = date.getDate()-1;
+if (yesterday < 10) {
+	yesterday = '0' + yesterday;
+}
+let tomorrow = date.getDate()+1;
+if (tomorrow < 10) {
+	tomorrow = '0' + tomorrow;
+}
+date = year + '-' + month + '-' + today;
 //let url = "https://markoco14.github.io/google-sheet-test/map-footprints-json.json";
 
 //Initialize all marker arrays
 var footprintMarkers = [];
 var disinfectionMarkers = [];
-var chineseHospitalMarkers = [];
 var testHospitalMarkers = [];
-var englishHospitalMarkers = [];
 var vaccinationHospitalMarkers = [];
+var healthCenterMarkers = [];
+
+var footprintInfoWindows = [];
+var disinfectionInfoWindows = [];
+var healthCenterInfoWindows = [];
 
 //initialize variable for the map
 let map;
@@ -44,8 +54,9 @@ function initMap() {
 	.then(loadDisinfections)
 	//.then(loadChineseHospitals)
 	//.then(loadEnglishHospitals)
-	.then(loadTestHospitals)
-	.then(loadVaccinationHospitals)
+	.then(loadHealthCenters)
+	/*.then(loadTestHospitals)
+	.then(loadVaccinationHospitals)*/
 	.then(() => {
 		var options = {
 			zoom: 10,
@@ -69,26 +80,37 @@ function initMap() {
 			addDisinfectionMarker(disinfectionData[i]);
 		}
 
-		//make loop to initialize chinese hospital markers
+		for (i = 0; i < healthCenterData.length; i++) {
+			addHealthCenterMarker(healthCenterData[i]);
+		}
+
+		//make health center loop : healthCenterData
+
+		/*//make loop to initialize testing hospital markers
 		for (i = 0; i < testHospitalData.length; i++) {
 			addTestHospitalMarker(testHospitalData[i]);
 		}
 
-		//make loop to initialize english hospital markers
+		//make loop to initialize vaccination hospital markers
 		for (i = 0; i < vaccinationHospitalData.length; i++) {
 			addVaccinationHospitalMarker(vaccinationHospitalData[i]);
 		}
-
+*/
 		//show all markers
 		//footprint data not included because it is found in showSliderMarkers function
-		showMarkers(disinfectionData, testHospitalData, vaccinationHospitalData);
-
+		// showMarkers(disinfectionData, testHospitalData, vaccinationHospitalData);
+		/*showTestHospitalMarkers()
+		showVaccinationHospitalMarkers()*/
+		showHealthCenterMarkers()
+		
 		changeMarkerIcons();
 	})
-	.then(() => {
+	/*.then(() => {
 		initializeSlider();
-	}) 
+	})*/
 }
+
+// initializeSlider();
 
 /* one change marker function for all */
 
@@ -104,15 +126,21 @@ function changeMarkerIcons() {
 	for (i=0; i<disinfectionMarkers.length; i++) {
 		disinfectionMarkers[i].setIcon(disinfectionIcon);
 	}
+
+	//add loop for health centers
+	//add loop for disinfections
+	for (i=0; i<healthCenterMarkers.length; i++) {
+		healthCenterMarkers[i].setIcon(healthCenterIcon);
+	}
 	//add loop for chinese hospitals
 
-	for (i =0; i < testHospitalMarkers.length; i++) {
+	/*for (i =0; i < testHospitalMarkers.length; i++) {
 		testHospitalMarkers[i].setIcon(testHospitalIcon)
 	}
 	//add loop for english hospitals
 	for (i=0; i < vaccinationHospitalMarkers.length; i++) {
 		vaccinationHospitalMarkers[i].setIcon(vaccinationHospitalIcon);
-	}
+	}*/
 }
 
 /* FOOTPRINT MARKER SECTION */
@@ -131,8 +159,23 @@ function addFootprintMarker(footprintData) {
 	//add listener to open/close windows on click
 	if(footprintData.place) {
 		let infoWindowOpen = false;
-		footprintMarker.addListener('click', function() {
+		footprintMarker.addListener('click', function(e) {
 			if (!infoWindowOpen) {
+				for (i = 0; i < footprintInfoWindows.length; i++) {
+					if (!e.target) {
+						footprintInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < disinfectionInfoWindows.length; i++) {
+					if (!e.target) {
+						disinfectionInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < healthCenterInfoWindows.length; i++) {
+					if (!e.target) {
+						healthCenterInfoWindows[i].close();
+					}
+				}
 				infoWindow.open(map, footprintMarker)
 				infoWindowOpen = true;
 			} else {
@@ -141,6 +184,8 @@ function addFootprintMarker(footprintData) {
 			}
 		});
 	}
+
+	footprintInfoWindows.push(infoWindow);
 
 	//push new markers into the footprint markers array	
 	footprintMarkers.push(footprintMarker);
@@ -160,8 +205,23 @@ function addDisinfectionMarker(disinfectionData) {
 	//add listener to open/close windows on click
 	if(disinfectionData.place) {
 		let infoWindowOpen = false;
-		disinfectionMarker.addListener('click', function() {
+		disinfectionMarker.addListener('click', function(e) {
 			if (!infoWindowOpen) {
+				for (i = 0; i < footprintInfoWindows.length; i++) {
+					if (!e.target) {
+						footprintInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < disinfectionInfoWindows.length; i++) {
+					if (!e.target) {
+						disinfectionInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < healthCenterInfoWindows.length; i++) {
+					if (!e.target) {
+						healthCenterInfoWindows[i].close();
+					}
+				}
 				infoWindow.open(map, disinfectionMarker)
 				infoWindowOpen = true;
 			} else {
@@ -171,11 +231,59 @@ function addDisinfectionMarker(disinfectionData) {
 		});
 	}
 
+	disinfectionInfoWindows.push(infoWindow);
+
 	//push new markers into the disinfection markers array	
 	disinfectionMarkers.push(disinfectionMarker);
 }
 
-function addTestHospitalMarker(testHospitalData) {
+function addHealthCenterMarker(healthCenterData) {
+	var healthCenterMarker = new google.maps.Marker({
+		position: healthCenterData.coords,
+		//map: map,
+	});
+	//check for marker has place data, create info window
+	if(healthCenterData.name) {
+		var infoWindow = new google.maps.InfoWindow({
+			content: healthCenterData.name
+		})
+	}
+	//add listener to open/close windows on click
+	if(healthCenterData.name) {
+		let infoWindowOpen = false;
+		healthCenterMarker.addListener('click', function(e) {
+			if (!infoWindowOpen) {
+				for (i = 0; i < footprintInfoWindows.length; i++) {
+					if (!e.target) {
+						footprintInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < disinfectionInfoWindows.length; i++) {
+					if (!e.target) {
+						disinfectionInfoWindows[i].close();
+					}
+				}
+				for (i = 0; i < healthCenterInfoWindows.length; i++) {
+					if (!e.target) {
+						healthCenterInfoWindows[i].close();
+					}
+				}
+				infoWindow.open(map, healthCenterMarker)
+				infoWindowOpen = true;
+			} else {
+				infoWindow.close()
+				infoWindowOpen = false;
+			}
+		});
+	}
+
+	healthCenterInfoWindows.push(infoWindow);
+
+	//push new markers into the disinfection markers array	
+	healthCenterMarkers.push(healthCenterMarker);
+}
+
+/*function addTestHospitalMarker(testHospitalData) {
 	var testHospitalMarker = new google.maps.Marker({
 		position: testHospitalData.coords,
 		//map: map,
@@ -231,7 +339,7 @@ function addVaccinationHospitalMarker(vaccinationHospitalData) {
 
 	//push new markers into the disinfection markers array	
 	vaccinationHospitalMarkers.push(vaccinationHospitalMarker);
-}
+}*/
 
 /* set map on all markers here */
 
@@ -249,7 +357,13 @@ function setMapOnDisinfections(map) {
 	}
 }
 
-function setMapOnTestHospitals(map) {
+function setMapOnHealthCenters(map) {
+	for (i=0; i < healthCenterMarkers.length; i++) {
+		healthCenterMarkers[i].setMap(map);
+	}
+}
+
+/*function setMapOnTestHospitals(map) {
 	for (i=0; i < testHospitalMarkers.length; i++) {
 		testHospitalMarkers[i].setMap(map);
 	}
@@ -259,24 +373,28 @@ function setMapOnVaccinationHospitals(map) {
 	for (i=0; i < vaccinationHospitalMarkers.length; i++) {
 		vaccinationHospitalMarkers[i].setMap(map);
 	}
-}
+}*/
 
 /* show marker functions here */
 
-function showMarkers(disinfectionMarkers, testHospitalMarkers, vaccinationHospitalMarkers) {
+function showMarkers(disinfectionMarkers, healthCenterMarkers, testHospitalMarkers, vaccinationHospitalMarkers) {
 	if  (disinfectionMarkers) {
 		setMapOnDisinfections(map);
 	}
-	if (testHospitalMarkers) {
+
+	if (healthCenterMarkers) {
+		setMapOnHealthCenters(map);
+	}
+	/*if (testHospitalMarkers) {
 		setMapOnTestHospitals(map);
 	}
 	if (vaccinationHospitalMarkers) {
 		setMapOnVaccinationHospitals(map);
-	}
+	}*/
 }
 
 /* show marker functions for toggle buttons here */
-function showFootprintMarkers() {
+function showFootprintMarkers(from, to) {
 	setMapOnFootprints(map);
 }
 
@@ -285,13 +403,17 @@ function showDisinfectionMarkers() {
 	setMapOnDisinfections(map);
 }
 
-function showTestHospitalMarkers() {
+function showHealthCenterMarkers() {
+	setMapOnHealthCenters(map);
+}
+
+/*function showTestHospitalMarkers() {
 	setMapOnTestHospitals(map);
 }
 
 function showVaccinationHospitalMarkers() {
 	setMapOnVaccinationHospitals(map);
-}
+}*/
 
 /* hide marker functions for toggle buttons here */ 
 
@@ -303,13 +425,17 @@ function hideDisinfectionMarkers() {
 	setMapOnDisinfections(null);
 }
 
-function hideTestHospitalMarkers() {
+function hideHealthCenterMarkers() {
+	setMapOnHealthCenters(null);
+}
+
+/*function hideTestHospitalMarkers() {
 	setMapOnTestHospitals(null);
 }
 
 function hideVaccinationHospitalMarkers() {
 	setMapOnVaccinationHospitals(null);
-}
+}*/
 
 
 /* Disinfection marker functions*/
