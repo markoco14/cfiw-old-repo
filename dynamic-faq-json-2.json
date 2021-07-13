@@ -1,43 +1,11 @@
 [
 {
-"id": 1,
-"question": "Does public transport run normally? Can I still take the bus or MRT in Taichung?",
-"answer": "City bus route adjustments Check the schedule on the Taichung bus website or app for Android or iOS app (can be set to English). This English Timetable app gets good reviews. Stopped until 7/2: 164, 165, 200 (incl extension), 206 extension, 219 (incl extension), 232, 278, 279, 500, 700, 900, student commuter shuttle buses. Stopped until 6/28: A1, A2, A3, 111, 209, 235, 252, 269, 309, 688, 821 and other sightseeing or high overlapping routes MRT Green Line adjustments until 6/28 You can check this MRT route map Every 10 minutes on weekdays, 15 minutes between 23:00-24:00 and on weekends",
+"id": 26,
+"question": "How do I register for a first dose vaccination? How to use the website 1922.gov.tw to apply to get vaccinated for my 1st jab of AZ or Moderna?",
+"answer": "Everyone older than 18 can now begin registration. At the time of writing 7/13 around noon the official website was overloaded so it took me 1 hour to get to the 2nd page. Here are some tips and guidance:  Have everything ready before you begin the process Google Translate doesn't work on all the buttons and some reported using the plugin stopped the process.   Page 1: Browse to https://1922.gov.tw/vas and keep refreshing (F5) until you see the blue box for registration and can click the button [Register] 登記 (1) to go to page 2. Page 2: National Health Insurance Card: You need both your ARC/APRC number (1) and the NHI number (2) and enter the confirmation number (3) then click to continue (4). Page 3: Check the info and select your county and district(1) (picture shows example for Taichung + West District), choose preferred vaccine type (2) (picture shows example for both AZ and Moderna) and accept terms and conditions (3) then click to continue (4). Page 4: Congratulations, if you see this page your registration was successful.  Please note that this is only a registration of your willingness to get vaccinated. Now you have to wait for a text (SMS) message with further instructions in the coming days or weeks.",
 "formatAnswer": "",
 "formatQuestion": "",
-"order": 19
-},
-{
-"id": 2,
-"question": "I'm worried I've got COVID. Are there hospitals in Taichung where I can get a paid COVID-19 test?",
-"answer": "7/2 The latest PDF from CDC shows a Designated Hospital List for out-of-pocket COVID-19 PCR testing in Taiwan. Below basic info on some of the testing facilities in Taichung for your convenience.  For more details and easy navigation and a list of health facilities that offer English services, check our covid map.  Wuri Lin Shin Hospital, No. 168, Ronghe Road, Wuri District, Taichung City, 414, (04)2338-8766 Lin Shin Hospital, No. 36, Section 3, Huizhong Road, Nantun District, Taichung City, 408, (04)2258-6688 Jen-Ai Hospital (Dali Branch), No. 483, Dongrong Road, Dali District, Taichung City, 412, (04)2481-9900 Kuang Tien General Hospital (Dajia Branch), No.321, Jingguo Road , Dajia District, Taichung City, 437, (04)2665-1900 Kuang Tien General Hospital (Shalu Branch), No. 117, Shatian Road, Shalu District, Taichung City, 433, (04)2665-1900 Everan Hospital, No.9, Sec. 1, Yongping Rd., Taiping Dist., Taichung City (04)3611-3611 Feng Yuan Hospital (Ministry of Health and Welfare), No. 100, Ankang Road, Fengyuan District, Taichung City, 420, (04)2527-1180 Taichung Hospital (Ministry of Health and Welfare), No. 199, Section 1, Sanmin Road, West District, Taichung City, 403, (04)2229-4411 Asia University Hospital, No. 222, Fuxin Road, Wufeng District, Taichung City, 413, (04)3706-1668 China Medical University Hospital, No. 2, Yude Road, North District, Taichung City, 404, (04)2205-2121",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 8
-},
-{
-"id": 3,
-"question": "I'm worried I've got COVID. Is there a covid screening station in Taichung where I can get a free COVID-19 test?",
-"answer": "6/25 UPDATE several health facilities have set up outdoors COVID-19 Fast Screening Stations to provide rapid antigen testing for free if you have an official address in Taichung.  Bring ID cards (ARC, APRC, VISA), health insurance cards (NHIC), and wear medical masks throughout the journey. Most locations require you to make an online appointment and ask to come early. Check our map for more details and help with navigation. Screening services will be suspended if they run out of tests If the test result is negative, you will be notified on the spot, and no paper report will be provided (result can be checked in your health passbook 1-3 days after) Those who test positive will be transferred to the emergency room for follow-up",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 9
-},
-{
-"id": 4,
-"question": "Is Taichung City hall still open for citizens? Where can I go for government services in Taichung during the current pandemic?",
-"answer": "Taichung City hall public services require access control and are centralized at Taichung City Yangming building on the first floor at No. 36, Yangming Street, Fengyuan District, Taichung City, 420. Remaining floors and spaces are only accessible to city employees.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 18
-},
-{
-"id": 5,
-"question": "Are there any English videos with information about confirmed COVID-19 cases?",
-"answer": "CDC has some English videos on their official YouTube channel with English audio and subtitles:  6/9 What to do if you had contact with a confirmed COVID-19 case? 6/9 What to do if you've been diagnosed with COVID-19? 6/8 How to care for a COVID-19 patient at home? We appreciate the CDC's continued efforts and hope to see more COVID-19 videos.",
-"formatAnswer": "<p>Yes. The CDC has released 3 videos on their <a href=\"https://www.youtube.com/channel/UCyh91eTE9jA3ykg8W3_v3DQ\">official YouTube channel</a> with English audio and subtitles:</p><ul><li><a href=\"https://www.youtube.com/watch?v=lDo9wShQVps&t=4s\">What to do if you had contact with a confirmed COVID-19 case?</a></li><li><a href=\"https://www.youtube.com/watch?v=maauaPQZlEw&t=5s\">What to do if you've been diagnosed with COVID-19?</a></li><li><a href=\"https://www.youtube.com/watch?v=6Sd47AvS3z0&t=5s\">How to care for a COVID-19 patient at home?</a></li> </ul><p>We appreciate the CDC's continued efforts and hope to see more COVID-19 videos soon.</p>",
-"formatQuestion": "<label for=`input4`>Are there any English videos with information about confirmed COVID-19 cases?</label>",
-"order": 10
+"order": 1
 },
 {
 "id": 6,
@@ -56,12 +24,76 @@
 "order": 3
 },
 {
+"id": 25,
+"question": "Where can I get a Covid self-test kit? How to use the coronavirus testing kit at home?",
+"answer": "7/11 CDC posted a YouTube video with English audio and subtitles: Instructions for the use of COVID 19 home test kits  COVID-19 rapid antigen self-test kits can be purchased at drug stores, pharmacies, medical equipment shops, and convenience stores.  Check for FDA-approved tests (click links that end with Chinese date eg 110.7.1). Follow the instructions to collect a sample and administer the test. When the result is negative, place the kit in a sealed plastic bag and dispose in the household garbage. When the result is positive, immediately call the toll-free hotline 1922 and go into home quarantine (separate rooms including bathroom, always mask). If you're unable to go into home isolation, put the test kit in sealed plastic bag, visit a nearby clinic or hospital asap and hand it to the staff, wear a mask at all times, and do not use public transport",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 4
+},
+{
+"id": 22,
+"question": "Is there a map where I can see locations for testing and vaccines in Taichung? Can you help me make an appointment and navigate to covid testing and vaccination facilities?",
+"answer": "7/8 Vaccinations in Taichung and Taiwan are still limited to priority groups 1-10 and special cases. Both free and paid covid-19 tests, rapid antigen or molecular RT-PCR, are widely available.  We contact health authorities and facilities regularly to update locations that offer some level of English services on our map with details about how to book and where to go.",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 5
+},
+{
+"id": 17,
+"question": "Are libraries still open in Taichung? What should I do with books that I borrowed?",
+"answer": "7/1 A drive-thru service for free book pick-ups has opened Tuesday to Sunday 08:30-17:30, starting 7/1 at most branches, from 7/8 at Tanzi branch and 7/15 at Xixi branch. Waipu Branch and Beitun Children's Branch do not provide services due to construction. You have to reserve books online (Chinese).  6/18 Taichung Public Library announced an online book delivery service for library card holders at 70 NTD per box.  The libraries have adjusted their policies:  All library branches are closed but the book return box is open 24/7 The upper limit of renewal is increased to 3 times. If you do not pick up the books you put on reserve, you will not be penalized. If a book that you reserved has arrived at the library, the book collection period will be postponed to July 15. If you fail to return books in time, your membership will not be revoked. If a book return period is from May 19 to June 30, it will be postponed to July 31.",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 6
+},
+{
+"id": 24,
+"question": "Can I get a loan or subsidy for my job, company, or family? Do COVID-19 relief or bailout programs apply to foreigners in Taiwan?",
+"answer": "7/8 If you have Taiwanese citizenship, an APRC or Taiwanese spouse, you are most likely eligible for the relief programs for individuals and families. APRC holders that fit the requirements can receive 27K NTD, citizenship or spouse 30K, and/or 10K per child. Check the table with more info and links for application.  If you're a business owner, there are many different programs and requirements and most of the information is in Chinese. So we recommend to check with your accountant or a Taiwanese employee or friend.  The Taiwanese government has created this website to explain all the options and rules for relief program 4.0  You can choose English at the top left for auto-translation. Eligibility depends on your situation so do your own research. But when you live and pay taxes in Taiwan, or own a company that does, some programs should apply. If you can't work it out, call the CDC service line at 1988 and ask for relief package assistance in English. There may be a queue so please prepare before you call.",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 7
+},
+{
+"id": 2,
+"question": "I'm worried I've got COVID. Are there hospitals in Taichung where I can get a paid COVID-19 test?",
+"answer": "7/2 The latest PDF from CDC shows a Designated Hospital List for out-of-pocket COVID-19 PCR testing in Taiwan. Below basic info on some of the testing facilities in Taichung for your convenience.  For more details and easy navigation and a list of health facilities that offer English services, check our covid map.  Wuri Lin Shin Hospital, No. 168, Ronghe Road, Wuri District, Taichung City, 414, (04)2338-8766 Lin Shin Hospital, No. 36, Section 3, Huizhong Road, Nantun District, Taichung City, 408, (04)2258-6688 Jen-Ai Hospital (Dali Branch), No. 483, Dongrong Road, Dali District, Taichung City, 412, (04)2481-9900 Kuang Tien General Hospital (Dajia Branch), No.321, Jingguo Road , Dajia District, Taichung City, 437, (04)2665-1900 Kuang Tien General Hospital (Shalu Branch), No. 117, Shatian Road, Shalu District, Taichung City, 433, (04)2665-1900 Everan Hospital, No.9, Sec. 1, Yongping Rd., Taiping Dist., Taichung City (04)3611-3611 Feng Yuan Hospital (Ministry of Health and Welfare), No. 100, Ankang Road, Fengyuan District, Taichung City, 420, (04)2527-1180 Taichung Hospital (Ministry of Health and Welfare), No. 199, Section 1, Sanmin Road, West District, Taichung City, 403, (04)2229-4411 Asia University Hospital, No. 222, Fuxin Road, Wufeng District, Taichung City, 413, (04)3706-1668 China Medical University Hospital, No. 2, Yude Road, North District, Taichung City, 404, (04)2205-2121",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 8
+},
+{
+"id": 3,
+"question": "I'm worried I've got COVID. Is there a covid screening station in Taichung where I can get a free COVID-19 test?",
+"answer": "6/25 UPDATE several health facilities have set up outdoors COVID-19 Fast Screening Stations to provide rapid antigen testing for free if you have an official address in Taichung.  Bring ID cards (ARC, APRC, VISA), health insurance cards (NHIC), and wear medical masks throughout the journey. Most locations require you to make an online appointment and ask to come early. Check our map for more details and help with navigation. Screening services will be suspended if they run out of tests If the test result is negative, you will be notified on the spot, and no paper report will be provided (result can be checked in your health passbook 1-3 days after) Those who test positive will be transferred to the emergency room for follow-up",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 9
+},
+{
+"id": 5,
+"question": "Are there any English videos with information about confirmed COVID-19 cases?",
+"answer": "CDC has some English videos on their official YouTube channel with English audio and subtitles:  6/9 What to do if you had contact with a confirmed COVID-19 case? 6/9 What to do if you've been diagnosed with COVID-19? 6/8 How to care for a COVID-19 patient at home? We appreciate the CDC's continued efforts and hope to see more COVID-19 videos.",
+"formatAnswer": "<p>Yes. The CDC has released 3 videos on their <a href=\"https://www.youtube.com/channel/UCyh91eTE9jA3ykg8W3_v3DQ\">official YouTube channel</a> with English audio and subtitles:</p><ul><li><a href=\"https://www.youtube.com/watch?v=lDo9wShQVps&t=4s\">What to do if you had contact with a confirmed COVID-19 case?</a></li><li><a href=\"https://www.youtube.com/watch?v=maauaPQZlEw&t=5s\">What to do if you've been diagnosed with COVID-19?</a></li><li><a href=\"https://www.youtube.com/watch?v=6Sd47AvS3z0&t=5s\">How to care for a COVID-19 patient at home?</a></li> </ul><p>We appreciate the CDC's continued efforts and hope to see more COVID-19 videos soon.</p>",
+"formatQuestion": "<label for=`input4`>Are there any English videos with information about confirmed COVID-19 cases?</label>",
+"order": 10
+},
+{
 "id": 8,
 "question": "What are some important phone numbers with regard to the current outbreak in Taiwan? Who should I call for English assistance with covid-related questions and concerns?",
 "answer": "Please note that it depends on your device and browser if and how the links for the phone numbers below will be opened after you click on them. And this will only work for local calls in Taiwan. 1922 is the 24 hours/toll-free hotline from Taiwan CDC for service on disease reporting, communicable disease consultation, prevention policy promotion and control measure education to the public 119 is the 24 hours/toll-free emergency number for Ambulances and Fire Alarms 110 is the 24 hours/toll-free emergency number for Police Services 0800-024-111, press [2] for English service on the 24 hours/toll-free International Community Service Hotline 0800-011-765 is the English-speaking/24 hours/toll-free Travel Information Call Center 106 is the number for Directory Enquiries (English-speaking) 1925 is the 24-hour/toll-free care hotline of the Ministry of Health and Welfare (MOFW) for mental health consulting 1955 is the 24 hours/toll-free hotline of the Ministry of Labor (MOL) for labor counseling to help migrant workers with communication and adaptation to the Taiwanese lifestyle. It also offers an online interpretation service in Chinese, Indonesian, Vietnamese, Thai and Filipino to solve communication problems between employers and migrant workers.",
 "formatAnswer": "",
 "formatQuestion": "",
 "order": 11
+},
+{
+"id": 23,
+"question": "What to do if your residence (ARC, APRC) or staying permit (VISA) is about to expire?",
+"answer": "ARC or APRC alien residency certificate holders:  Automatically extended with 30 days with no upper limit on the number of extensions. Extend your leave of stay at a service station no later than 30 days after the pandemic alert has been lowered to level 2 alert. VISA as tourist or student or originally had permission to delay departure from Taiwan:  Do not have to extend leave or stay or delay departure for the time being Extend your leave of stay at a service station no later than 10 days after the pandemic alert has been lowered to level 2 alert.",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 12
 },
 {
 "id": 9,
@@ -104,6 +136,22 @@
 "order": 17
 },
 {
+"id": 4,
+"question": "Is Taichung City hall still open for citizens? Where can I go for government services in Taichung during the current pandemic?",
+"answer": "Taichung City hall public services require access control and are centralized at Taichung City Yangming building on the first floor at No. 36, Yangming Street, Fengyuan District, Taichung City, 420. Remaining floors and spaces are only accessible to city employees.",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 18
+},
+{
+"id": 1,
+"question": "Does public transport run normally? Can I still take the bus or MRT in Taichung?",
+"answer": "City bus route adjustments Check the schedule on the Taichung bus website or app for Android or iOS app (can be set to English). This English Timetable app gets good reviews. Stopped until 7/2: 164, 165, 200 (incl extension), 206 extension, 219 (incl extension), 232, 278, 279, 500, 700, 900, student commuter shuttle buses. Stopped until 6/28: A1, A2, A3, 111, 209, 235, 252, 269, 309, 688, 821 and other sightseeing or high overlapping routes MRT Green Line adjustments until 6/28 You can check this MRT route map Every 10 minutes on weekdays, 15 minutes between 23:00-24:00 and on weekends",
+"formatAnswer": "",
+"formatQuestion": "",
+"order": 19
+},
+{
 "id": 14,
 "question": "How can I stay up-to-date about the virus outbreak in Taichung?",
 "answer": "Up-to-date information about coronavirus prevention, infections, measures, and footprints on the Taichung City government website some of which can be translated IBSC school in Daya Disctrict, Taichung posts English COVID19 info and FAQ on this FB page",
@@ -126,14 +174,6 @@
 "formatAnswer": "",
 "formatQuestion": "",
 "order": 22
-},
-{
-"id": 17,
-"question": "Are libraries still open in Taichung? What should I do with books that I borrowed?",
-"answer": "7/1 A drive-thru service for free book pick-ups has opened Tuesday to Sunday 08:30-17:30, starting 7/1 at most branches, from 7/8 at Tanzi branch and 7/15 at Xixi branch. Waipu Branch and Beitun Children's Branch do not provide services due to construction. You have to reserve books online (Chinese).  6/18 Taichung Public Library announced an online book delivery service for library card holders at 70 NTD per box.  The libraries have adjusted their policies:  All library branches are closed but the book return box is open 24/7 The upper limit of renewal is increased to 3 times. If you do not pick up the books you put on reserve, you will not be penalized. If a book that you reserved has arrived at the library, the book collection period will be postponed to July 15. If you fail to return books in time, your membership will not be revoked. If a book return period is from May 19 to June 30, it will be postponed to July 31.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 6
 },
 {
 "id": 18,
@@ -166,45 +206,5 @@
 "formatAnswer": "",
 "formatQuestion": "",
 "order": 26
-},
-{
-"id": 22,
-"question": "Is there a map where I can see locations for testing and vaccines in Taichung? Can you help me make an appointment and navigate to covid testing and vaccination facilities?",
-"answer": "7/8 Vaccinations in Taichung and Taiwan are still limited to priority groups 1-10 and special cases. Both free and paid covid-19 tests, rapid antigen or molecular RT-PCR, are widely available.  We contact health authorities and facilities regularly to update locations that offer some level of English services on our map with details about how to book and where to go.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 5
-},
-{
-"id": 23,
-"question": "What to do if your residence (ARC, APRC) or staying permit (VISA) is about to expire?",
-"answer": "ARC or APRC alien residency certificate holders:  Automatically extended with 30 days with no upper limit on the number of extensions. Extend your leave of stay at a service station no later than 30 days after the pandemic alert has been lowered to level 2 alert. VISA as tourist or student or originally had permission to delay departure from Taiwan:  Do not have to extend leave or stay or delay departure for the time being Extend your leave of stay at a service station no later than 10 days after the pandemic alert has been lowered to level 2 alert.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 12
-},
-{
-"id": 24,
-"question": "Can I get a loan or subsidy for my job, company, or family? Do COVID-19 relief or bailout programs apply to foreigners in Taiwan?",
-"answer": "7/8 If you have Taiwanese citizenship, an APRC or Taiwanese spouse, you are most likely eligible for the relief programs for individuals and families. APRC holders that fit the requirements can receive 27K NTD, citizenship or spouse 30K, and/or 10K per child. Check the table with more info and links for application.  If you're a business owner, there are many different programs and requirements and most of the information is in Chinese. So we recommend to check with your accountant or a Taiwanese employee or friend.  The Taiwanese government has created this website to explain all the options and rules for relief program 4.0  You can choose English at the top left for auto-translation. Eligibility depends on your situation so do your own research. But when you live and pay taxes in Taiwan, or own a company that does, some programs should apply. If you can't work it out, call the CDC service line at 1988 and ask for relief package assistance in English. There may be a queue so please prepare before you call.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 7
-},
-{
-"id": 25,
-"question": "Where can I get a Covid self-test kit? How to use the coronavirus testing kit at home?",
-"answer": "7/11 CDC posted a YouTube video with English audio and subtitles: Instructions for the use of COVID 19 home test kits  COVID-19 rapid antigen self-test kits can be purchased at drug stores, pharmacies, medical equipment shops, and convenience stores.  Check for FDA-approved tests (click links that end with Chinese date eg 110.7.1). Follow the instructions to collect a sample and administer the test. When the result is negative, place the kit in a sealed plastic bag and dispose in the household garbage. When the result is positive, immediately call the toll-free hotline 1922 and go into home quarantine (separate rooms including bathroom, always mask). If you're unable to go into home isolation, put the test kit in sealed plastic bag, visit a nearby clinic or hospital asap and hand it to the staff, wear a mask at all times, and do not use public transport",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 4
-},
-{
-"id": 26,
-"question": "How do I register for a first dose vaccination? How to use the website 1922.gov.tw to apply to get vaccinated for my 1st jab of AZ or Moderna?",
-"answer": "Everyone older than 18 can now begin registration. At the time of writing 7/13 around noon the official website was overloaded so it took me 1 hour to get to the 2nd page. Here are some tips and guidance:  Have everything ready before you begin the process Google Translate doesn't work on all the buttons and some reported using the plugin stopped the process.   Page 1: Browse to https://1922.gov.tw/vas and keep refreshing (F5) until you see the blue box for registration and can click the button [Register] 登記 (1) to go to page 2. Page 2: National Health Insurance Card: You need both your ARC/APRC number (1) and the NHI number (2) and enter the confirmation number (3) then click to continue (4). Page 3: Check the info and select your county and district(1) (picture shows example for Taichung + West District), choose preferred vaccine type (2) (picture shows example for both AZ and Moderna) and accept terms and conditions (3) then click to continue (4). Page 4: Congratulations, if you see this page your registration was successful.  Please note that this is only a registration of your willingness to get vaccinated. Now you have to wait for a text (SMS) message with further instructions in the coming days or weeks.",
-"formatAnswer": "",
-"formatQuestion": "",
-"order": 1
 }
 ]
