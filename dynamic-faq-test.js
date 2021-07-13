@@ -117,12 +117,13 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 const loadFaq = async () => {
-	let url = "https://markoco14.github.io/google-sheet-test/dynamic-faq-json.json";
+	let url = "https://markoco14.github.io/cfiw/dynamic-faq-json.json";
+	let url2 ="https://markoco14.github.io/cfiw/dynamic-faq-json-2.json";
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
 	try {
-		const res = await fetch(url);
+		const res = await fetch(url2);
 		faqData = await res.json();
 		console.log(faqData);
 	} catch (err) {
@@ -159,6 +160,11 @@ const displaySearches = function(filteredFaq) {
 
 }
 
+let containersArray = [];
+let answersArray = [];
+let questionsArray = [];
+let inputsArray = [];
+
 const displayFaqContent = async () => {
 	console.log("Data downloaded, copy FAQ to page");
 	for (i = 0; i < faqData.length; i++) {
@@ -166,85 +172,89 @@ const displayFaqContent = async () => {
 		let container = document.createElement('div');
 		let details = document.createElement('details');
 		let summary = document.createElement('summary');
-		let div = document.createElement('div');
+		let questionDiv = document.createElement('div');
+		let answerDiv = document.createElement('div');
+		let input = document.createElement('input');
+		let label = document.createElement('label');
+		
+		//set ID's for anchor links
+		container.setAttribute('id', `${faqData[i].order}`);
+		container.classList.add('faq-box');
+
+		answerDiv.classList.add('answer-content', 'hidden');
+		
+		input.setAttribute('type', 'checkbox');
+		input.setAttribute('id', `input${i}`);
+		input.setAttribute('checked', false);
+		input.setAttribute('class', 'hidden');
+
+		questionDiv.setAttribute('id', `question${faqData[i].id}`);
+
+/*		questionDiv.innerHTML = `<label for="input${i}" id="question${faqData[i].id}">${faqData[i].question}</label>`
+*/
+/*		label.textContent = `${faqData[i].question}`;
+*/		label.setAttribute('for', `input${i}`)
+/*		label.setAttribute('id', `question${faqData[i].id}`);
+*/		/*label.setAttribute('class', 'faq-question');*/
+
+		questionDiv.setAttribute('class', 'faq-question')
 
 		//set text content of elements
-		summary.innerHTML = `<strong>${faqData[i].question}</strong>`;
-		if(faqData[i].content) {
-			div.innerHTML = faqData[i].content;
+/*		summary.textContent = `${faqData[i].question}`;*/
+		if(faqData[i].formatAnswer) {
+			answerDiv.innerHTML = faqData[i].formatAnswer;
 		} else {
-			div.innerHTML = faqData[i].answer;
-
+			answerDiv.innerHTML = faqData[i].answer;
 		}
 
-		//set ID's for anchor links
-		details.setAttribute('id', `question${faqData[i].id}`)
-		details.setAttribute('class', faqData[i].id)
+		/*if(faqData[i].formatQuestion) {
+			label.innerHTML = faqData[i].formatQuestion;
+		} else {
+			label.innerHTML = faqData[i].question;
+		}*/
+
 		
-		//create event listener function
-
-		container.addEventListener('click', (evt) => {
-			
+		questionDiv.innerHTML = faqData[i].question;
+		
 
 
-			
-			//your code goes here
-			//so I need the function to know which one has been clicked
-			//and I think that is evt
-			//from there I think I can check for a match in ID? 
-			//and then flip the switch on the open variable
-			//check all the details to see if open
-			//close if open
-
-			//check through all details
-			//if any open, close them
-			/*for (i = 0; i < detailsArray.length; i++) {
-				if (detailsArray[i].open) {
-					detailsArray[i].open = false;
-				}	
-			}*/
-
-			//create tracker
-			let tracker;
-
-			//find the index of evt.target
-			for (i = 0; i < detailsArray.length; i++) {
-				if (evt.target.textContent === detailsArray[i].innerText) {
-					console.log(`We found it at ${i}`)
-					tracker = i;
-				}
-			}
-
-			//there is some problem here
-			//when I'm trying to close the element
-			//tracker returns undefined
-			//maybe this is preventing the close on second click
-			console.log(tracker)
-
-			//this is where the program goes wrong
-			//I figured out that it does close itself back down
-			//but only when you click the expanded details.
-
-			/*if (!evt.target.open) {
-				detailsArray[tracker].open = true;
-			} else {
-				detailsArray[tracker].open = false;
-			}*/
-		});
-
+		questionDiv.addEventListener('click', toggleFaq)
+		answerDiv.addEventListener('click', toggleFaq)
+		
+		containersArray.push(container);
+		answersArray.push(answerDiv);
+		questionsArray.push(questionDiv);
+		inputsArray.push(input);
 		//add details to array so they can be worked with
 		
 		//append elements to page
-		details.appendChild(summary);
-		details.appendChild(div);
-		container.appendChild(details);
-		faqContainer.appendChild(container);
+		/*details.appendChild(summary);*/
+		/*label.appendChild(div);*/
+		/*questionDiv.appendChild(input);
+		questionDiv.appendChild(label);*/
+		questionDiv.appendChild(input);
+		container.appendChild(questionDiv);
+		container.appendChild(answerDiv);
+		faqContainer.appendChild(container);	
 
 		//create arrays for testing
 		detailsArray.push(details);
 		summaryArray.push(summary);
 	}
 }
+
+function toggleFaq(e) {
+	//i want to close all
+	for (i=0; i < inputsArray.length; i++) {
+		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
+			answersArray[i].classList.remove('hidden');
+		} else {
+			answersArray[i].classList.add('hidden');
+		}
+	}	
+
+}
+	
 
 
 loadFaq()

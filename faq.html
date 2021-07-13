@@ -9,6 +9,72 @@
 		<link rel="stylesheet" href="css/style1.css">
 		<link href='css/style.css' rel='stylesheet' type='text/css'>
 		<link href='css/headerStyle.css' rel='stylesheet' type='text/css'>
+		<style>
+
+			/*.faq-toggle {
+				display:  none;
+			}*/
+
+			.hidden {
+				display:  none;
+			}
+
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.image {
+				width: 100%;
+				position: relative;
+				margin: 50px auto;
+			}
+
+			.red {
+				color: red;
+			}
+
+			.faqContainer {
+				width: 70vw;
+			}
+
+			.faq-box {
+				/*display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;*/
+				margin: 10px 0;
+			}
+
+			.faq-box p, ul, li, label{
+				margin:  5px 0;
+			}
+
+			.faq-box ul{
+				position: relative;
+				margin: 0 auto;
+				width:  80%;
+				list-style: none;
+			}
+
+			.faq-question {
+				padding: 10px 0;
+				border-bottom: 5px solid black;
+				font-weight: bold;
+			}
+
+			.answer-content {
+				margin-top: 10px;
+				border-bottom: 2px solid black;
+				padding: 5px 0;
+			}
+
+			/*.faq-box p, label, ul {
+				width: 80%;
+			}*/
+		</style>
 	</head>
 	<body>
 		<header>
@@ -42,11 +108,12 @@
 				</div>
 			</div>
 			<div id="faqContainer" class="faqContainer">
-
+				
 			</div>
 		</div>
-		<script src="dynamic-faq-test.js"></script>
-		<script src="dnu-files.js"></script>
+
+		<script src="js/faq/dynamic-faq-test.js"></script>
+		<script src="js/faq/dnu-files.js"></script>
 	
 	</body>
 </html>
