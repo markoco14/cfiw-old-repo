@@ -9,8 +9,6 @@ let filteredFaq = [];
 let detailsArray = [];
 let summaryArray = [];
 
-
-
 //create search bar listener function
 searchBar.addEventListener('keyup', (e) => {
 	//initialize faqData count property
@@ -119,6 +117,7 @@ searchBar.addEventListener('keyup', (e) => {
 const loadFaq = async () => {
 	let url = "https://markoco14.github.io/cfiw/dynamic-faq-json.json";
 	let url2 ="https://markoco14.github.io/cfiw/dynamic-faq-json-2.json";
+	let url3 = "json/dynamic-faq-json-2.json"
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
@@ -166,93 +165,72 @@ let questionsArray = [];
 let inputsArray = [];
 
 const displayFaqContent = async () => {
-	console.log("Data downloaded, copy FAQ to page");
 	for (i = 0; i < faqData.length; i++) {
 		//create elements
 		let container = document.createElement('div');
-		let details = document.createElement('details');
-		let summary = document.createElement('summary');
 		let questionDiv = document.createElement('div');
 		let answerDiv = document.createElement('div');
-		let input = document.createElement('input');
-		let label = document.createElement('label');
 		
-		//set ID's for anchor links
+		//set up attributes
 		container.setAttribute('id', `${faqData[i].order}`);
 		container.classList.add('faq-box');
 
-		answerDiv.classList.add('answer-content', 'hidden');
-		
-		input.setAttribute('type', 'checkbox');
-		input.setAttribute('id', `input${i}`);
-		input.setAttribute('checked', false);
-		input.setAttribute('class', 'hidden');
-
 		questionDiv.setAttribute('id', `question${faqData[i].id}`);
-
-/*		questionDiv.innerHTML = `<label for="input${i}" id="question${faqData[i].id}">${faqData[i].question}</label>`
-*/
-/*		label.textContent = `${faqData[i].question}`;
-*/		label.setAttribute('for', `input${i}`)
-/*		label.setAttribute('id', `question${faqData[i].id}`);
-*/		/*label.setAttribute('class', 'faq-question');*/
-
 		questionDiv.setAttribute('class', 'faq-question')
 
-		//set text content of elements
-/*		summary.textContent = `${faqData[i].question}`;*/
+		answerDiv.classList.add('answer-content', 'hidden');
+		
+		//set text contents
+		questionDiv.textContent = faqData[i].question;
+
+	
+	
+		//this one will test later
+		/*if(faqData[i].formatQuestion) {
+			questionDiv.innerHTML = faqData[i].formatQuestion;
+		} else {
+			questionDiv.textContent = faqData[i].question;
+		}*/
+
+
+		/*Convert markdown into HTML*/
+		var converter = new showdown.Converter(),
+		    text = faqData[i].formatAnswer,
+		    html = converter.makeHtml(text);
+		    console.log(html)
+
+		//check if faqData has HTML formatted answer
 		if(faqData[i].formatAnswer) {
-			answerDiv.innerHTML = faqData[i].formatAnswer;
+			answerDiv.innerHTML = html;
 		} else {
 			answerDiv.innerHTML = faqData[i].answer;
 		}
-
-		/*if(faqData[i].formatQuestion) {
-			label.innerHTML = faqData[i].formatQuestion;
-		} else {
-			label.innerHTML = faqData[i].question;
-		}*/
-
 		
-		questionDiv.innerHTML = faqData[i].question;
-		
-
-
+		//set event listeners
 		questionDiv.addEventListener('click', toggleFaq)
 		answerDiv.addEventListener('click', toggleFaq)
 		
-		containersArray.push(container);
+		/*faqData[i]["count"] = 0;*/		
+		//push elements to arrays for looping
 		answersArray.push(answerDiv);
 		questionsArray.push(questionDiv);
-		inputsArray.push(input);
-		//add details to array so they can be worked with
 		
-		//append elements to page
-		/*details.appendChild(summary);*/
-		/*label.appendChild(div);*/
-		/*questionDiv.appendChild(input);
-		questionDiv.appendChild(label);*/
-		questionDiv.appendChild(input);
+		//append elements to the page	
 		container.appendChild(questionDiv);
 		container.appendChild(answerDiv);
 		faqContainer.appendChild(container);	
-
-		//create arrays for testing
-		detailsArray.push(details);
-		summaryArray.push(summary);
 	}
 }
 
 function toggleFaq(e) {
 	//i want to close all
-	for (i=0; i < inputsArray.length; i++) {
+	for (i=0; i < questionsArray.length; i++) {
 		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
 			answersArray[i].classList.remove('hidden');
 		} else {
 			answersArray[i].classList.add('hidden');
 		}
 	}	
-
 }
 	
 
