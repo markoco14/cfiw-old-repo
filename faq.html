@@ -6,75 +6,10 @@
 		<title>CFIW FAQ</title>
 		<!-- a link to a stylesheet later -->
 		<!-- get it working first -->
-		<link rel="stylesheet" href="style1.css">
+		<link rel="stylesheet" href="css/style1.css">
 		<link href='css/style.css' rel='stylesheet' type='text/css'>
 		<link href='css/headerStyle.css' rel='stylesheet' type='text/css'>
-		<style>
-
-			/*.faq-toggle {
-				display:  none;
-			}*/
-
-			.hidden {
-				display:  none;
-			}
-
-
-			.container {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-			.image {
-				width: 100%;
-				position: relative;
-				margin: 50px auto;
-			}
-
-			.red {
-				color: red;
-			}
-
-			.faqContainer {
-				width: 70vw;
-			}
-
-			.faq-box {
-				/*display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;*/
-				margin: 10px 0;
-			}
-
-			.faq-box p, ul, li, label{
-				margin:  5px 0;
-			}
-
-			.faq-box ul{
-				position: relative;
-				margin: 0 auto;
-				width:  80%;
-				list-style: none;
-			}
-
-			.faq-question {
-				padding: 10px 0;
-				border-bottom: 5px solid black;
-				font-weight: bold;
-			}
-
-			.answer-content {
-				margin-top: 10px;
-				border-bottom: 2px solid black;
-				padding: 5px 0;
-			}
-
-			/*.faq-box p, label, ul {
-				width: 80%;
-			}*/
-		</style>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -93,8 +28,8 @@
 				<span></span>
 			</label>
 		</header>
-		<h1>This is the FAQ</h1>
 		<div class="container">
+			<p>Type keywords in our search box or scroll down to find answers about COVID-19 in Taichung and Taiwan.</p>
 			<div id="searchWrapper" class="searchWrapper">
 				<input
 					type="text"
@@ -107,13 +42,15 @@
 					
 				</div>
 			</div>
+
+
 			<div id="faqContainer" class="faqContainer">
 				
 			</div>
 		</div>
 
 		<script src="js/faq/dynamic-faq-test.js"></script>
-		<script src="dnu-files.js"></script>
+		<script src="js/faq/dnu-files.js"></script>
 	
 	</body>
 </html>
