@@ -25,3 +25,9 @@ body {
 	margin:0px;
 	padding:0px;
 }
+
+/* General Styles */
+
+main {
+	padding: 2em; 
+}
