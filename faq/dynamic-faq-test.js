@@ -115,8 +115,8 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 const loadFaq = async () => {
-	let url = "https://markoco14.github.io/cfiw/dynamic-faq-json.json";
-	let url2 ="https://markoco14.github.io/cfiw/dynamic-faq-json-2.json";
+	let url = "https://markoco14.github.io/cfiw/faq/dynamic-faq-json.json";
+	let url2 ="https://markoco14.github.io/cfiw/faq/dynamic-faq-json-2.json";
 	let url3 = "json/dynamic-faq-json-2.json"
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
@@ -197,7 +197,6 @@ const displayFaqContent = async () => {
 		var converter = new showdown.Converter(),
 		    text = faqData[i].formatAnswer,
 		    html = converter.makeHtml(text);
-		    console.log(html)
 
 		//check if faqData has HTML formatted answer
 		if(faqData[i].formatAnswer) {
