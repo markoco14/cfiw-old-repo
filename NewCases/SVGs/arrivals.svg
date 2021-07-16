@@ -1,0 +1,17 @@
+<svg version="1.1" id="prefix__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 102.8"
+	xml:space="preserve">
+	<style>
+		.prefix__st2 {
+			fill: none;
+			stroke: #000;
+			stroke-width: 2;
+			stroke-miterlimit: 10
+		}
+	</style>
+	<g id="prefix__Layer_2_1_">
+		<path class="prefix__st2"
+			d="M24.5 24.1l61 27.3s6 3.4 6.1 11.1-1.7 10.1-6 8.5C81.4 69.5 62 60.7 62 60.7L30.8 75.8l-11.1-5.1s-1.2-.5-1.1-1.4.8-1.4.8-1.4l19.4-17.1L17.2 41s-6.6-3.3-8.1-5.6S7 27.8 7 27.8l4.1-19.5 10 4.5 3.4 11.3z" />
+		<path class="prefix__st2"
+			d="M47.1 5.9l12.5 5.6 8.9 32.3-21.4-9.6zM77.1 78.3L81 90.5l-10.7 4.3M52.9 78.3L81 90.5" />
+	</g>
+</svg>
