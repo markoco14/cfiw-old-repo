@@ -1,7 +1,7 @@
 /*nav styling starts here*/
 header {
 	background-color:var(--background);
-	text-align:center;
+	text-align:left;
 	position:relative;
 	width:100%;
 	height:80px;
@@ -95,7 +95,7 @@ nav a:hover {
 	transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 690px) {
 	.nav-toggle-label {
 		display:none;
 	}
