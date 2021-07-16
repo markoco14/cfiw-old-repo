@@ -6,8 +6,8 @@ const searchBar = document.getElementById('searchBar');
 const searchResults = document.getElementById('searchResults');
 let faqData = [];
 let filteredFaq = [];
-let detailsArray = [];
-let summaryArray = [];
+
+
 
 //create search bar listener function
 searchBar.addEventListener('keyup', (e) => {
@@ -115,16 +115,13 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 const loadFaq = async () => {
-	let url = "https://markoco14.github.io/cfiw/dynamic-faq-json.json";
-	let url2 ="https://markoco14.github.io/cfiw/dynamic-faq-json-2.json";
-	let url3 = "json/dynamic-faq-json-2.json"
+	let url = "https://markoco14.github.io/cfiw/faqDataJSON.json";
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
 	try {
-		const res = await fetch(url2);
+		const res = await fetch(url);
 		faqData = await res.json();
-		console.log(faqData);
 	} catch (err) {
 		console.log(err);
 	}
@@ -159,81 +156,4 @@ const displaySearches = function(filteredFaq) {
 
 }
 
-let containersArray = [];
-let answersArray = [];
-let questionsArray = [];
-let inputsArray = [];
-
-const displayFaqContent = async () => {
-	for (i = 0; i < faqData.length; i++) {
-		//create elements
-		let container = document.createElement('div');
-		let questionDiv = document.createElement('div');
-		let answerDiv = document.createElement('div');
-		
-		//set up attributes
-		container.setAttribute('id', `${faqData[i].order}`);
-		container.classList.add('faq-box');
-
-		questionDiv.setAttribute('id', `question${faqData[i].id}`);
-		questionDiv.setAttribute('class', 'faq-question')
-
-		answerDiv.classList.add('answer-content', 'hidden');
-		
-		//set text contents
-		questionDiv.textContent = faqData[i].question;
-
-	
-	
-		//this one will test later
-		/*if(faqData[i].formatQuestion) {
-			questionDiv.innerHTML = faqData[i].formatQuestion;
-		} else {
-			questionDiv.textContent = faqData[i].question;
-		}*/
-
-
-		/*Convert markdown into HTML*/
-		var converter = new showdown.Converter(),
-		    text = faqData[i].formatAnswer,
-		    html = converter.makeHtml(text);
-		    console.log(html)
-
-		//check if faqData has HTML formatted answer
-		if(faqData[i].formatAnswer) {
-			answerDiv.innerHTML = html;
-		} else {
-			answerDiv.innerHTML = faqData[i].answer;
-		}
-		
-		//set event listeners
-		questionDiv.addEventListener('click', toggleFaq)
-		answerDiv.addEventListener('click', toggleFaq)
-		
-		/*faqData[i]["count"] = 0;*/		
-		//push elements to arrays for looping
-		answersArray.push(answerDiv);
-		questionsArray.push(questionDiv);
-		
-		//append elements to the page	
-		container.appendChild(questionDiv);
-		container.appendChild(answerDiv);
-		faqContainer.appendChild(container);	
-	}
-}
-
-function toggleFaq(e) {
-	//i want to close all
-	for (i=0; i < questionsArray.length; i++) {
-		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
-			answersArray[i].classList.remove('hidden');
-		} else {
-			answersArray[i].classList.add('hidden');
-		}
-	}	
-}
-	
-
-
 loadFaq()
-.then(displayFaqContent)

@@ -3,7 +3,7 @@
 //fetch footprints data
 const loadFootprints = async () => {
 			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
-			let url = "https://markoco14.github.io/cfiw/json/footprints.json";
+			let url = "https://markoco14.github.io/cfiw/data/footprints.json";
 			try {
 				const res = await fetch(url);
 				footprintData = await res.json();
@@ -30,7 +30,7 @@ const loadFootprints = async () => {
 //fetch disinfection data
 const loadDisinfections = async () => {
 			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
-			let url = "https://markoco14.github.io/cfiw/json/disinfections.json";
+			let url = "https://markoco14.github.io/cfiw/data/disinfections.json";
 			try {
 				const res = await fetch(url);
 				disinfectionData = await res.json();
@@ -53,7 +53,7 @@ const loadDisinfections = async () => {
 //fetch testing location data
 const loadHealthCenters = async () => {
 			/*"https://markoco14.github.io/google-sheet-test/map-footprints-json.json"*/
-			let url = "https://markoco14.github.io/cfiw/json/health-center-data.json";
+			let url = "https://markoco14.github.io/cfiw/data/health-center-data.json";
 			try {
 				const res = await fetch(url);
 				healthCenterData = await res.json();

@@ -1,16 +1,4 @@
-
-.separation {
-margin-bottom:50px;
-}
-
-p a {
-color:#0066CC;
-text-decoration:underline;
-}
-
-label {
-	font-weight: bold;
-}
+/*Style the Search bar on the FAQ page*/
 
 /*Container holds search bar, search results, and FAQ content*/
 .container {
@@ -76,7 +64,7 @@ label {
 
 
 
-/*FAQ content styles*/
+/*Style the content section of the FAQ page*/
 
 /*for toggling display*/
 .hidden {
