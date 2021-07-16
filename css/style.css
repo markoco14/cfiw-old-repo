@@ -24,4 +24,403 @@ canary yellow
 body {
 	margin:0px;
 	padding:0px;
+	box-sizing: border-box;
+}
+
+.separation {
+margin-bottom:50px;
+}
+
+p a {
+color:#0066CC;
+text-decoration:underline;
+}
+
+label {
+	font-weight: bold;
+}
+
+
+/*Style the Search bar on the FAQ page*/
+
+/*Container holds search bar, search results, and FAQ content*/
+.container {
+	/*style the container*/
+	width: 90vw;
+	position: relative;
+	margin: 100px auto;
+	/*set flex properties*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*Search bar and search result styles*/
+#searchWrapper {
+	/*position: relative;
+	margin: 0 auto;
+	margin-bottom: 20px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 75%;
+}
+
+.searchBar {
+	width: 100%;
+	margin: 50px 0px 0px;
+}
+
+#searchResults {
+/*	width: 100%;
+*/}
+
+.searchContainer {
+	display: flex;
+	justify-content: left;
+	padding: 5px 0px;
+	color: ;
+	border-bottom: 0.5px rgba(200,200,200,0.8) solid;
+}
+
+.searchLink {
+	text-align: left;
+	color: #959595;
+	text-decoration: none;
+}
+
+.searchLink:hover {
+	color:#0066CC;
+}
+
+@media screen and (min-width: 600px) {
+	.container {
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		width: 70vw;
+	}
+}
+
+
+
+/*Style the content section of the FAQ page*/
+
+/*for toggling display*/
+.hidden {
+	display:  none;
+}
+
+/*Style FAQ element container*/
+.faqContainer {
+	width: 100%;
+	margin: 25px 0 0;
+}
+
+.image {
+	width: 100%;
+	position: relative;
+	margin: 50px auto;
+}
+
+.red {
+	color: red;
+}
+
+/*Style containers for each FAQ question/answer pair*/
+.faq-box {
+	margin: 10px 0;
+}
+
+.faq-box p, ul, li, label{
+	margin:  5px 0;
+}
+
+.faq-box ul{
+	position: relative;
+	margin: 0 auto;
+	width:  80%;
+/*	list-style: none;
+*/}
+
+.faq-question {
+	padding: 10px 0;
+	border-bottom: 3px solid #393939;
+	font-weight: bold;
+}
+
+.answer-content {
+	margin-top: 10px;
+	border-bottom: 3px solid #393939;
+	padding: 10px 0;
+}
+
+.answer-content p img {
+	width: 100%;
+	position: relative;
+	margin: 50px auto;
+}
+
+/*.faq-box p, label, ul {
+	width: 80%;
+}*/
+
+
+/* Style the MAP page */
+
+button {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	padding: 3px;
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+/*Style buttons when pressed*/
+.pressed {
+	box-shadow:  inset 0px 0px 5px #c1c1c1;
+}
+
+.footprint-pressed {
+	background-color: #ff4081;
+}
+
+.disinfection-pressed {
+	background-color: #6242ff;
+}
+
+.testing-pressed {
+	background-color: #ffe94b;
+}
+
+.vaccination-pressed {
+	background-color: #1de9b6;
+}
+
+.health-center-pressed {
+	background-color: #1de9b6;
+}
+
+/*Style footprints buttons*/
+
+#footprint-button {
+	/*color: var(--dark-text);
+	background-color: rgb(34,34,34);*/
+}
+
+.footprint-button:hover {
+	cursor:  pointer;
+	color: var(--background);
+	background-color: #ff4081;
+}
+
+.footprint-button:active {
+	cursor:  pointer;
+	color: black;
+	background-color: #E2326D;
+}
+
+/*Style disinfection buttons*/
+
+#disinfection-button {
+	
+}
+
+.disinfection-button:hover {
+	cursor:  pointer;
+	color: var(--background);
+	background-color:  #6242ff;
+}
+
+.disinfection-button:active {
+	cursor:  pointer;
+	color: black;
+	background-color:  #5238D2;
+}
+
+/*#test-hospitals-button {
+	
+}
+
+#test-hospitals-button:hover{
+	cursor:  pointer;
+	color: var(--background);
+	background-color: #ffe94b;
+}
+
+#test-hospitals-button:active {
+	cursor:  pointer;
+	color: black;
+	background-color: #D7C73D;
+}
+
+#vaccination-hospitals-button {
+	
+}
+
+#vaccination-hospitals-button:hover {
+	cursor:  pointer;
+	color: var(--background);
+	background-color: #1de9b6;
+}
+
+#vaccination-hospitals-button:active {
+	cursor:  pointer;
+	color: black;
+	background-color: #1CD0A6;
+}*/
+
+/*Style health center buttons*/
+
+.health-center-button:hover {
+	cursor:  pointer;
+	color: var(--background);
+	background-color: #1de9b6;
+}
+
+.health-center-button:active {
+	cursor:  pointer;
+	color: black;
+	background-color: #1CD0A6;
+}
+
+/*Map filter selectors*/
+#footprint-selectors {
+	border-left: 10px solid #ff4081;
+	border-bottom: 2px solid #B3B3B3;
+}
+
+#disinfection-selectors {
+	border-left:  10px solid #6242ff;
+	border-bottom: 2px solid #B3B3B3;
+}
+
+/*#testing-selectors {
+	border-left: 10px solid #ffe94b;
+	border-bottom: 2px solid #B3B3B3;
+}
+
+#vaccination-selectors {
+	border-left: 10px solid #1de9b6;
+	border-bottom: 2px solid #B3B3B3;
+}*/
+
+#health-center-selectors {
+	border-left: 10px solid #1de9b6;
+	border-bottom: 2px solid #B3B3B3;
+}
+
+
+.half-category {
+	width: 50%;
+}
+
+#page-header {
+	text-align: center;
+	margin: 20px 0;
+}
+
+/* Style the map */
+
+#map {
+	position: relative;
+	height: 400px;
+	width: 80%;
+	margin: 20px auto;
+}
+
+/* Style the controls containers */
+
+.controls-container {
+	position: relative;
+	margin: 20px auto;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: top;
+}
+
+.selectors-container {
+	width: 70%;
+	padding: 0 20%;
+}
+
+.container {
+	width: 70%;
+	margin: 10px 20px;
+}
+
+/* Style the Footprint controls */
+
+.extra-controls {
+	display: flex;
+	justify-content: center;
+}
+
+.js-input {
+	width: 50%;
+}
+
+/* Style the Disinfection/Vaccination/Hospital controls */
+
+.category-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+.control-label {
+	width: 60%;
+	height: 16px;
+	line-height: 16px;
+	display: inline-flex;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+}
+
+.control-button {
+	height: 40px;
+	width: 25%;
+}
+
+.hide-show-controls {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hide-show-button {
+	width: 100%;
+}
+
+.inline-legend {
+	height: 16px;
+	width: 16px;
+}
+
+.js-range-slider {
+	color: #6242ff;
+}
+
+.hidden {
+	display: none;
+}
+
+@media all and (max-width: 751px) {
+
+	.container {
+		width: 100%;
+	}
 }
