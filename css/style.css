@@ -38,4 +38,28 @@ label {
 	font-weight: bold;
 }
 
+/* Footer */
+
+footer {
+	color: #ccc;
+	background-color: #222;
+	text-align: center;
+	padding: 1em;
+}
+
+footer a {
+	color: #ccc;
+}
+
+footer > p {
+	line-height: 1.6;
+}
+
+footer > p:nth-child(1) {
+	font-size: 1.2rem;
+}
+
+footer > p:nth-child(2) {
+	font-size: 0.8rem;
+}
 
