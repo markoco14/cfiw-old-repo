@@ -1,10 +1,4 @@
-/*
-These are colors that I need to figure out variables for\
-rgb(35,35,35) *** dark grey (my black)
-rgb(245,245,245) *** off-white (my white)
-canary yellow
 
-*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -27,6 +21,10 @@ body {
 	box-sizing: border-box;
 }
 
+h2, h3, h4, h5, h6, p {
+	margin-bottom: 1em;
+}
+
 .separation {
 margin-bottom:50px;
 }
@@ -39,7 +37,5 @@ text-decoration:underline;
 label {
 	font-weight: bold;
 }
-
-
 
 
