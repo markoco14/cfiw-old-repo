@@ -43,74 +43,76 @@
 			<span></span>
 		</label>
 	</header>
-	<section>
-		<h1 id="page-header">What do you want to see?</h2>
-		<div class="controls-container">
-			<div class="hide-show-controls">
-				<button id="footprint-button" class="footprint-button control-button">Footprints</button>
-				<button id="disinfection-button" class="disinfection-button control-button">Disinfections</button>
-				<button id="health-center-button" class="health-center-button control-button pressed health-center-pressed">Health Centers</button>
-				<!-- <button id="vaccination-hospitals-button" class="control-button pressed vaccination-pressed">Hide Vaccination Hospitals</button> -->
-			</div>
-			<!-- <div id="footprint-controls-container" class="container">
-				<div class="category-container">
-					<label class="control-label"> <img src="https://i.ibb.co/N3tfg1D/CFIW-pink-pin-72ppi-transparent.png" class="inline-legend">Footprint locations</label>
-					<div class="hide-show-controls">
-						
-					</div>
+	<main>
+		<section>
+			<h1 id="page-header">What do you want to see?</h2>
+			<div class="controls-container">
+				<div class="hide-show-controls">
+					<button id="footprint-button" class="footprint-button control-button">Footprints</button>
+					<button id="disinfection-button" class="disinfection-button control-button">Disinfections</button>
+					<button id="health-center-button" class="health-center-button control-button pressed health-center-pressed">Health Centers</button>
+					<!-- <button id="vaccination-hospitals-button" class="control-button pressed vaccination-pressed">Hide Vaccination Hospitals</button> -->
 				</div>
-			</div> -->
-			<div id="selectors-container" class="container">
-				<div id="footprint-selectors" class="category-container hidden">
-					<div class="range-slider">
-				    <input type="text" class="js-range-slider" value="" />
+				<!-- <div id="footprint-controls-container" class="container">
+					<div class="category-container">
+						<label class="control-label"> <img src="https://i.ibb.co/N3tfg1D/CFIW-pink-pin-72ppi-transparent.png" class="inline-legend">Footprint locations</label>
+						<div class="hide-show-controls">
+							
+						</div>
 					</div>
-					<!-- <div class="extra-controls">
-					    <input type="text" class="js-input-from js-input" value="0" />
-					    <input type="text" class="js-input-to js-input" value="0" />
-					</div> -->
-				</div>
-				<div id="disinfection-selectors" class="category-container hidden">
-					<label class="control-label"><img src="https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png" class="inline-legend"> Disinfection Locations
-					</label>
-					<button id="disinfect-all" class="disinfection-button">All</button>
-					<button id="disinfect-yesterday" class="disinfection-button">Yesterday</button>
-					<button id="disinfect-today" class="disinfection-button">Today</button>
-					<button id="disinfect-tomorrow" class="disinfection-button">Tomorrow</button>
-				</div>
-				<div id="health-center-selectors" class="category-container">
-					<div class="half-category">
-						<label class="control-label"> Testing Facilities
-						</label>
-
-						<button id="test-english" class="health-center-button">English</button>
-						<button id="test-pregnant" class="health-center-button">Pregnancy</button>
-						<button id="test-rapid" class="health-center-button">Rapid Test</button>
-						<button id="test-pcr" class="health-center-button">PCR Test</button>
-						
-					</div>
-					<div class="half-category">
-						<label class="control-label"> Vaccination Facilities 
-						</label>
-						<button id="vac-english" class="health-center-button">English</button>
-						<button id="vac-pregnant" class="health-center-button">Pregnancy</button>
-						<button id="vac-zeneca"class="health-center-button">Astra Zeneca</button>
-						<button id="vac-moderna"class="health-center-button">Moderna</button>
-					</div>
-				</div>
-				<!-- <div id="vaccination-selectors" class="category-container">
 				</div> -->
-				<!--<div class="category-container">
-					<label class="other-control-label">Vaccination Stations</label>
-					<div class="hide-show-controls">
-						<button id="hide-vaccination-stations" class="hide-show-button">Hide</button>
-						<button id="show-vaccination-stations" class="hide-show-button">Show</button>
+				<div id="selectors-container" class="container">
+					<div id="footprint-selectors" class="category-container hidden">
+						<div class="range-slider">
+						<input type="text" class="js-range-slider" value="" />
+						</div>
+						<!-- <div class="extra-controls">
+							<input type="text" class="js-input-from js-input" value="0" />
+							<input type="text" class="js-input-to js-input" value="0" />
+						</div> -->
 					</div>
-				</div>-->
+					<div id="disinfection-selectors" class="category-container hidden">
+						<label class="control-label"><img src="https://i.ibb.co/Sv0PPNs/CFIW-purple-check-pin-72ppi-transparent.png" class="inline-legend"> Disinfection Locations
+						</label>
+						<button id="disinfect-all" class="disinfection-button">All</button>
+						<button id="disinfect-yesterday" class="disinfection-button">Yesterday</button>
+						<button id="disinfect-today" class="disinfection-button">Today</button>
+						<button id="disinfect-tomorrow" class="disinfection-button">Tomorrow</button>
+					</div>
+					<div id="health-center-selectors" class="category-container">
+						<div class="half-category">
+							<label class="control-label"> Testing Facilities
+							</label>
+
+							<button id="test-english" class="health-center-button">English</button>
+							<button id="test-pregnant" class="health-center-button">Pregnancy</button>
+							<button id="test-rapid" class="health-center-button">Rapid Test</button>
+							<button id="test-pcr" class="health-center-button">PCR Test</button>
+							
+						</div>
+						<div class="half-category">
+							<label class="control-label"> Vaccination Facilities 
+							</label>
+							<button id="vac-english" class="health-center-button">English</button>
+							<button id="vac-pregnant" class="health-center-button">Pregnancy</button>
+							<button id="vac-zeneca"class="health-center-button">Astra Zeneca</button>
+							<button id="vac-moderna"class="health-center-button">Moderna</button>
+						</div>
+					</div>
+					<!-- <div id="vaccination-selectors" class="category-container">
+					</div> -->
+					<!--<div class="category-container">
+						<label class="other-control-label">Vaccination Stations</label>
+						<div class="hide-show-controls">
+							<button id="hide-vaccination-stations" class="hide-show-button">Hide</button>
+							<button id="show-vaccination-stations" class="hide-show-button">Show</button>
+						</div>
+					</div>-->
+				</div>
 			</div>
-		</div>
-		<div id="map"></div>
-	</section>
+			<div id="map"></div>
+		</section>
+	</main>
 
 	<script src="map/initialize-slider.js"></script>
 	<script src="map/map-functions.js"></script>
