@@ -77,11 +77,6 @@
 	margin: 25px 0 0;
 }
 
-.image {
-	width: 100%;
-	position: relative;
-	margin: 50px auto;
-}
 
 .red {
 	color: red;
@@ -90,6 +85,12 @@
 /*Style containers for each FAQ question/answer pair*/
 .faq-box {
 	margin: 10px 0;
+}
+
+.faq-box .image {
+	width: 100%;
+	position: relative;
+	margin: 50px auto;
 }
 
 .faq-box p, ul, li, label{
