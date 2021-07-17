@@ -48,8 +48,10 @@ color: var(--hover-text);
 text-decoration:underline;
 }
 
-
-
+p a:visited {
+color: var(--hover-text);
+text-decoration:underline;
+}
 
 /*i added this because <li> links weren't taking on the color
   and we want it one the site level, or no?
@@ -64,8 +66,10 @@ color: var(--hover-text);
 text-decoration:underline;
 }
 
-
-
+main li a:visited {
+color: var(--hover-text);
+text-decoration:underline;
+}
 
 label {
 	font-weight: bold;
