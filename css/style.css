@@ -12,7 +12,7 @@
 /* color variables go here */
 :root {
 	--background:rgb(57,57,57);
-	--dark-text:rgb(245,245,245);
+	--header-text:rgb(245,245,245); 
 	--link-text: #0066CC;
 };
 
