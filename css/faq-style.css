@@ -103,10 +103,11 @@
 	margin: 0 auto 1em;
 }
 
-.answer-content a {
-	color:#0066CC;
+/*i added this because <li> links were not using our link color*/
+/*.answer-content a {
+	color:var(--link-text);
 	text-decoration:underline;
-}
+}*/
 
 /*.answer-content li {
 	margin-bottom: 1em;
