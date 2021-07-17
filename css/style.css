@@ -49,18 +49,22 @@ text-decoration:underline;
 }
 
 
+
+
 /*i added this because <li> links weren't taking on the color
   and we want it one the site level, or no?
 */
-li a {
+main li a {
 color: var(--link-text);
 text-decoration:underline;
 }
 
-li a:hover {
+main li a:hover {
 color: var(--hover-text);
 text-decoration:underline;
 }
+
+
 
 
 label {
