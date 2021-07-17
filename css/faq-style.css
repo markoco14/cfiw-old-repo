@@ -91,6 +91,11 @@
 	font-weight: bold;
 	margin-bottom: 1em;
 }
+
+div .faq-question:hover {
+	cursor: pointer;
+}
+
 .answer-content p img{
 	width: 100%;
 	/*position: relative;
