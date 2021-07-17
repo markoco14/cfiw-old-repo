@@ -12,6 +12,10 @@ header {
 	color:var(--dark-text);
 }
 
+.logo-img {
+	height: 1.2em;
+}
+
 .nav-toggle {
 	display:none;
 }
