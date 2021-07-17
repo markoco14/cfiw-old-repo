@@ -166,7 +166,8 @@ let inputsArray = [];
 
 const displayFaqContent = async () => {
 	for (i = 0; i < faqData.length; i++) {
-		//create elements
+
+		//create page elements
 		let container = document.createElement('div');
 		let questionDiv = document.createElement('div');
 		let answerDiv = document.createElement('div');
@@ -183,27 +184,15 @@ const displayFaqContent = async () => {
 		//set text contents
 		questionDiv.textContent = faqData[i].question;
 
-	
-	
-		//this one will test later
+		//will test faq question h3 markdown later
 		/*if(faqData[i].formatQuestion) {
 			questionDiv.innerHTML = faqData[i].formatQuestion;
 		} else {
 			questionDiv.textContent = faqData[i].question;
 		}*/
 
-
 		/*Convert markdown into HTML*/
-		var converter = new showdown.Converter(),
-		    text = faqData[i].formatAnswer,
-		    html = converter.makeHtml(text);
-
-		//check if faqData has HTML formatted answer
-		if(faqData[i].formatAnswer) {
-			answerDiv.innerHTML = html;
-		} else {
-			answerDiv.innerHTML = faqData[i].answer;
-		}
+		convertMarkdownToHtml(faqData, answerDiv);
 		
 		//set event listeners
 		questionDiv.addEventListener('click', toggleFaq)
@@ -220,6 +209,24 @@ const displayFaqContent = async () => {
 		faqContainer.appendChild(container);	
 	}
 }
+
+/*functions to convert markdown to html*/
+function convertMarkdownToHtml(faqData, answerDiv) {
+	//convert markdown to html
+	var converter = new showdown.Converter(),
+	    text = faqData[i].formatAnswer,
+	    html = converter.makeHtml(text);
+
+	//check if faqData has HTML formatted answer
+	if(faqData[i].formatAnswer) {
+		answerDiv.innerHTML = html;
+	} else {
+		answerDiv.innerHTML = faqData[i].answer;
+	}
+}
+
+
+
 
 function toggleFaq(e) {
 	//i want to close all
