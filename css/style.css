@@ -12,7 +12,9 @@
 /* color variables go here */
 :root {
 	--background:rgb(57,57,57);
-	--dark-text:rgb(245,245,245);
+	--light-text:rgb(245,245,245); 
+	--link-text: #0066CC;
+	--hover-text: #9b33c4;
 };
 
 body {
@@ -37,7 +39,32 @@ margin-bottom:50px;
 }
 
 p a {
-color:#0066CC;
+color: var(--link-text);
+text-decoration:underline;
+}
+
+p a:hover {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+p a:visited {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+main li a {
+color: var(--link-text);
+text-decoration:underline;
+}
+
+main li a:hover {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+main li a:visited {
+color: var(--hover-text);
 text-decoration:underline;
 }
 

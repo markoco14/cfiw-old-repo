@@ -166,7 +166,8 @@ let inputsArray = [];
 
 const displayFaqContent = async () => {
 	for (i = 0; i < faqData.length; i++) {
-		//create elements
+
+		//create page elements
 		let container = document.createElement('div');
 		let questionDiv = document.createElement('div');
 		let answerDiv = document.createElement('div');
@@ -180,27 +181,23 @@ const displayFaqContent = async () => {
 
 		answerDiv.classList.add('answer-content', 'hidden');
 		
-		//set text contents
-		questionDiv.textContent = faqData[i].question;
+		/* 
+			keep next line of code for later
+		*/
+		/*questionDiv.innerHTML = faqData[i].question;*/
 
-	
-	
-		//this one will test later
-		/*if(faqData[i].formatQuestion) {
-			questionDiv.innerHTML = faqData[i].formatQuestion;
+		/*questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");*/
+
+		//will test faq question h3 markdown later
+		if(faqData[i].formatQuestion) {
+			questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");
 		} else {
-			questionDiv.textContent = faqData[i].question;
-		}*/
+			questionDiv.innerHTML = faqData[i].question;
+		}
 
-
-		/*Convert markdown into HTML*/
-		var converter = new showdown.Converter(),
-		    text = faqData[i].formatAnswer,
-		    html = converter.makeHtml(text);
-
-		//check if faqData has HTML formatted answer
+		/*set answer content and convert markdown as needed*/
 		if(faqData[i].formatAnswer) {
-			answerDiv.innerHTML = html;
+			answerDiv.innerHTML = convertMarkdownToHtml(faqData, "answer");
 		} else {
 			answerDiv.innerHTML = faqData[i].answer;
 		}
@@ -211,13 +208,29 @@ const displayFaqContent = async () => {
 		
 		/*faqData[i]["count"] = 0;*/		
 		//push elements to arrays for looping
-		answersArray.push(answerDiv);
 		questionsArray.push(questionDiv);
+		answersArray.push(answerDiv);
 		
 		//append elements to the page	
 		container.appendChild(questionDiv);
 		container.appendChild(answerDiv);
 		faqContainer.appendChild(container);	
+	}
+}
+
+/*functions to convert markdown to html*/
+function convertMarkdownToHtml(data, string) {
+	//convert markdown to html
+	if (string === "answer") {
+		var converter = new showdown.Converter(),
+		    text = faqData[i].formatAnswer,
+		    html = converter.makeHtml(text);
+		    return html
+	} else {
+		var converter = new showdown.Converter(),
+		    text = faqData[i].formatQuestion,
+		    html = converter.makeHtml(text);
+		    return html
 	}
 }
 
@@ -229,7 +242,15 @@ function toggleFaq(e) {
 		} else {
 			answersArray[i].classList.add('hidden');
 		}
-	}	
+	}
+
+	/*
+		scroll screen to the clicked on question. 
+		https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+		right now scrolls to top
+		but needs more work
+	*/
+	e.target.scrollIntoView(true)
 }
 	
 

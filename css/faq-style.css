@@ -91,6 +91,11 @@
 	font-weight: bold;
 	margin-bottom: 1em;
 }
+
+div .faq-question:hover {
+	cursor: pointer;
+}
+
 .answer-content p img{
 	width: 100%;
 	/*position: relative;
@@ -103,10 +108,11 @@
 	margin: 0 auto 1em;
 }
 
-.answer-content a {
-	color:#0066CC;
+/*i added this because <li> links were not using our link color*/
+/*.answer-content a {
+	color:var(--link-text);
 	text-decoration:underline;
-}
+}*/
 
 /*.answer-content li {
 	margin-bottom: 1em;
