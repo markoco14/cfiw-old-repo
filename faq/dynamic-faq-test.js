@@ -189,10 +189,14 @@ const displayFaqContent = async () => {
 			questionDiv.innerHTML = faqData[i].formatQuestion;
 		} else {
 			questionDiv.textContent = faqData[i].question;
-		}*/
-
-		/*Convert markdown into HTML*/
-		convertMarkdownToHtml(faqData, answerDiv);
+		}
+*/
+		/*set answer content and convert markdown as needed*/
+		if(faqData[i].formatAnswer) {
+			answerDiv.innerHTML = convertMarkdownToHtml(faqData);
+		} else {
+			answerDiv.innerHTML = faqData[i].answer;
+		}
 		
 		//set event listeners
 		questionDiv.addEventListener('click', toggleFaq)
@@ -211,6 +215,23 @@ const displayFaqContent = async () => {
 }
 
 /*functions to convert markdown to html*/
+function convertMarkdownToHtml(data) {
+	//convert markdown to html
+	var converter = new showdown.Converter(),
+	    text = faqData[i].formatAnswer,
+	    html = converter.makeHtml(text);
+	    return html
+}
+
+/*function setAnswerInnerHtml(content) {
+	if(faqData[i].formatAnswer) {
+		answerDiv.innerHTML = answerHTML;
+	} else {
+		answerDiv.innerHTML = faqData[i].answer;
+	}
+}*/
+
+/*functions to convert markdown to html*//*
 function convertMarkdownToHtml(faqData, answerDiv) {
 	//convert markdown to html
 	var converter = new showdown.Converter(),
@@ -223,7 +244,7 @@ function convertMarkdownToHtml(faqData, answerDiv) {
 	} else {
 		answerDiv.innerHTML = faqData[i].answer;
 	}
-}
+}*/
 
 
 
