@@ -181,19 +181,23 @@ const displayFaqContent = async () => {
 
 		answerDiv.classList.add('answer-content', 'hidden');
 		
-		//set text contents
-		questionDiv.textContent = faqData[i].question;
+		/* 
+			keep next line of code for later
+		*/
+		/*questionDiv.innerHTML = faqData[i].question;*/
+
+		/*questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");*/
 
 		//will test faq question h3 markdown later
-		/*if(faqData[i].formatQuestion) {
-			questionDiv.innerHTML = faqData[i].formatQuestion;
+		if(faqData[i].formatQuestion) {
+			questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");
 		} else {
-			questionDiv.textContent = faqData[i].question;
+			questionDiv.innerHTML = faqData[i].question;
 		}
-*/
+
 		/*set answer content and convert markdown as needed*/
 		if(faqData[i].formatAnswer) {
-			answerDiv.innerHTML = convertMarkdownToHtml(faqData);
+			answerDiv.innerHTML = convertMarkdownToHtml(faqData, "answer");
 		} else {
 			answerDiv.innerHTML = faqData[i].answer;
 		}
@@ -204,8 +208,8 @@ const displayFaqContent = async () => {
 		
 		/*faqData[i]["count"] = 0;*/		
 		//push elements to arrays for looping
-		answersArray.push(answerDiv);
 		questionsArray.push(questionDiv);
+		answersArray.push(answerDiv);
 		
 		//append elements to the page	
 		container.appendChild(questionDiv);
@@ -215,39 +219,21 @@ const displayFaqContent = async () => {
 }
 
 /*functions to convert markdown to html*/
-function convertMarkdownToHtml(data) {
+function convertMarkdownToHtml(data, string) {
 	//convert markdown to html
-	var converter = new showdown.Converter(),
-	    text = faqData[i].formatAnswer,
-	    html = converter.makeHtml(text);
-	    return html
+	if (string === "answer") {
+		var converter = new showdown.Converter(),
+		    text = faqData[i].formatAnswer,
+		    html = converter.makeHtml(text);
+		    return html
+	} else {
+		var converter = new showdown.Converter(),
+		    text = faqData[i].formatQuestion,
+		    html = converter.makeHtml(text);
+		    return html
+		
+	}
 }
-
-/*function setAnswerInnerHtml(content) {
-	if(faqData[i].formatAnswer) {
-		answerDiv.innerHTML = answerHTML;
-	} else {
-		answerDiv.innerHTML = faqData[i].answer;
-	}
-}*/
-
-/*functions to convert markdown to html*//*
-function convertMarkdownToHtml(faqData, answerDiv) {
-	//convert markdown to html
-	var converter = new showdown.Converter(),
-	    text = faqData[i].formatAnswer,
-	    html = converter.makeHtml(text);
-
-	//check if faqData has HTML formatted answer
-	if(faqData[i].formatAnswer) {
-		answerDiv.innerHTML = html;
-	} else {
-		answerDiv.innerHTML = faqData[i].answer;
-	}
-}*/
-
-
-
 
 function toggleFaq(e) {
 	//i want to close all

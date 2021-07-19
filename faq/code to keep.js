@@ -21,5 +21,5 @@ function convertMarkdownToHtml(data, type) {
 		    text = faqData[i].formatAnswer,
 		    html = converter.makeHtml(text);
 		    return html
-	}
 }
+	}
