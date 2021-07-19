@@ -231,7 +231,6 @@ function convertMarkdownToHtml(data, string) {
 		    text = faqData[i].formatQuestion,
 		    html = converter.makeHtml(text);
 		    return html
-		
 	}
 }
 
@@ -243,7 +242,7 @@ function toggleFaq(e) {
 		} else {
 			answersArray[i].classList.add('hidden');
 		}
-	}	
+	}
 }
 	
 
