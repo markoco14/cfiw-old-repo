@@ -199,7 +199,7 @@ const displayFaqContent = async () => {
 			because I think the switch to a dl>dd>dt
 			took care of the semantic concerns
 		*/
-		
+
 		//will test faq question h3 markdown later
 		/*if(faqData[i].formatQuestion) {
 			questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");
@@ -263,7 +263,10 @@ function toggleFaq(e) {
 		right now scrolls to top
 		but needs more work
 	*/
-	e.target.scrollIntoView(true)
+/*	e.target.scrollIntoView(true);*/
+	e.target.scrollIntoView({
+		behavior: "smooth"
+	})
 }
 	
 
