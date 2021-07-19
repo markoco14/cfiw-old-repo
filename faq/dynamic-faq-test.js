@@ -178,7 +178,7 @@ const displayFaqContent = async () => {
 			definition list within a div wrapping
 			each question/answer pair
 		*/
-		
+
 		/*container.setAttribute('id', `${faqData[i].order}`);
 		container.classList.add('faq-box');*/
 
@@ -190,16 +190,22 @@ const displayFaqContent = async () => {
 		/* 
 			keep next line of code for later
 		*/
-		/*questionDiv.innerHTML = faqData[i].question;*/
+		questionDiv.innerHTML = faqData[i].question;
 
 		/*questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");*/
 
+		/*
+			commented out the <h3> format for the question
+			because I think the switch to a dl>dd>dt
+			took care of the semantic concerns
+		*/
+		
 		//will test faq question h3 markdown later
-		if(faqData[i].formatQuestion) {
+		/*if(faqData[i].formatQuestion) {
 			questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");
 		} else {
 			questionDiv.innerHTML = faqData[i].question;
-		}
+		}*/
 
 		/*set answer content and convert markdown as needed*/
 		if(faqData[i].formatAnswer) {
