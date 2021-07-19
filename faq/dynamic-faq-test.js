@@ -168,13 +168,19 @@ const displayFaqContent = async () => {
 	for (i = 0; i < faqData.length; i++) {
 
 		//create page elements
-		let container = document.createElement('div');
-		let questionDiv = document.createElement('div');
-		let answerDiv = document.createElement('div');
+		/*let container = document.createElement('div');*/
+		let questionDiv = document.createElement('dd');
+		let answerDiv = document.createElement('dt');
 		
 		//set up attributes
-		container.setAttribute('id', `${faqData[i].order}`);
-		container.classList.add('faq-box');
+		/*
+			comment out container div element to test
+			definition list within a div wrapping
+			each question/answer pair
+		*/
+		
+		/*container.setAttribute('id', `${faqData[i].order}`);
+		container.classList.add('faq-box');*/
 
 		questionDiv.setAttribute('id', `question${faqData[i].id}`);
 		questionDiv.setAttribute('class', 'faq-question')
@@ -212,9 +218,10 @@ const displayFaqContent = async () => {
 		answersArray.push(answerDiv);
 		
 		//append elements to the page	
-		container.appendChild(questionDiv);
-		container.appendChild(answerDiv);
-		faqContainer.appendChild(container);	
+		/*container.appendChild(questionDiv);
+		container.appendChild(answerDiv);*/
+		faqContainer.appendChild(questionDiv);
+		faqContainer.appendChild(answerDiv);	
 	}
 }
 
