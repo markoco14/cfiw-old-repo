@@ -9,7 +9,7 @@ header {
 
 .logo {
 	line-height:80px;
-	color:var(--header-text);
+	color:var(--light-text);
 }
 
 .logo-img {
@@ -34,7 +34,7 @@ header {
 .nav-toggle-label span::before, 
 .nav-toggle-label span::after {
 	display:block;
-	background-color:var(--header-text);
+	background-color:var(--light-text);
 	height:3px;
 	width:2em;
 	border-radius:2px;
@@ -80,7 +80,7 @@ header {
 }
 
 .nav a {
-	color:var(--header-text);
+	color:var(--light-text);
 	text-decoration:none;
 	opacity: 0;
 	transition: opacity 150ms ease-in-out;

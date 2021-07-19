@@ -12,7 +12,7 @@
 /* color variables go here */
 :root {
 	--background:rgb(57,57,57);
-	--header-text:rgb(245,245,245); 
+	--light-text:rgb(245,245,245); 
 	--link-text: #0066CC;
 	--hover-text: #9b33c4;
 };
@@ -53,9 +53,6 @@ color: var(--hover-text);
 text-decoration:underline;
 }
 
-/*i added this because <li> links weren't taking on the color
-  and we want it one the site level, or no?
-*/
 main li a {
 color: var(--link-text);
 text-decoration:underline;
