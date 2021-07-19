@@ -94,6 +94,10 @@ div .faq-question:hover {
 	cursor: pointer;
 }
 
+dt {
+	margin-bottom: 50px;
+}
+
 .answer-content p img{
 	width: 100%;
 	/*position: relative;
