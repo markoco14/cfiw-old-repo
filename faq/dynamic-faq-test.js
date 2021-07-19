@@ -243,6 +243,14 @@ function toggleFaq(e) {
 			answersArray[i].classList.add('hidden');
 		}
 	}
+
+	/*
+		scroll screen to the clicked on question. 
+		https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+		right now scrolls to top
+		but needs more work
+	*/
+	e.target.scrollIntoView(true)
 }
 	
 
