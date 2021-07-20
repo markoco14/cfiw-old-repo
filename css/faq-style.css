@@ -84,7 +84,7 @@
 }
 
 .faq-question {
-	padding: 10px 0;
+	padding: 1em;
 	border-bottom: 3px solid #393939;
 	font-weight: bold;
 	margin-bottom: 1em;
@@ -103,6 +103,10 @@
 
 dt {
 	margin-bottom: 50px;
+}
+
+.answer-content {
+	padding-left: 2em;
 }
 
 .answer-content p img{
