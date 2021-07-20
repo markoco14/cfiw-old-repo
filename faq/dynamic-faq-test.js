@@ -137,7 +137,6 @@ const displaySearches = function(filteredFaq) {
 		searchResults.removeChild(searchResults.firstChild);
 	}
 
-
 	//loop through filtered search data
 	for (i = 0; i < filteredFaq.length; i++) {
 		const div = document.createElement('div');
