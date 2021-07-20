@@ -90,8 +90,15 @@
 	margin-bottom: 1em;
 }
 
-div .faq-question:hover {
+.faq-question:hover {
 	cursor: pointer;
+	background-color: var(--background);
+	color: white;
+}
+
+.question-clicked {
+	background-color: var(--background);
+	color: var(--light-text);
 }
 
 dt {

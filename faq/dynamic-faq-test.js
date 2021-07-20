@@ -252,8 +252,10 @@ function toggleFaq(e) {
 	for (i=0; i < questionsArray.length; i++) {
 		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
 			answersArray[i].classList.remove('hidden');
+			questionsArray[i].classList.add('question-clicked');
 		} else {
 			answersArray[i].classList.add('hidden');
+			questionsArray[i].classList.remove('question-clicked');
 		}
 	}
 
