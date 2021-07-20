@@ -169,8 +169,8 @@ const displayFaqContent = async () => {
 
 		//create page elements
 		/*let container = document.createElement('div');*/
-		let questionDiv = document.createElement('dd');
-		let answerDiv = document.createElement('dt');
+		let questionDiv = document.createElement('dt');
+		let answerDiv = document.createElement('dd');
 		
 		//set up attributes
 		/*

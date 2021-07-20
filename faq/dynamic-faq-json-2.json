@@ -3,7 +3,7 @@
 "id": 26,
 "question": "How do I register for a first dose vaccination? How to use the website 1922.gov.tw to apply to get vaccinated for my 1st jab of AZ or Moderna?",
 "answer": "Everyone older than 18 can now begin registration. At the time of writing 7/13 around noon the official website was overloaded so it took me 1 hour to get to the 2nd page. Here are some tips and guidance:  Have everything ready before you begin the process Google Translate doesn't work on all the buttons and some reported using the plugin stopped the process.   Page 1: Browse to https://1922.gov.tw/vas and keep refreshing (F5) until you see the blue box for registration and can click the button [Register] 登記 (1) to go to page 2. Page 2: National Health Insurance Card: You need both your ARC/APRC number (1) and the NHI number (2) and enter the confirmation number (3) then click to continue (4). Page 3: Check the info and select your county and district(1) (picture shows example for Taichung + West District), choose preferred vaccine type (2) (picture shows example for both AZ and Moderna) and accept terms and conditions (3) then click to continue (4). Page 4: Congratulations, if you see this page your registration was successful.  Please note that this is only a registration of your willingness to get vaccinated. Now you have to wait for a text (SMS) message with further instructions in the coming days or weeks.",
-"formatAnswer": "<span class=red>Everyone older than 18 can begin registration between 7/13 12:00 and 7/15 17:00. Check or download our [step-by-step guide](https://www.covid-taichung.com/vaccination-guide/) or read on for basic instructions::</span>\r\n- Once you get to page 2 you have 10 minutes to complete the process so have your National Health Insurance card and Chinese address ready before you begin\r\n- Translation services don't work on all the buttons and some reported that the software or plugin stopped or restarted the process\r\n- Page 1: Browse to [https://1922.gov.tw/vas](https://1922.gov.tw/vas) and can click the button [Register] 登記 in the blue box. \r\n- Page 2: Enter the ARC/APRC and NHI number that are on your NHI card. Then enter the confirmation code and click the button at the bottom.\r\n- Page 3: Check your info and add your phone (only numbers 09XXXXXXX). Then select your county and district, select preferred vaccine type(s), and accept terms and conditions.\r\n-Page 4: This page confirms your date and time of registration and shows a registration ID. We recommend to take a screenshot then you can close the page.\r\n\r\n<span class=red>This is only a registration of your willingness to get vaccinated. Now you have to wait for a text (SMS) message from 1922 with further instructions in the coming days.</span>\r\n",
+"formatAnswer": "<span class=red>Everyone older than 18 can begin registration between 7/13 12:00 and 7/15 17:00. Check or download our [step-by-step guide](https://www.covid-taichung.com/vaccination-guide/) or read on for basic instructions::</span>\n- Once you get to page 2 you have 10 minutes to complete the process so have your National Health Insurance card and Chinese address ready before you begin\n- Translation services don't work on all the buttons and some reported that the software or plugin stopped or restarted the process\n- Page 1: Browse to [https://1922.gov.tw/vas](https://1922.gov.tw/vas) and can click the button [Register] 登記 in the blue box. \n- Page 2: Enter the ARC/APRC and NHI number that are on your NHI card. Then enter the confirmation code and click the button at the bottom.\n- Page 3: Check your info and add your phone (only numbers 09XXXXXXX). Then select your county and district, select preferred vaccine type(s), and accept terms and conditions.\n-Page 4: This page confirms your date and time of registration and shows a registration ID. We recommend to take a screenshot then you can close the page.\n\n<span class=red>This is only a registration of your willingness to get vaccinated. Now you have to wait for a text (SMS) message from 1922 with further instructions in the coming days.</span>\n",
 "formatQuestion": "### How do I register for a first dose vaccination? How to use the website 1922.gov.tw to apply to get vaccinated for my 1st jab of AZ or Moderna? ",
 "order": 1
 },
@@ -11,7 +11,7 @@
 "id": 6,
 "question": "What epidemic alert level is Taiwan in currently? What are the guidelines and rules for Taichung at this moment? What's the COVID-level 3 timeline or end date?",
 "answer": "7/11 Taichung city government has decided which restrictions will be loosened. Most remain the same but some tourist spots will reopen in Taichung from 7/13. Note that platforms, physical fitness facilities, children's recreational facilities, and pavilions remain closed:  Dakeng hiking trails No. 1 to 8, Tanzi Xintian trail, Dadu hiking trails, Wuri Zhi Gao Zhun walking trail, Cheng Gong trails, Rainbow Village Hongfeng Bicycle Green Way, Hou-Fong bike path, Tanya Shen Green Bikeway Dajia Tiezhenshan Scenic Area Walkways at the Daan Mazu Gaomei Coastal area (beaches remain closed) Tourist sites that remain closed in Taichung until 7/26:  Dakeng hiking trails No. 9 to 10 and Guguan Hot Spring Travel Service Centers at public transport stations, airports and tourist sites 7/8 CDC has extended alert level 3 to July 26, 2021. Local governments may loosen some restrictions starting 7/13.  6/24 CDC has extended the Nationwide Level 3 epidemic alert 3 to July 12, 2021.  6/10 CDC listed regulations and guidelines in English. A quick summary:  Obligated/Fined: Always wear masks outdoors. Those with symptoms should seek medical attention. Supermarkets, stores, and businesses must implement crowd control measures.  Closed/Banned: All parks, night markets, playgrounds, schools & daycare, community services & workshops, sports venues, libraries, tourist sites, leisure & entertainment venues, weddings & memorials, places of worship are closed. No more than 9 people (including you) may gather outdoors, and no more than 4 people (including you) indoors, those living together not included. As soon as you have 1 visitor in your family home who has a different official address, the rule of maximum 4 applies.   Advised: Social distancing, reduce shopping frequency, distance working, flexible hours, avoid all non-essential travel to all countries.  Others: Food & beverage vendors only takeout. Enhanced disinfection of public places and public transport, details on our maps page.",
-"formatAnswer": "7/11 Taichung city government has decided which restrictions will be loosened. Most remain the same but **[some tourist spots](https://www.covid-taichung.com/frequently-asked-questions/#)** will reopen in Taichung from 7/13 (but platforms, physical fitness facilities, children's recreational facilities, and pavilions remain closed):\r\n- Dakeng hiking trails No. 1 to 8, Tanzi Xintian trail, Dadu hiking trails, Wuri Zhi Gao Zhun walking trail, Cheng Gong trails, Rainbow Village\r\n- Hongfeng Bicycle Green Way, Hou-Fong bike path, Tanya Shen Green Bikeway\r\n- Dajia Tiezhenshan Scenic Area\r\n- Walkways at the Daan Mazu Gaomei Coastal area (beaches remain closed)\r\n\r\nTourist sites that **remain closed in Taichung until 7/26**:\r\n- Dakeng hiking trails No. 9 to 10 and Guguan Hot Spring\r\n- Travel Service Centers at public transport stations, airports and tourist sites\r\n\r\n**7/8** CDC has [extended alert level 3 to July 26, 2021](https://www.cdc.gov.tw/En/Bulletin/Detail/vlmAORqyqEntz1Tr_Ls7DQ?typeid=158). Local governments may loosen some restrictions starting 7/13.\r\n\r\n6/24 CDC has extended the [Nationwide Level 3 epidemic alert 3 to July 12, 2021](https://www.cdc.gov.tw/En/Bulletin/Detail/en36fygNXciYYgmgcWPHuQ?typeid=158).\r\n\r\n6/10 CDC listed [regulations and guidelines in English](https://www.cdc.gov.tw/En/Bulletin/Detail/uIsfZpLbzqQ_uBK71xZ8Xg?typeid=158). A quick summary:\r\n\r\n**Obligated/Fined**: Always wear masks outdoors. Those with symptoms should seek medical attention. Supermarkets, stores, and businesses must implement crowd control measures.\r\n\r\n**Closed/Banned**: All parks, night markets, playgrounds, schools & daycare, community services & workshops, sports venues, libraries, tourist sites, leisure & entertainment venues, weddings & memorials, places of worship are closed. No more than 9 people (including you) may gather outdoors, and no more than 4 people (including you) indoors, those living together not included. As soon as you have 1 visitor in your family home who has a different official address, the rule of maximum 4 applies. \r\n\r\n**Advised**: Social distancing, reduce shopping frequency, distance working, flexible hours, avoid all non-essential travel to all countries.\r\n\r\n**Others**: Food & beverage vendors only takeout. [Enhanced disinfection of public places and public transport, details on our maps page](https://www.covid-taichung.com/maps/).\r",
+"formatAnswer": "7/11 Taichung city government has decided which restrictions will be loosened. Most remain the same but **[some tourist spots](https://www.covid-taichung.com/frequently-asked-questions/#)** will reopen in Taichung from 7/13 (but platforms, physical fitness facilities, children's recreational facilities, and pavilions remain closed):\n- Dakeng hiking trails No. 1 to 8, Tanzi Xintian trail, Dadu hiking trails, Wuri Zhi Gao Zhun walking trail, Cheng Gong trails, Rainbow Village\n- Hongfeng Bicycle Green Way, Hou-Fong bike path, Tanya Shen Green Bikeway\n- Dajia Tiezhenshan Scenic Area\n- Walkways at the Daan Mazu Gaomei Coastal area (beaches remain closed)\n\nTourist sites that **remain closed in Taichung until 7/26**:\n- Dakeng hiking trails No. 9 to 10 and Guguan Hot Spring\n- Travel Service Centers at public transport stations, airports and tourist sites\n\n**7/8** CDC has [extended alert level 3 to July 26, 2021](https://www.cdc.gov.tw/En/Bulletin/Detail/vlmAORqyqEntz1Tr_Ls7DQ?typeid=158). Local governments may loosen some restrictions starting 7/13.\n\n6/24 CDC has extended the [Nationwide Level 3 epidemic alert 3 to July 12, 2021](https://www.cdc.gov.tw/En/Bulletin/Detail/en36fygNXciYYgmgcWPHuQ?typeid=158).\n\n6/10 CDC listed [regulations and guidelines in English](https://www.cdc.gov.tw/En/Bulletin/Detail/uIsfZpLbzqQ_uBK71xZ8Xg?typeid=158). A quick summary:\n\n**Obligated/Fined**: Always wear masks outdoors. Those with symptoms should seek medical attention. Supermarkets, stores, and businesses must implement crowd control measures.\n\n**Closed/Banned**: All parks, night markets, playgrounds, schools & daycare, community services & workshops, sports venues, libraries, tourist sites, leisure & entertainment venues, weddings & memorials, places of worship are closed. No more than 9 people (including you) may gather outdoors, and no more than 4 people (including you) indoors, those living together not included. As soon as you have 1 visitor in your family home who has a different official address, the rule of maximum 4 applies. \n\n**Advised**: Social distancing, reduce shopping frequency, distance working, flexible hours, avoid all non-essential travel to all countries.\n\n**Others**: Food & beverage vendors only takeout. [Enhanced disinfection of public places and public transport, details on our maps page](https://www.covid-taichung.com/maps/).\n",
 "formatQuestion": "",
 "order": 2
 },
@@ -76,14 +76,14 @@
 "question": "Are there any English videos with information about confirmed COVID-19 cases?",
 "answer": "CDC has some English videos on their official YouTube channel with English audio and subtitles:  6/9 What to do if you had contact with a confirmed COVID-19 case? 6/9 What to do if you've been diagnosed with COVID-19? 6/8 How to care for a COVID-19 patient at home? We appreciate the CDC's continued efforts and hope to see more COVID-19 videos.",
 "formatAnswer": "CDC has some videos about this on [their official YouTube channel](https://www.youtube.com/channel/UCyh91eTE9jA3ykg8W3_v3DQ) with English audio and subtitles:\r\n- 6/9 [What to do if you had contact with a confirmed COVID-19 case?](https://www.youtube.com/watch?v=lDo9wShQVps&t=4s)\r\n- 6/9 [What to do if you've been diagnosed with COVID-19?](https://www.youtube.com/watch?v=maauaPQZlEw&t=5s)\r\n- 6/8 [How to care for a COVID-19 patient at home?](https://www.youtube.com/watch?v=6Sd47AvS3z0&t=5s)\r\n\r\nWe appreciate the CDC's continued efforts and hope to see more COVID-19 videos.\r\n",
-"formatQuestion": "<label for=`input4`>Are there any English videos with information about confirmed COVID-19 cases?</label>",
+"formatQuestion": "",
 "order": 10
 },
 {
 "id": 8,
 "question": "What are some important phone numbers with regard to the current outbreak in Taiwan? Who should I call for English assistance with covid-related questions and concerns?",
 "answer": "Please note that it depends on your device and browser if and how the links for the phone numbers below will be opened after you click on them. And this will only work for local calls in Taiwan. 1922 is the 24 hours/toll-free hotline from Taiwan CDC for service on disease reporting, communicable disease consultation, prevention policy promotion and control measure education to the public 119 is the 24 hours/toll-free emergency number for Ambulances and Fire Alarms 110 is the 24 hours/toll-free emergency number for Police Services 0800-024-111, press [2] for English service on the 24 hours/toll-free International Community Service Hotline 0800-011-765 is the English-speaking/24 hours/toll-free Travel Information Call Center 106 is the number for Directory Enquiries (English-speaking) 1925 is the 24-hour/toll-free care hotline of the Ministry of Health and Welfare (MOFW) for mental health consulting 1955 is the 24 hours/toll-free hotline of the Ministry of Labor (MOL) for labor counseling to help migrant workers with communication and adaptation to the Taiwanese lifestyle. It also offers an online interpretation service in Chinese, Indonesian, Vietnamese, Thai and Filipino to solve communication problems between employers and migrant workers.",
-"formatAnswer": "",
+"formatAnswer": "Please note that it depends on your device and browser if and how the links for the phone numbers below will be opened after you click on them. And this will only work for local calls in Taiwan.\r\n- [1922](tel:1922) is the 24 hours/toll-free hotline from Taiwan CDC for service on **disease reporting, communicable disease consultation, prevention policy promotion and control measure education** to the public\r\n- [119](tel:119) is the 24 hours/toll-free **emergency number for Ambulances and Fire Alarms**\r\n- [110](tel:110) is the 24 hours/toll-free **emergency number for Police Services**\r\n- [0800-024-111](tel:0800024111), press [2] for English service on the 24 hours/toll-free **International Community Service Hotline**\r\n- [0800-011-765](tel:0800011765) is the English-speaking/24 hours/toll-free **Travel Information Call Center**\r\n- [106](tel:106) is the number for **Directory Enquiries** (English-speaking)\r\n- [1925](1925) is the 24-hour/toll-free care hotline of the Ministry of Health and Welfare (MOFW) for **mental health consulting**\r\n- [1955](1955) is the 24 hours/toll-free hotline of the Ministry of Labor (MOL) for **labor counseling to help migrant workers** with communication and adaptation to the Taiwanese lifestyle. It also offers an **online interpretation service in Chinese, Indonesian, Vietnamese, Thai and Filipino** to solve communication problems between employers and migrant workers.\r\n\r",
 "formatQuestion": "",
 "order": 11
 },
@@ -91,7 +91,7 @@
 "id": 23,
 "question": "What to do if your residence (ARC, APRC) or staying permit (VISA) is about to expire?",
 "answer": "ARC or APRC alien residency certificate holders:  Automatically extended with 30 days with no upper limit on the number of extensions. Extend your leave of stay at a service station no later than 30 days after the pandemic alert has been lowered to level 2 alert. VISA as tourist or student or originally had permission to delay departure from Taiwan:  Do not have to extend leave or stay or delay departure for the time being Extend your leave of stay at a service station no later than 10 days after the pandemic alert has been lowered to level 2 alert.",
-"formatAnswer": "",
+"formatAnswer": "A summary of this [article](https://www.immigration.gov.tw/5475/5478/141457/141990/264991/) for your convenience:\r\n\r\n**ARC or APRC** alien residency certificate holders:\r\n- Automatically extended with 30 days with no upper limit on the number of extensions.\r\n- Extend your leave of stay at a service station no later than 30 days after the pandemic alert has been lowered to level 2 alert.\r\n\r\n*VISA holders* (working, student, tourist) or originally had permission to delay departure from Taiwan:\r\n- Do not have to extend leave or stay or delay departure for the time being.\r\n- Extend your leave of stay at a service station no later than 10 days after the pandemic alert has been lowered to level 2 alert.\r\n\r",
 "formatQuestion": "",
 "order": 12
 },
@@ -99,7 +99,7 @@
 "id": 9,
 "question": "What are the differences between home isolation, home quarantine, and self-monitoring or self-health management? What should I do when I've come in contact with a confirmed case? What to keep in mind when self-monitoring?",
 "answer": "This PDF from the CECC explains the different measures for following up on persons at risk of infection And this PDF lists all the precautions for autonomous health management in English and Chinese",
-"formatAnswer": "",
+"formatAnswer": "- [This PDF from the CECC explains the different measures](https://www.cdc.gov.tw/En/File/Get/cMB97TVhS09yeUeqDxP_Gw) for following up on persons at risk of infection\r\n- And [this PDF lists all the precautions](https://www.cdc.gov.tw/File/Get/LpahKLHrSbDVv7zfGeOeWw) for autonomous health management in English and Chinese\r\n\r",
 "formatQuestion": "",
 "order": 13
 },
@@ -107,7 +107,7 @@
 "id": 10,
 "question": "What border control measures are in place? Who can enter Taiwan during the level 3 alert?",
 "answer": "Non-R.O.C. nationals without a valid Alien Resident Certificate (ARC/APRC) are temporarily barred from entry Transit travelers are temporarily barred from entry",
-"formatAnswer": "",
+"formatAnswer": "A summary of [the main article](https://www.cdc.gov.tw/En/Bulletin/Detail/76gfV9Sy8SnRkIQlMiY7Cw?typeid=158):\r\n- Non-R.O.C. nationals without a valid Alien Resident Certificate (ARC/APRC) are temporarily barred from entry\r\n- Transit travelers are temporarily barred from entry\r",
 "formatQuestion": "",
 "order": 14
 },
@@ -115,7 +115,7 @@
 "id": 11,
 "question": "Are there English apps for my smartphone or tablet that can help me during the covid outbreak in Taiwan?",
 "answer": "Install the Taiwan Social Distancing app for Android or iOS and turn on Bluetooth to get notified when you were close to another user that tested positive for SARS-Cov-2",
-"formatAnswer": "",
+"formatAnswer": "Install the Taiwan Social Distancing app for [Android](https://play.google.com/store/apps/details?id=tw.gov.cdc.exposurenotifications) or [iOS](https://apps.apple.com/us/app/taiwan-social-distancing/id1554431836) and turn on Bluetooth to [get notified when you were close to another user](https://www.cdc.gov.tw/En/Bulletin/Detail/32-hon2vaFXEQjxIGmqRgw?typeid=158) that tested positive for SARS-Cov-2\r",
 "formatQuestion": "",
 "order": 15
 },
@@ -123,7 +123,7 @@
 "id": 12,
 "question": "Are there websites in English that can keep me informed during the covid outbreak in Taiwan?",
 "answer": "The Taiwanese Centers for Disease Control (CDC) offer a wealth of English covid19 information, updates, and resources for English speakers",
-"formatAnswer": "",
+"formatAnswer": "The [Taiwanese Centers for Disease Control (CDC)](https://www.cdc.gov.tw/En/) offer a wealth of English covid19 information, updates, and resources for English speakers\r",
 "formatQuestion": "",
 "order": 16
 },
@@ -131,7 +131,7 @@
 "id": 13,
 "question": "Do you recommend any translation technology to help me translate Chinese info?",
 "answer": "For mobile devices, the Google Translate app for Android or iOS can help to understand Chinese texts. It integrates well with Google's Chrome browser for Android systems or Apple devices to automatically translate websites. The Google Translate extension for Google's Chrome browser translates websites quickly on Windows-based computers and can be configured for your situation. Check this if you use a Mac laptop or computer and prefer to use the Apple Safari browser",
-"formatAnswer": "",
+"formatAnswer": "For mobile devices, the Google Translate app for [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.translate&hl=en) or [iOS](https://apps.apple.com/us/app/google-translate/id414706506) can help to understand Chinese texts. It integrates well with Google's Chrome browser for [Android systems](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) or [Apple devices](https://apps.apple.com/us/app/google-chrome/id535886823) to automatically translate websites.\r\n\r\nThe [Google Translate extension for Google's Chrome browser](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en) translates websites quickly on Windows-based computers and can be [configured for your situation](https://support.google.com/chrome/answer/173424?hl=en).\r\n\r\n[Check this if you use a Mac computer](https://www.howtogeek.com/700658/how-to-translate-web-pages-in-safari-on-mac/) and use the Apple Safari browser.\r\n\r",
 "formatQuestion": "",
 "order": 17
 },
@@ -139,7 +139,7 @@
 "id": 4,
 "question": "Is Taichung City hall still open for citizens? Where can I go for government services in Taichung during the current pandemic?",
 "answer": "Taichung City hall public services require access control and are centralized at Taichung City Yangming building on the first floor at No. 36, Yangming Street, Fengyuan District, Taichung City, 420. Remaining floors and spaces are only accessible to city employees.",
-"formatAnswer": "",
+"formatAnswer": "Taichung City hall public services require access control (QR scan) and are centralized at Taichung City Yangming building on the first floor at [No. 36, Yangming Street, Fengyuan District, Taichung City, 420](https://goo.gl/maps/errgCZ8fCDLfpefh8). Remaining floors and spaces are only accessible to city employees.\r",
 "formatQuestion": "",
 "order": 18
 },
@@ -147,7 +147,7 @@
 "id": 1,
 "question": "Does public transport run normally? Can I still take the bus or MRT in Taichung?",
 "answer": "City bus route adjustments Check the schedule on the Taichung bus website or app for Android or iOS app (can be set to English). This English Timetable app gets good reviews. Stopped until 7/2: 164, 165, 200 (incl extension), 206 extension, 219 (incl extension), 232, 278, 279, 500, 700, 900, student commuter shuttle buses. Stopped until 6/28: A1, A2, A3, 111, 209, 235, 252, 269, 309, 688, 821 and other sightseeing or high overlapping routes MRT Green Line adjustments until 6/28 You can check this MRT route map Every 10 minutes on weekdays, 15 minutes between 23:00-24:00 and on weekends",
-"formatAnswer": "",
+"formatAnswer": "City bus route adjustments:\r\n- Check the schedule on the [Taichung bus website](https://citybus.taichung.gov.tw/cms/en/) or app for [Android](https://play.google.com/store/apps/details?id=tms.tw.publictransit.TaichungCityBus&hl=en&gl=US) or [iOS](https://apps.apple.com/tw/app/%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A/id590226800) app (can be set to English). This [English Timetable app](https://play.google.com/store/apps/details?id=com.goder.busquerysystemtch&hl=en&gl=US) gets good reviews.\r\n- **Stopped until 7/28**: 164, 165, 200 (incl extension), 206 extension, 219 (incl extension), 232, 278, 279, 500, 700, 900, student commuter shuttle buses.\r\n- **Stopped until 7/28**: A1, A2, A3, 111, 209, 235, 252, 269, 309, 688, 821 and other sightseeing or high overlapping routes\r\n\r\n**MRT Green Line adjustments until 7/28**\r\n- You can check [this MRT route map](https://www.piliapp.com/mrt-taiwan/taichung/)\r\n- Every 10 minutes on weekdays, 15 minutes between 23:00-24:00 and on weekends\r\n\r\n\r",
 "formatQuestion": "",
 "order": 19
 },
@@ -155,7 +155,7 @@
 "id": 14,
 "question": "How can I stay up-to-date about the virus outbreak in Taichung?",
 "answer": "Up-to-date information about coronavirus prevention, infections, measures, and footprints on the Taichung City government website some of which can be translated IBSC school in Daya Disctrict, Taichung posts English COVID19 info and FAQ on this FB page",
-"formatAnswer": "",
+"formatAnswer": "[Up-to-date information about coronavirus](https://www.taichung.gov.tw/1174201/) prevention, infections, measures, and footprints on the Taichung City government website most of which can be translated.\r\n\r\nIBSC school in Daya Disctrict, Taichung posts [English COVID19 info and FAQ on their FB page](https://www.facebook.com/IBSC-%E4%B8%AD%E7%A7%91%E5%AF%A6%E4%B8%AD%E9%9B%99%E8%AA%9E%E9%83%A8-102145442081299/).\r\n\r",
 "formatQuestion": "",
 "order": 20
 },
@@ -163,7 +163,7 @@
 "id": 15,
 "question": "Are there any maps to track COVID-19 cases and footprints?",
 "answer": "Our English Taichung covid map shows footprints of confirmed cases structured according to the dates when they visited a location. Clicking on a marker reveals more details.  Fengjia University has created a covid cases map where most fields can be translated",
-"formatAnswer": "",
+"formatAnswer": "Our [English Taichung covid map](https://www.covid-taichung.com/maps/) shows footprints of confirmed cases structured according to the dates when they visited a location. Clicking on a marker reveals more details.\r\n\r\nFengjia University has created a [covid cases map](https://fcu-cocd.maps.arcgis.com/apps/dashboards/55c6d3f4be314ff5b048371feb8f0ac7) where most fields can be translated.\r",
 "formatQuestion": "",
 "order": 21
 },
@@ -171,7 +171,7 @@
 "id": 16,
 "question": "Is there a map where I can track when the government disinfects public places?",
 "answer": "Check out our covid map with locations that have been and will be disinfected or the Chinese source.",
-"formatAnswer": "",
+"formatAnswer": "Check out [our covid map](https://www.covid-taichung.com/maps/) with locations that have been and will be disinfected or the [Chinese source](https://www.google.com/maps/d/u/0/viewer?mid=1Xu-OkUr4wwHGAtwgOzfCes18e6pekEHN&ll=24.2434465929013%2C120.685459&z=11).\r",
 "formatQuestion": "",
 "order": 22
 },
@@ -179,7 +179,7 @@
 "id": 18,
 "question": "Are there any English news sources where I can read about the newest developments with regards to the covid-19 pandemic in Taiwan?",
 "answer": "Taiwan News offers a lot of news articles in English Taipei Times is an English-language news site from Taiwan's capital Focus Taiwan is the English media site from the Central News Agency (CNA) in ROC.",
-"formatAnswer": "",
+"formatAnswer": "- [Taiwan News](https://www.taiwannews.com.tw/en/index) offers a lot of news articles in English\r\n- [Taipei Times](https://www.taipeitimes.com/) is an English-language news site from Taiwan's capital\r\n- [Focus Taiwan](https://focustaiwan.tw/) is the English media site from the Central News Agency (CNA) in ROC.\r\n\r",
 "formatQuestion": "",
 "order": 23
 },
@@ -187,7 +187,7 @@
 "id": 19,
 "question": "Are there any global data sources with charts about the latest developments with the covid-19 pandemic in the world?",
 "answer": "Worldometers has a selection of covid19 charts and data for Taiwan and other countries Our World in Data has a huge collection of COVID charts and databases. They also have a a Github repository if you like to connect your own software to global coronavirus data. Check the Taiwan stats on Johns Hopkins University (JHU) website as well as global and US coronavirus maps",
-"formatAnswer": "",
+"formatAnswer": "- Worldometers has a selection of [covid19 charts and data for Taiwan](https://www.worldometers.info/coronavirus/country/taiwan) and [other countries](https://www.worldometers.info/coronavirus/#countries).\r\n- Our World in Data has a huge collection of [COVID charts and databases](https://ourworldindata.org/coronavirus). They also have a Github repository if you like to connect your own software to global coronavirus data.\r\n- Check the [Taiwan stats](https://coronavirus.jhu.edu/region/taiwan) on Johns Hopkins University (JHU) website as well as [global and US coronavirus maps](https://coronavirus.jhu.edu/map.html).\r",
 "formatQuestion": "",
 "order": 24
 },
@@ -195,7 +195,7 @@
 "id": 20,
 "question": "Where can health workers get more information?",
 "answer": "Elsevier's COVID-19 Healthcare Hub shares free clinical resources focused on the latest evidence-based practices for novel coronavirus  Fight Covid Taiwan shares Taiwan's governmental disease response guidelines with medical professionals and policy makers around the world",
-"formatAnswer": "",
+"formatAnswer": "- Elsevier's [COVID-19 Healthcare Hub](https://elsevier.health/en-US/covid-19/home) shares free clinical resources focused on the latest evidence-based practices for novel coronavirus.\r\n- [Fight Covid Taiwan](https://fightcovid.edu.tw/) shares Taiwan's governmental disease response guidelines with medical professionals and policy makers around the world.\r\n\r",
 "formatQuestion": "",
 "order": 25
 },
@@ -203,7 +203,7 @@
 "id": 21,
 "question": "Do you have any covid-related information for Southeast-Asian migrant communities in Taiwan?",
 "answer": "Taipei non-profit organization One Forty offers a Facebook Messenger epidemic CARE chat bot and various FB pages and links. (Can be translated by clicking [See Translation] at the bottom of the post).  The Ministry of Labor (MOL) has released a Line@E-Line service to provide the latest coronavirus updates for migrant workers and a hotline at phone number 1955.",
-"formatAnswer": "",
+"formatAnswer": "- Taipei non-profit organization [One Forty](https://one-forty.org/) offers a [Facebook Messenger epidemic CARE chat bot](https://www.messenger.com/t/105466188393728/?ref=4lQMhMIow-&messaging_source=source%3Apages%3Amessage_shortlink) and [various FB pages and links](https://www.facebook.com/1436850183290438/posts/2555621858079926/?d=n). These can be translated by clicking [See Translation] at the bottom of a post.\r\n- The Ministry of Labor (MOL) has released a [Line@E-Line service group](https://english.mol.gov.tw/homeinfo/33506/50174/#title3_2) to provide the latest coronavirus updates for migrant workers and a hotline at phone number [1955](tel:1955).\r\n\r",
 "formatQuestion": "",
 "order": 26
 }
