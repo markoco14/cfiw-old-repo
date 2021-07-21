@@ -1,11 +1,88 @@
 <!DOCTYPE html>
+
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1.0 shrink-to-fit=no'>
 		<title>Covid Footprints Information Website</title>
 		<link href='css/style.css' rel='stylesheet' type='text/css'>
 		<link href='css/headerStyle.css' rel='stylesheet' type='text/css'>
+		<style>
+
+	.cases-container{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	.cases-section {
+		background-color:rgb(245,245,245);
+		margin:0.8em;
+		border-radius:1em;
+		padding: 2em;
+		min-width:18em;
+	}
+	.cases-item {
+		margin: 2em;
+		border-width: 0 0.2em;
+		border-style: solid;
+	}
+
+	.cases-item:nth-of-type(1) { border-color: #6f4901; }
+	.cases-item:nth-of-type(2) { border-color: red; }
+	.cases-item:nth-of-type(3) { border-color: green; }
+
+	.cases-item > div {
+		text-align: center;
+		margin: 1em;
+	}
+
+	.cases-heading{ text-align: center; }
+
+	.newToday, .total { font-weight: bold; }
+	.total { font-size: 1.33em; }
+	.infections { color: #6f4901; }
+	.recovered { color:green; }
+	.deaths { color:red; }
+
+	/* BackToTop button css */
+			#scroll {
+				position: fixed;
+				right: 10px;
+				bottom: 10px;
+				cursor: pointer;
+				width: 50px;
+				height: 50px;
+				background-color: #222222;
+				text-indent: -9999px;
+				display: none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 100%;
+			}
+
+			#scroll span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -8px;
+				margin-top: -12px;
+				height: 0;
+				width: 0;
+				border: 8px solid transparent;
+				border-bottom-color: #ffffff
+			}
+
+			#scroll:hover {
+				background-color: #ff4081;
+				opacity: 1;
+				filter: "alpha(opacity=100)";
+				-ms-filter: "alpha(opacity=100)";
+			}
+
+			*/
+		</style>
+
 	</head>
+
 	<body>
 		<header>
 			<h1 class='logo'>Covid Taichung</h1>
@@ -24,7 +101,174 @@
 			</label>
 		</header>
 		<main>
-			<h1>This is Stats.</h1>
+			<p>Coronavirus stats below are updated frequently using data from
+				<a href="https://track.taichung.gov.tw/" target="_blank">
+					Taichung City
+				</a> , the <a href="https://www.cdc.gov.tw/En" target="_blank">
+					Taiwan Centers for Disease Control (CDC)
+				</a>
+				, and
+				<a href="https://www.worldometers.info/coronavirus" target="_blank">
+					Worldometer
+				</a>.
+			</p>
+
+			<div class="cases-container">
+				<!-- TAICHUNG CASE INFORMATION -->
+				<div class="cases-section">
+					<h1> TAICHUNG 7/21 </h1>
+					<p> last updated: 14:15 </p>
+					<!-- CASES INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">INFECTIONS</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday infections">+0</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total infections">200</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- TAIWAN CASE INFORMATION -->
+				<div class="cases-section">
+					<h1> TAIWAN 7/21 </h1>
+					<p> last updated: 14:15 </p>
+					<!-- CASES INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">INFECTIONS</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday infections">+25</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total infections">15,478</span>
+						</div>
+					</div>
+					<!-- DEATHS INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">DEATHS</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday deaths">+5</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total deaths">778</span>
+						</div>
+					</div>
+					<!-- RECOVERED INFORMATION-->
+					<div class="cases-item">
+						<h2 class="cases-heading">RECOVERED</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday recovered">+80</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total recovered">13,650</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- WORLDWIDE CASE INFORMATION -->
+				<div class="cases-section">
+					<h1> WORLD 7/21 </h1>
+					<p> last updated: 14:15 </p>
+					<!-- CASES INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">INFECTIONS</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday infections">+49,062</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total infections">192,278,425</span>
+						</div>
+					</div>
+					<!-- DEATHS INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">DEATHS</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday deaths">+648</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total deaths">4,133,988</span>
+						</div>
+					</div>
+					<!-- RECOVERED INFORMATION -->
+					<div class="cases-item">
+						<h2 class="cases-heading">RECOVERED</h2>
+						<div>
+							<span>Today:</span>
+							<span class="newToday recovered">+38,759</span>
+						</div>
+						<div>
+							<span>Total:</span>
+							<span class="total recovered">174,963,512</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$(window).scroll(function () {
+							if ($(this).scrollTop() > 100) {
+								$('#scroll').fadeIn();
+							} else {
+								$('#scroll').fadeOut();
+							}
+						});
+						$('#scroll').click(function () {
+							$("html, body").animate({ scrollTop: 0 }, 600);
+							return false;
+						});
+					});
+				</script>
+
+				<a href="javascript:void(0);" id="scroll" title="Scroll to Top"
+					style="display: none;">Top<span></span></a>
+			</div>
 		</main>
+
+		<footer>
+			<p>
+				<a href="https://www.covid-taichung.com/contact/#contact-team">
+					Our volunteers
+				</a>
+				💛 translate and create much of this content manually.
+				<br />
+				If you find an issue or have a great idea, please
+				<a
+					href="https://www.covid-taichung.com/contact/#contact-form">
+					tell us
+				</a>.
+			</p>
+			<p>
+				The materials provided in this web site may be used for private purposes.
+				For use, reproduction or transmission for purposes other than private use, please contact us.
+				The content on this website was translated by volunteers, third parties, and translation software.
+				Reasonable efforts have been made in order to provide accurate translations.
+				Translations are provided as a service to users of our website, and are provided "as is."
+				No warranty of any kind, either expressed or implied, is made as to the reliability, accuracy, or correctness of any translations made from the source languages into any other language.
+				Some content may not be accurately translated due to limitations of the translation software.
+				Some content has been summarized and interpreted to provide a user-friendly service.
+			</p>
+			<p>
+				Covid Taichung - Footprint and Information Website
+					©
+				2021
+			</p>
+		</footer>
 	</body>
+
 </html>
