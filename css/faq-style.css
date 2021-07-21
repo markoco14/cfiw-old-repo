@@ -5,6 +5,7 @@
 }
 /*Search bar and search result styles*/
 .searchWrapper {
+	margin-bottom: 1em;
 	padding: 0 0.5em;
 	width: 100%;
 }
