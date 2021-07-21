@@ -1,29 +1,18 @@
 /*Container holds search bar, search results, and FAQ content*/
 .container {
-	/*style the container*/
-	width: 90vw;
 	position: relative;
-	margin: 100px auto;
-	/*set flex properties*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	margin: 0 auto;
 }
 /*Search bar and search result styles*/
-#searchWrapper {
-	/*position: relative;
-	margin: 0 auto;
-	margin-bottom: 20px;*/
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 75%;
+.searchWrapper {
+	padding: 0 0.5em;
+	width: 100%;
 }
 
 .searchBar {
 	width: 100%;
-	margin: 50px 0px 0px;
+	margin: 1em 0 0;
+	font-size: 16px;
 }
 
 #searchResults {
@@ -52,6 +41,10 @@
 	.container {
 		width: 80vw;
 	}
+
+	.searchWrapper {
+		margin: 2em 0;
+	}
 }
 
 @media screen and (min-width: 900px) {
@@ -74,8 +67,7 @@
 /*create space from search bar container above*/
 .faqContainer {
 	width: 100%;
-	margin: 25px 0 0;
-	padding: 1em;
+	margin: 1em 0 0;
 }
 
 /*highlight important details red*/
@@ -84,7 +76,7 @@
 }
 
 .faq-question {
-	padding: 1em;
+	padding: 1em 0.5em;
 	border-bottom: 3px solid #393939;
 	font-weight: bold;
 	margin-bottom: 1em;
@@ -106,7 +98,7 @@ dt {
 }
 
 .answer-content {
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 .answer-content p img{
