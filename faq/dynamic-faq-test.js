@@ -137,7 +137,6 @@ const displaySearches = function(filteredFaq) {
 		searchResults.removeChild(searchResults.firstChild);
 	}
 
-
 	//loop through filtered search data
 	for (i = 0; i < filteredFaq.length; i++) {
 		const div = document.createElement('div');
@@ -146,6 +145,21 @@ const displaySearches = function(filteredFaq) {
 		div.setAttribute('class','searchContainer');
 		a.setAttribute('href', `#question${filteredFaq[i].id}`)
 		a.setAttribute('class', 'searchLink');
+		a.addEventListener('click', () => {
+			//create a reference to the link ID
+			let id = a.getAttribute('href')
+			//check question IDs for match with link ID
+			for (j = 0; j < questionsArray.length; j++) {
+				console.log(`#${questionsArray[j].id}`)
+				if (id === `#${questionsArray[j].id}`) {
+					questionsArray[j].classList.add('question-clicked');
+					answersArray[j].classList.remove('hidden');
+				} else {
+					questionsArray[j].classList.remove('question-clicked');
+					answersArray[j].classList.add('hidden');
+				}
+			}
+		});
 		div.appendChild(a);
 		searchResults.appendChild(div);
 	}
@@ -156,7 +170,6 @@ const displaySearches = function(filteredFaq) {
 			searchResults.removeChild(searchResults.firstChild);
 		}
 	}
-
 }
 
 let containersArray = [];
@@ -168,13 +181,19 @@ const displayFaqContent = async () => {
 	for (i = 0; i < faqData.length; i++) {
 
 		//create page elements
-		let container = document.createElement('div');
-		let questionDiv = document.createElement('div');
-		let answerDiv = document.createElement('div');
+		/*let container = document.createElement('div');*/
+		let questionDiv = document.createElement('dt');
+		let answerDiv = document.createElement('dd');
 		
 		//set up attributes
-		container.setAttribute('id', `${faqData[i].order}`);
-		container.classList.add('faq-box');
+		/*
+			comment out container div element to test
+			definition list within a div wrapping
+			each question/answer pair
+		*/
+
+		/*container.setAttribute('id', `${faqData[i].order}`);
+		container.classList.add('faq-box');*/
 
 		questionDiv.setAttribute('id', `question${faqData[i].id}`);
 		questionDiv.setAttribute('class', 'faq-question')
@@ -184,16 +203,22 @@ const displayFaqContent = async () => {
 		/* 
 			keep next line of code for later
 		*/
-		/*questionDiv.innerHTML = faqData[i].question;*/
+		questionDiv.innerHTML = faqData[i].question;
 
 		/*questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");*/
 
+		/*
+			commented out the <h3> format for the question
+			because I think the switch to a dl>dd>dt
+			took care of the semantic concerns
+		*/
+
 		//will test faq question h3 markdown later
-		if(faqData[i].formatQuestion) {
+		/*if(faqData[i].formatQuestion) {
 			questionDiv.innerHTML = convertMarkdownToHtml(faqData, "question");
 		} else {
 			questionDiv.innerHTML = faqData[i].question;
-		}
+		}*/
 
 		/*set answer content and convert markdown as needed*/
 		if(faqData[i].formatAnswer) {
@@ -204,7 +229,7 @@ const displayFaqContent = async () => {
 		
 		//set event listeners
 		questionDiv.addEventListener('click', toggleFaq)
-		answerDiv.addEventListener('click', toggleFaq)
+		/*answerDiv.addEventListener('click', toggleFaq)*/
 		
 		/*faqData[i]["count"] = 0;*/		
 		//push elements to arrays for looping
@@ -212,9 +237,10 @@ const displayFaqContent = async () => {
 		answersArray.push(answerDiv);
 		
 		//append elements to the page	
-		container.appendChild(questionDiv);
-		container.appendChild(answerDiv);
-		faqContainer.appendChild(container);	
+		/*container.appendChild(questionDiv);
+		container.appendChild(answerDiv);*/
+		faqContainer.appendChild(questionDiv);
+		faqContainer.appendChild(answerDiv);	
 	}
 }
 
@@ -237,12 +263,17 @@ function convertMarkdownToHtml(data, string) {
 function toggleFaq(e) {
 	//i want to close all
 	for (i=0; i < questionsArray.length; i++) {
-		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
+		if (e.target === questionsArray[i] && answersArray[i].classList.contains('hidden')) {
 			answersArray[i].classList.remove('hidden');
+			questionsArray[i].classList.add('question-clicked');
 		} else {
 			answersArray[i].classList.add('hidden');
+			questionsArray[i].classList.remove('question-clicked');
 		}
 	}
+
+/*
+|| e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')*/
 
 	/*
 		scroll screen to the clicked on question. 
@@ -250,7 +281,10 @@ function toggleFaq(e) {
 		right now scrolls to top
 		but needs more work
 	*/
-	e.target.scrollIntoView(true)
+/*	e.target.scrollIntoView(true);*/
+	e.target.scrollIntoView({
+		behavior: "smooth"
+	})
 }
 	
 

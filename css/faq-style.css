@@ -1,31 +1,19 @@
-/*Style the Search bar on the FAQ page*/
-
 /*Container holds search bar, search results, and FAQ content*/
 .container {
-	/*style the container*/
-	width: 90vw;
 	position: relative;
-	margin: 100px auto;
-	/*set flex properties*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	margin: 0 auto;
 }
 /*Search bar and search result styles*/
-#searchWrapper {
-	/*position: relative;
-	margin: 0 auto;
-	margin-bottom: 20px;*/
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 75%;
+.searchWrapper {
+	margin-bottom: 1em;
+	padding: 0 0.5em;
+	width: 100%;
 }
 
 .searchBar {
 	width: 100%;
-	margin: 50px 0px 0px;
+	margin: 1em 0 0;
+	font-size: 16px;
 }
 
 #searchResults {
@@ -54,6 +42,10 @@
 	.container {
 		width: 80vw;
 	}
+
+	.searchWrapper {
+		margin: 2em 0;
+	}
 }
 
 @media screen and (min-width: 900px) {
@@ -76,24 +68,38 @@
 /*create space from search bar container above*/
 .faqContainer {
 	width: 100%;
-	margin: 25px 0 0;
-	padding: 1em;
+	margin: 1em 0 0;
 }
 
 /*highlight important details red*/
 .red {
-	color: red;
+	color: #cc5a5a;
 }
 
 .faq-question {
-	padding: 10px 0;
+	padding: 1em 0.5em;
 	border-bottom: 3px solid #393939;
 	font-weight: bold;
 	margin-bottom: 1em;
 }
 
-div .faq-question:hover {
+.faq-question:hover {
 	cursor: pointer;
+	background-color: var(--background);
+	color: white;
+}
+
+.question-clicked {
+	background-color: var(--background);
+	color: var(--light-text);
+}
+
+dt {
+	margin-bottom: 50px;
+}
+
+.answer-content {
+	padding-left: 0.5em;
 }
 
 .answer-content p img{
@@ -103,52 +109,14 @@ div .faq-question:hover {
 }
 
 .answer-content li {
-	width: 80%;
+	width: 85%;
 	position: relative;
 	margin: 0 auto 1em;
 }
 
-/*i added this because <li> links were not using our link color*/
-/*.answer-content a {
-	color:var(--link-text);
-	text-decoration:underline;
-}*/
-
-/*.answer-content li {
-	margin-bottom: 1em;
-}*/
-/*Style containers for each FAQ question/answer pair*/
-/*.faq-box {
-	margin: 10px 0;
+@media screen and (min-width: 600px) {
+	.answer-content {
+		padding-left: 1em;
+	}
 }
-
-.faq-box p, ul {
-	width: 80%;
-}
-
-.faq-box .image {
-	width: 100%;
-	position: relative;
-	margin: 0px auto;
-}
-
-
-.faq-box p, ul, li{
-	margin-bottom:  10px 0;
-}
-
-.faq-box ul{
-	position: relative;
-	margin: 0 auto;
-	width:  80%;
-	list-style: none;
-}
-
-
-.answer-content {
-	margin-top: 10px;
-	border-bottom: 3px solid #393939;
-	padding: 10px 0;
-}*/
-
 
