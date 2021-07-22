@@ -229,7 +229,7 @@ const displayFaqContent = async () => {
 		
 		//set event listeners
 		questionDiv.addEventListener('click', toggleFaq)
-		answerDiv.addEventListener('click', toggleFaq)
+		/*answerDiv.addEventListener('click', toggleFaq)*/
 		
 		/*faqData[i]["count"] = 0;*/		
 		//push elements to arrays for looping
@@ -263,7 +263,7 @@ function convertMarkdownToHtml(data, string) {
 function toggleFaq(e) {
 	//i want to close all
 	for (i=0; i < questionsArray.length; i++) {
-		if ((e.target === questionsArray[i] || e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')) {
+		if (e.target === questionsArray[i] && answersArray[i].classList.contains('hidden')) {
 			answersArray[i].classList.remove('hidden');
 			questionsArray[i].classList.add('question-clicked');
 		} else {
@@ -271,6 +271,9 @@ function toggleFaq(e) {
 			questionsArray[i].classList.remove('question-clicked');
 		}
 	}
+
+/*
+|| e.target === answersArray[i]) && answersArray[i].classList.contains('hidden')*/
 
 	/*
 		scroll screen to the clicked on question. 
