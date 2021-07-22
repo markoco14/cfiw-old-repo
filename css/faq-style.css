@@ -114,12 +114,6 @@ dt {
 	margin: 0 auto 1em;
 }
 
-@media screen and (min-width: 400px) {
-	.answer-content li {
-		width: 90%;
-	}
-}
-
 @media screen and (min-width: 600px) {
 	.answer-content {
 		padding-left: 1em;
