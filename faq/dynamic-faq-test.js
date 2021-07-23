@@ -97,7 +97,24 @@ searchBar.addEventListener('keyup', (e) => {
 
 	/*filteredFaq.sort((a,b)=>b-a);*/
 	//define function to compare the indexes of unsorted filteredFaq
-	function compare( a, b ) {
+	/*function compare( a, b ) {
+	  if ( a.count < b.count ){
+	    return 1;
+	  }
+	  if ( a.count > b.count ){
+	    return -1;
+	  }
+	  return 0;
+	}*/
+
+	//sort filtered FAQ to be in descending numerical order
+	filteredFaq.sort( compare );
+
+	//call the display searches function
+	displaySearches(filteredFaq)
+});
+
+function compare( a, b ) {
 	  if ( a.count < b.count ){
 	    return 1;
 	  }
@@ -106,13 +123,6 @@ searchBar.addEventListener('keyup', (e) => {
 	  }
 	  return 0;
 	}
-
-	//sort filtered FAQ to be in descending numerical order
-	filteredFaq.sort( compare );
-
-	//call the display searches function
-	displaySearches(filteredFaq)
-});
 
 const loadFaq = async () => {
 	let url = "https://markoco14.github.io/cfiw/faq/dynamic-faq-json.json";
@@ -235,6 +245,8 @@ const displayFaqContent = async () => {
 		//push elements to arrays for looping
 		questionsArray.push(questionDiv);
 		answersArray.push(answerDiv);
+
+
 		
 		//append elements to the page	
 		/*container.appendChild(questionDiv);
@@ -242,6 +254,10 @@ const displayFaqContent = async () => {
 		faqContainer.appendChild(questionDiv);
 		faqContainer.appendChild(answerDiv);	
 	}
+
+	console.log(questionsArray)
+	questionsArray.sort(compare)
+	console.log(questionsArray)
 }
 
 /*functions to convert markdown to html*/
