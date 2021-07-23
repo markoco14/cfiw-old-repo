@@ -108,17 +108,27 @@ searchBar.addEventListener('keyup', (e) => {
 	}*/
 
 	//sort filtered FAQ to be in descending numerical order
-	filteredFaq.sort( compare );
+	filteredFaq.sort( sortSearchResultsByCount );
 
 	//call the display searches function
 	displaySearches(filteredFaq)
 });
 
-function compare( a, b ) {
+function sortSearchResultsByCount( a, b ) {
 	  if ( a.count < b.count ){
 	    return 1;
 	  }
 	  if ( a.count > b.count ){
+	    return -1;
+	  }
+	  return 0;
+	}
+
+function sortFaqContentByOrder( a, b ) {
+	  if ( a.order > b.order ){
+	    return 1;
+	  }
+	  if ( a.order < b.order ){
 	    return -1;
 	  }
 	  return 0;
@@ -188,6 +198,7 @@ let questionsArray = [];
 let inputsArray = [];
 
 const displayFaqContent = async () => {
+	const sortedFaqContent = faqData.sort(sortFaqContentByOrder)
 	for (i = 0; i < faqData.length; i++) {
 
 		//create page elements
@@ -254,10 +265,6 @@ const displayFaqContent = async () => {
 		faqContainer.appendChild(questionDiv);
 		faqContainer.appendChild(answerDiv);	
 	}
-
-	console.log(questionsArray)
-	questionsArray.sort(compare)
-	console.log(questionsArray)
 }
 
 /*functions to convert markdown to html*/
