@@ -55,6 +55,16 @@
 }
 
 
+/*Style the latest news section of the FAQ page*/
+
+.latest-news ul {
+	padding-left: 2em;
+}
+
+.latest-news li {
+	margin-bottom: 1em;
+}
+
 
 /*Style the content section of the FAQ page*/
 
