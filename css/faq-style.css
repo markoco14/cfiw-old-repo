@@ -58,7 +58,11 @@
 /*Style the latest news section of the FAQ page*/
 
 .latest-news ul {
-	padding-left: 1em;
+	padding-left: 2em;
+}
+
+.latest-news li {
+	margin-bottom: 1em;
 }
 
 
