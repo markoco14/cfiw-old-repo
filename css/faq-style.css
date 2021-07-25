@@ -2,6 +2,7 @@
 .container {
 	position: relative;
 	margin: 0 auto;
+	font-size: 18px;
 }
 /*Search bar and search result styles*/
 .searchWrapper {
@@ -67,6 +68,10 @@
 
 .latest-news li {
 	margin-bottom: 1em;
+}
+
+.latest-news li::marker {
+	color: black;
 }
 
 
