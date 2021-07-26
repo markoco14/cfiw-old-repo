@@ -144,7 +144,7 @@ const loadFaq = async () => {
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
 	try {
-		const res = await fetch(url5);
+		const res = await fetch(url);
 		faqData = await res.json();
 		console.log(faqData);
 	} catch (err) {
