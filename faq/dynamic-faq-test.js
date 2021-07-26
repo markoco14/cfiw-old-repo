@@ -139,11 +139,12 @@ const loadFaq = async () => {
 	let url2 ="https://markoco14.github.io/cfiw/faq/dynamic-faq-json-2.json";
 	let url3 = "json/dynamic-faq-json-2.json"
 	let url4 = "https://github.com/markoco14/cfiw/blob/main/faqDataJSON.json"
+	let url5 = "https://markoco14.github.io/cfiw/faqDataJSON.json"
 	/* url for script link
 	<script src="https://markoco14.github.io/google-sheet-test/display-data.js"></script>
 	*/
 	try {
-		const res = await fetch(url4);
+		const res = await fetch(url5);
 		faqData = await res.json();
 		console.log(faqData);
 	} catch (err) {
