@@ -17,7 +17,7 @@
         "id": 3,
         "question": "I'm worried I've got COVID. Is there a covid screening station in Taichung where I can get a free COVID-19 test?",
         "answer": "6/25 UPDATE several health facilities have set up outdoors COVID-19 Fast Screening Stations to provide rapid antigen testing for free if you have an official address in Taichung.  Bring ID cards (ARC, APRC, VISA), health insurance cards (NHIC), and wear medical masks throughout the journey. Most locations require you to make an online appointment and ask to come early. Check our map for more details and help with navigation. Screening services will be suspended if they run out of tests If the test result is negative, you will be notified on the spot, and no paper report will be provided (result can be checked in your health passbook 1-3 days after) Those who test positive will be transferred to the emergency room for follow-up",
-        "markdownAnswer": "**6/25** several **health facilities have set up outdoors COVID-19 Fast Screening Stations** to provide rapid antigen testing for free if you have an official address in Taichung.\r\n- Bring ID cards (ARC, APRC, VISA), health insurance cards (NHIC), and wear medical masks throughout the journey.\r\n- Most locations require you to make an online appointment and ask to come early. Check [our map](https://www.covid-taichung.com/maps/) for more details and help with navigation.\r\n- Screening services will be suspended if they run out of tests\r\n- If the test result is negative, you will be notified on the spot, and no paper report will be provided (result can be checked in your health passbook 1-3 days after)\r\n- Those who test positive will be transferred to the emergency room for follow-up\r",
+        "markdownAnswer": "**6/25** several **health facilities have set up outdoors COVID-19 Fast Screening Stations** to provide rapid antigen testing for free if you have an official address in Taichung.\n- Bring ID cards (ARC, APRC, VISA), health insurance cards (NHIC), and wear medical masks throughout the journey.\n- Most locations require you to make an online appointment and ask to come early. Check [our map](https://www.covid-taichung.com/maps/) for more details and help with navigation.\n- Screening services will be suspended if they run out of tests\n- If the test result is negative, you will be notified on the spot, and no paper report will be provided (result can be checked in your health passbook 1-3 days after)\n- Those who test positive will be transferred to the emergency room for follow-up",
         "order": 9
     },
     {
@@ -31,7 +31,7 @@
         "id": 5,
         "question": "Are there any English videos with information about confirmed COVID-19 cases?",
         "answer": "CDC has some English videos on their official YouTube channel with English audio and subtitles:  6/9 What to do if you had contact with a confirmed COVID-19 case? 6/9 What to do if you've been diagnosed with COVID-19? 6/8 How to care for a COVID-19 patient at home? We appreciate the CDC's continued efforts and hope to see more COVID-19 videos.",
-        "markdownAnswer": "CDC has some videos about this on [their official YouTube channel](https://www.youtube.com/channel/UCyh91eTE9jA3ykg8W3_v3DQ) with English audio and subtitles:\n- 6/9 [What to do if you had contact with a confirmed COVID-19 case?](https://www.youtube.com/watch?v=lDo9wShQVps&t=4s)\n- 6/9 [What to do if you've been diagnosed with COVID-19?](https:
+        "markdownAnswer": "CDC has some videos about this on [their official YouTube channel](https://www.youtube.com/channel/UCyh91eTE9jA3ykg8W3_v3DQ) with English audio and subtitles: \n- 6/9 [What to do if you had contact with a confirmed COVID-19 case?](https://www.youtube.com/watch?v=lDo9wShQVps&t=4s)\n- 6/9 [What to do if you've been diagnosed with COVID-19?](https:
         "order": 10
     },
     {
@@ -73,7 +73,7 @@
         "id": 11,
         "question": "Are there English apps for my smartphone or tablet that can help me during the covid outbreak in Taiwan?",
         "answer": "Install the Taiwan Social Distancing app for Android or iOS and turn on Bluetooth to get notified when you were close to another user that tested positive for SARS-Cov-2",
-        "markdownanswer": "Install the Taiwan Social Distancing app for [Android](https://play.google.com/store/apps/details?id=tw.gov.cdc.exposurenotifications) or [iOS](https://apps.apple.com/us/app/taiwan-social-distancing/id1554431836) and turn on Bluetooth to [get notified when you were close to another user](https://www.cdc.gov.tw/En/Bulletin/Detail/32-hon2vaFXEQjxIGmqRgw?typeid=158) that tested positive for SARS-Cov-2\r",
+        "markdownAnswer": "Install the Taiwan Social Distancing app for [Android](https://play.google.com/store/apps/details?id=tw.gov.cdc.exposurenotifications) or [iOS](https://apps.apple.com/us/app/taiwan-social-distancing/id1554431836) and turn on Bluetooth to [get notified when you were close to another user](https://www.cdc.gov.tw/En/Bulletin/Detail/32-hon2vaFXEQjxIGmqRgw?typeid=158) that tested positive for SARS-Cov-2\r",
         "order": 15
     },
     {
@@ -150,7 +150,7 @@
         "id": 22,
         "question": "Is there a map where I can see locations for testing and vaccines in Taichung? Can you help me make an appointment and navigate to covid testing and vaccination facilities?",
         "answer": "7/8 Vaccinations in Taichung and Taiwan are still limited to priority groups 1-10 and special cases. Both free and paid covid-19 tests, rapid antigen or molecular RT-PCR, are widely available.  We contact health authorities and facilities regularly to update locations that offer some level of English services on our map with details about how to book and where to go.",
-        "markdownanswer": "**7/8** Vaccinations in Taichung and Taiwan are still limited to priority groups 1-10 and special cases. Both free and paid covid-19 tests, rapid antigen or molecular RT-PCR, are widely available.\r\n\r\nWe contact health authorities and facilities regularly to update [**locations that offer some level of English services on our map**](https://www.covid-taichung.com/maps/) with details about how to book and where to go.",
+        "markdownAnswer": "**7/8** Vaccinations in Taichung and Taiwan are still limited to priority groups 1-10 and special cases. Both free and paid covid-19 tests, rapid antigen or molecular RT-PCR, are widely available.\r\n\r\nWe contact health authorities and facilities regularly to update [**locations that offer some level of English services on our map**](https://www.covid-taichung.com/maps/) with details about how to book and where to go.",
         "order": 5
     },
     {
